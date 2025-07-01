@@ -1,20 +1,16 @@
 {
   "total_sources": 3,
-  "scraping_timestamp": "2025-07-02 00:40:27",
+  "scraping_timestamp": "2025-07-02 01:10:18",
   "sources": {
     "myanimelist": {
-      "categories_scraped": 9,
-      "total_anime_entries": 180,
+      "categories_scraped": 5,
+      "total_anime_entries": 100,
       "categories": {
-        "top_anime": 20,
-        "most_popular": 20,
-        "top_airing": 20,
-        "top_upcoming": 20,
-        "top_tv": 20,
-        "top_movie": 20,
-        "top_ova": 20,
-        "top_special": 20,
-        "most_favorited": 20
+        "action_adventure_shounen": 20,
+        "romance": 20,
+        "ecchi_erotica": 20,
+        "slice_of_life": 20,
+        "comedy": 20
       }
     },
     "anidb": {

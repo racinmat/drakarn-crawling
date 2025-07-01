@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-MyAnimeList Top Anime Scraper
-Scrapes top 20 anime from various categories on MyAnimeList
+MyAnimeList Genre-Based Anime Scraper
+Scrapes top 20 anime from genre-based categories on MyAnimeList
+Categories: Action/Adventure/Shounen, Romance, Ecchi/Erotica, Slice of Life, Comedy
 """
 
 import requests
@@ -27,18 +28,38 @@ class MALScraper:
         os.makedirs('html_cache', exist_ok=True)
         os.makedirs('results', exist_ok=True)
         
-        # Available categories on MAL
+        # Genre-based categories as requested by user
+        # Using actual MAL genre IDs and proper search URLs
         self.categories = {
-            'top_anime': '/topanime.php',
-            'most_popular': '/topanime.php?type=bypopularity',
-            'top_airing': '/topanime.php?type=airing',
-            'top_upcoming': '/topanime.php?type=upcoming',
-            'top_tv': '/topanime.php?type=tv',
-            'top_movie': '/topanime.php?type=movie',
-            'top_ova': '/topanime.php?type=ova',
-            'top_special': '/topanime.php?type=special',
-            'most_favorited': '/topanime.php?type=favorite'
+            "action_adventure_shounen": {
+                "name": "Action, Adventure, Shounen",
+                "genres": [1, 2, 27],  # Action=1, Adventure=2, Shounen=27
+                "description": "Action, adventure, shounen anime"
+            },
+            "romance": {
+                "name": "Romance", 
+                "genres": [22],  # Romance=22
+                "description": "Romance anime"
+            },
+            "ecchi_erotica": {
+                "name": "Ecchi, Erotica",
+                "genres": [9],  # Ecchi=9 (skip erotica for now due to uncertain ID)
+                "description": "Ecchi anime"
+            },
+            "slice_of_life": {
+                "name": "Slice of Life",
+                "genres": [36],  # Slice of Life=36
+                "description": "Slice of life anime"
+            },
+            "comedy": {
+                "name": "Comedy",
+                "genres": [4],  # Comedy=4
+                "description": "Comedy anime"
+            }
         }
+        
+        # Exclude hentai (ID 12)
+        self.excluded_genres = [12]  # Hentai
     
     def _get_cache_filename(self, url: str) -> str:
         """Generate a cache filename based on URL"""
@@ -54,162 +75,262 @@ class MALScraper:
         filename = f"mal_{clean_name}.html"
         return os.path.join('html_cache', filename)
     
-    def _load_cached_html(self, url: str) -> Optional[str]:
-        """Load HTML from cache if it exists"""
+
+    def _get_page_content(self, url: str) -> Optional[str]:
+        """Get HTML content from URL with caching"""
         cache_file = self._get_cache_filename(url)
+        
+        # Try to load from cache first
         if os.path.exists(cache_file):
-            print(f"Loading cached HTML from {cache_file}")
             try:
                 with open(cache_file, 'r', encoding='utf-8') as f:
+                    print(f"Loading from cache: {cache_file}")
                     return f.read()
             except Exception as e:
-                print(f"Error loading cached HTML: {e}")
-                return None
-        return None
-    
-    def _save_html_to_cache(self, url: str, html_content: str):
-        """Save HTML content to cache"""
-        cache_file = self._get_cache_filename(url)
-        try:
-            with open(cache_file, 'w', encoding='utf-8') as f:
-                f.write(html_content)
-            print(f"HTML cached to {cache_file}")
-        except Exception as e:
-            print(f"Error saving HTML to cache: {e}")
-    
-    def _get_html_content(self, url: str) -> Optional[str]:
-        """Get HTML content either from cache or by downloading"""
-        # First try to load from cache
-        cached_html = self._load_cached_html(url)
-        if cached_html:
-            return cached_html
+                print(f"Error reading cache file {cache_file}: {e}")
         
-        # If not cached, download it
-        print(f"Downloading HTML from {url}")
-        
+        # Download if not in cache
         try:
-            response = self.session.get(url)
+            print(f"Downloading: {url}")
+            response = self.session.get(url, timeout=10)
             response.raise_for_status()
-            html_content = response.text
-            # Save to cache for future use
-            self._save_html_to_cache(url, html_content)
-            return html_content
             
-        except requests.RequestException as e:
-            print(f"Error downloading HTML: {e}")
+            # Save to cache
+            try:
+                with open(cache_file, 'w', encoding='utf-8') as f:
+                    f.write(response.text)
+                    print(f"Saved to cache: {cache_file}")
+            except Exception as e:
+                print(f"Error saving to cache: {e}")
+            
+            return response.text
+            
+        except Exception as e:
+            print(f"Error downloading {url}: {e}")
             return None
-
-    def scrape_category(self, category: str, limit: int = 20) -> List[Dict]:
-        """Scrape top anime from a specific category"""
-        if category not in self.categories:
-            print(f"Category '{category}' not found. Available categories: {list(self.categories.keys())}")
-            return []
-        
-        url = self.base_url + self.categories[category]
-        print(f"Scraping {category} from {url}")
-        
-        # Get HTML content (either from cache or download)
-        html_content = self._get_html_content(url)
-        if not html_content:
-            return []
-        
+    
+    def _parse_topanime_list(self, html_content: str, category_name: str, limit: int) -> List[Dict]:
+        """Parse anime list from MAL's top anime by genre pages"""
         try:
             soup = BeautifulSoup(html_content, 'html.parser')
-            
             anime_list = []
-            ranking_items = soup.find_all('tr', class_='ranking-list')
             
-            for i, item in enumerate(ranking_items[:limit]):
+            # Top anime pages use ranking-list class
+            anime_rows = soup.find_all('tr', class_='ranking-list')
+            
+            for i, row in enumerate(anime_rows[:limit]):
                 if i >= limit:
                     break
-                    
-                anime_data = self._extract_anime_data(item)
-                if anime_data:
-                    anime_list.append(anime_data)
                 
-                # Rate limiting
-                time.sleep(0.5)
+                try:
+                    # Extract rank
+                    rank_td = row.find('td', class_='rank ac')
+                    rank = rank_td.find('span').text.strip() if rank_td else "N/A"
+                    
+                    # Extract title and URL
+                    title_cell = row.find('td', class_='title al va-t word-break')
+                    if not title_cell:
+                        continue
+                    
+                    # Find the title in the h3 section
+                    title_h3 = title_cell.find('h3', class_='fl-l fs14 fw-b anime_ranking_h3')
+                    if not title_h3:
+                        continue
+                    
+                    title_link = title_h3.find('a', class_='hoverinfo_trigger')
+                    if not title_link:
+                        title_link = title_h3.find('a')
+                    
+                    if not title_link:
+                        continue
+                    
+                    title = title_link.text.strip()
+                    url = title_link.get('href', '')
+                    if url and not url.startswith('http'):
+                        url = self.base_url + url
+                    
+                    # Extract score
+                    score_td = row.find('td', class_='score ac fs14')
+                    score = "N/A"
+                    if score_td:
+                        score_span = score_td.find('span', class_='score-label')
+                        if score_span:
+                            score = score_span.text.strip()
+                    
+                    # Extract additional info (type, episodes, etc.)
+                    info_div = title_cell.find('div', class_='information di-ib mt4')
+                    additional_info = info_div.text.strip() if info_div else "N/A"
+                    
+                    anime_data = {
+                        'title': title,
+                        'score': score,
+                        'rank': rank,
+                        'url': url,
+                        'additional_info': additional_info,
+                        'source': 'MyAnimeList',
+                        'category': category_name
+                    }
+                    
+                    anime_list.append(anime_data)
+                    
+                except Exception as e:
+                    print(f"Error parsing anime row: {e}")
+                    continue
             
             return anime_list
             
         except Exception as e:
-            print(f"Error scraping {category}: {e}")
+            print(f"Error parsing top anime list for {category_name}: {e}")
             return []
     
-    def _extract_anime_data(self, item) -> Optional[Dict]:
-        """Extract anime data from a ranking item"""
+    def _extract_anime_from_item(self, item) -> Optional[Dict]:
+        """Extract anime data from various HTML item structures"""
         try:
-            # Rank
-            rank_elem = item.find('td', class_='rank ac')
-            rank = rank_elem.find('span').text.strip() if rank_elem else "N/A"
+            title = "N/A"
+            url = "N/A"
+            score = "N/A"
+            rank = "N/A"
+            additional_info = "N/A"
             
-            # Title and URL
-            title_elem = item.find('div', class_='detail')
-            if not title_elem:
-                return None
-                
-            title_link = title_elem.find('a', class_='hoverinfo_trigger')
-            title = title_link.text.strip() if title_link else "N/A"
-            anime_url = title_link.get('href') if title_link else "N/A"
+            # Try different extraction methods
             
-            # Score
-            score_elem = item.find('td', class_='score ac fs14')
-            score_span = score_elem.find('span') if score_elem else None
-            score = score_span.text.strip() if score_span else "N/A"
+            # Method 1: Seasonal anime structure
+            title_link = item.find('a', class_='link-title')
+            if not title_link:
+                # Method 2: Ranking list structure
+                title_link = item.find('a', class_='hoverinfo_trigger')
+            if not title_link:
+                # Method 3: Generic anime link
+                title_link = item.find('a', href=lambda x: x and '/anime/' in x)
             
-            # Additional info (type, episodes, dates)
-            info_elem = title_elem.find('div', class_='information di-ib mt4')
-            info_text = info_elem.text.strip() if info_elem else "N/A"
+            if title_link:
+                title = title_link.text.strip()
+                url = title_link.get('href', '')
+                if url and not url.startswith('http'):
+                    url = self.base_url + url
             
-            return {
-                'rank': rank,
-                'title': title,
-                'score': score,
-                'url': anime_url,
-                'additional_info': info_text,
-                'source': 'MyAnimeList'
-            }
+            # Extract score
+            score_elem = item.find('span', class_='score-label') or item.find('span', class_='score')
+            if not score_elem:
+                score_elem = item.find('td', class_='score ac fs14')
+                if score_elem:
+                    score_elem = score_elem.find('span')
+            
+            if score_elem:
+                score = score_elem.text.strip()
+            
+            # Extract rank
+            rank_elem = item.find('span', class_='rank') or item.find('td', class_='rank ac')
+            if rank_elem:
+                rank_span = rank_elem.find('span') if rank_elem.name == 'td' else rank_elem
+                if rank_span:
+                    rank = rank_span.text.strip()
+            
+            # Extract additional info
+            info_elem = item.find('div', class_='information') or item.find('div', class_='prodsrc')
+            if info_elem:
+                additional_info = info_elem.text.strip()
+            
+            # Only return if we have at least a title
+            if title != "N/A":
+                return {
+                    'title': title,
+                    'score': score,
+                    'rank': rank,
+                    'url': url,
+                    'additional_info': additional_info,
+                    'source': 'MyAnimeList'
+                }
+            
+            return None
             
         except Exception as e:
             print(f"Error extracting anime data: {e}")
             return None
     
-    def scrape_all_categories(self, limit: int = 20) -> Dict[str, List[Dict]]:
-        """Scrape all available categories"""
-        all_data = {}
+    def scrape_category(self, category_key: str, limit: int = 20) -> List[Dict]:
+        """Scrape anime from a specific genre-based category"""
+        if category_key not in self.categories:
+            print(f"Warning: Category '{category_key}' not found")
+            return []
         
-        for category in self.categories.keys():
-            print(f"\nScraping category: {category}")
-            category_data = self.scrape_category(category, limit)
-            all_data[category] = category_data
+        category = self.categories[category_key]
+        print(f"Scraping {category['name']} ({category['description']})...")
+        
+        # Use top anime by genre URL - this is more reliable than search
+        # We'll scrape from each genre separately and combine results
+        all_results = []
+        
+        for genre_id in category['genres']:
+            # Use the genre-specific top anime URL
+            url = f"{self.base_url}/topanime.php?genre%5B%5D={genre_id}"
             
-            # Longer delay between categories
-            time.sleep(2)
+            try:
+                html_content = self._get_page_content(url)
+                if not html_content:
+                    print(f"Failed to get content for genre {genre_id}")
+                    continue
+                
+                results = self._parse_topanime_list(html_content, category['name'], limit)
+                all_results.extend(results)
+                
+                # Add delay between requests
+                time.sleep(1)
+                
+            except Exception as e:
+                print(f"Error scraping genre {genre_id}: {e}")
         
-        return all_data
+        # Remove duplicates based on title and limit results
+        seen_titles = set()
+        unique_results = []
+        for anime in all_results:
+            if anime['title'] not in seen_titles:
+                seen_titles.add(anime['title'])
+                unique_results.append(anime)
+                if len(unique_results) >= limit:
+                    break
+        
+        return unique_results[:limit]
     
-    def save_to_json(self, data: Dict, filename: str = 'mal_anime_data.json'):
-        """Save data to JSON file"""
-        filepath = os.path.join('results', filename)
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"Data saved to {filepath}")
+    def scrape_all_categories(self, limit: int = 20) -> Dict[str, List[Dict]]:
+        """Scrape all genre-based categories"""
+        results = {}
+        for category_key in self.categories.keys():
+            results[category_key] = self.scrape_category(category_key, limit)
+            time.sleep(1)  # Be respectful to the server
+        return results
     
     def save_to_csv(self, data: Dict, filename: str = 'mal_anime_data.csv'):
-        """Save data to CSV file"""
-        all_anime = []
-        for category, anime_list in data.items():
-            for anime in anime_list:
-                anime['category'] = category
-                all_anime.append(anime)
-        
-        if all_anime:
-            fieldnames = ['category', 'rank', 'title', 'score', 'url', 'additional_info', 'source']
-            filepath = os.path.join('results', filename)
-            with open(filepath, 'w', newline='', encoding='utf-8') as f:
-                writer = csv.DictWriter(f, fieldnames=fieldnames)
-                writer.writeheader()
-                writer.writerows(all_anime)
+        """Save scraped data to CSV file in results directory"""
+        filepath = os.path.join('results', filename)
+        with open(filepath, 'w', newline='', encoding='utf-8') as csvfile:
+            if not data:
+                print("No data to save")
+                return
+            
+            # Get all unique fieldnames from all categories
+            fieldnames = set()
+            for category_data in data.values():
+                if category_data:
+                    for anime in category_data:
+                        fieldnames.update(anime.keys())
+            
+            fieldnames = sorted(list(fieldnames))
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            writer.writeheader()
+            
+            # Write data from all categories
+            for category, anime_list in data.items():
+                for anime in anime_list:
+                    writer.writerow(anime)
+            
+            print(f"Data saved to {filepath}")
+    
+    def save_to_json(self, data: Dict, filename: str = 'mal_anime_data.json'):
+        """Save scraped data to JSON file in results directory"""
+        filepath = os.path.join('results', filename)
+        with open(filepath, 'w', encoding='utf-8') as jsonfile:
+            json.dump(data, jsonfile, indent=2, ensure_ascii=False)
             print(f"Data saved to {filepath}")
 
 
@@ -217,14 +338,14 @@ def main():
     scraper = MALScraper()
     
     # Option 1: Scrape specific category
-    # category_data = scraper.scrape_category('top_anime', 20)
+    # category_data = scraper.scrape_category('action_adventure_shounen', 20)
     
-    # Option 2: Scrape all categories
+    # Option 2: Scrape all genre-based categories
     all_data = scraper.scrape_all_categories(20)
     
     # Save data
-    scraper.save_to_json(all_data, 'mal_top_anime.json')
-    scraper.save_to_csv(all_data, 'mal_top_anime.csv')
+    scraper.save_to_json(all_data, 'mal_genre_anime.json')
+    scraper.save_to_csv(all_data, 'mal_genre_anime.csv')
 
 
 if __name__ == "__main__":
