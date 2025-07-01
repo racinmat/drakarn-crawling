@@ -1,0 +1,101 @@
+category,rank,title,score,url,additional_info,source
+top_anime,1,Anime #1,N/A,https://anidb.net/anime/12876,Movie,AniDB
+top_anime,2,.hack//G.U. Returner,N/A,https://anidb.net/anime/5391,OVA,AniDB
+top_anime,3,.hack//G.U. Trilogy,N/A,https://anidb.net/anime/5459,Movie,AniDB
+top_anime,4,.hack//Gift,N/A,https://anidb.net/anime/1135,OVA,AniDB
+top_anime,5,.hack//Liminality,N/A,https://anidb.net/anime/222,OVA,AniDB
+top_anime,6,.hack//Quantum,N/A,https://anidb.net/anime/7883,OVA,AniDB
+top_anime,7,.hack//Roots,N/A,https://anidb.net/anime/4324,TV Series,AniDB
+top_anime,8,.hack//Sekai no Mukou ni,N/A,https://anidb.net/anime/8606,Movie,AniDB
+top_anime,9,.hack//Sign,N/A,https://anidb.net/anime/24,TV Series,AniDB
+top_anime,10,.hack//Tasogare no Udewa Densetsu,N/A,https://anidb.net/anime/447,TV Series,AniDB
+top_anime,11,"""0""",N/A,https://anidb.net/anime/10143,Music Video,AniDB
+top_anime,12,"""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",N/A,https://anidb.net/anime/3689,Movie,AniDB
+top_anime,13,"""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",N/A,https://anidb.net/anime/17129,Web,AniDB
+top_anime,14,"""Eiji""",N/A,https://anidb.net/anime/4317,Movie,AniDB
+top_anime,15,"""Eikou Naki Tensai-tachi"" kara no Monogatari",N/A,https://anidb.net/anime/12936,TV Special,AniDB
+top_anime,16,"""Eiyuu"" Kaitai",N/A,https://anidb.net/anime/12142,OVA,AniDB
+top_anime,17,"""Fate/Grand Order"" Memorial Movie 2023",N/A,https://anidb.net/anime/18160,Music Video,AniDB
+top_anime,18,"""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",N/A,https://anidb.net/anime/15460,Movie,AniDB
+top_anime,19,"""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",N/A,https://anidb.net/anime/19310,TV Series,AniDB
+top_anime,20,"""Oshi no Ko""",N/A,https://anidb.net/anime/17449,TV Series,AniDB
+highest_rated,1,Anime #1,N/A,https://anidb.net/anime/12876,Movie,AniDB
+highest_rated,2,.hack//G.U. Returner,N/A,https://anidb.net/anime/5391,OVA,AniDB
+highest_rated,3,.hack//G.U. Trilogy,N/A,https://anidb.net/anime/5459,Movie,AniDB
+highest_rated,4,.hack//Gift,N/A,https://anidb.net/anime/1135,OVA,AniDB
+highest_rated,5,.hack//Liminality,N/A,https://anidb.net/anime/222,OVA,AniDB
+highest_rated,6,.hack//Quantum,N/A,https://anidb.net/anime/7883,OVA,AniDB
+highest_rated,7,.hack//Roots,N/A,https://anidb.net/anime/4324,TV Series,AniDB
+highest_rated,8,.hack//Sekai no Mukou ni,N/A,https://anidb.net/anime/8606,Movie,AniDB
+highest_rated,9,.hack//Sign,N/A,https://anidb.net/anime/24,TV Series,AniDB
+highest_rated,10,.hack//Tasogare no Udewa Densetsu,N/A,https://anidb.net/anime/447,TV Series,AniDB
+highest_rated,11,"""0""",N/A,https://anidb.net/anime/10143,Music Video,AniDB
+highest_rated,12,"""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",N/A,https://anidb.net/anime/3689,Movie,AniDB
+highest_rated,13,"""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",N/A,https://anidb.net/anime/17129,Web,AniDB
+highest_rated,14,"""Eiji""",N/A,https://anidb.net/anime/4317,Movie,AniDB
+highest_rated,15,"""Eikou Naki Tensai-tachi"" kara no Monogatari",N/A,https://anidb.net/anime/12936,TV Special,AniDB
+highest_rated,16,"""Eiyuu"" Kaitai",N/A,https://anidb.net/anime/12142,OVA,AniDB
+highest_rated,17,"""Fate/Grand Order"" Memorial Movie 2023",N/A,https://anidb.net/anime/18160,Music Video,AniDB
+highest_rated,18,"""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",N/A,https://anidb.net/anime/15460,Movie,AniDB
+highest_rated,19,"""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",N/A,https://anidb.net/anime/19310,TV Series,AniDB
+highest_rated,20,"""Oshi no Ko""",N/A,https://anidb.net/anime/17449,TV Series,AniDB
+most_popular,1,Anime #1,N/A,https://anidb.net/anime/12876,Movie,AniDB
+most_popular,2,.hack//G.U. Returner,N/A,https://anidb.net/anime/5391,OVA,AniDB
+most_popular,3,.hack//G.U. Trilogy,N/A,https://anidb.net/anime/5459,Movie,AniDB
+most_popular,4,.hack//Gift,N/A,https://anidb.net/anime/1135,OVA,AniDB
+most_popular,5,.hack//Liminality,N/A,https://anidb.net/anime/222,OVA,AniDB
+most_popular,6,.hack//Quantum,N/A,https://anidb.net/anime/7883,OVA,AniDB
+most_popular,7,.hack//Roots,N/A,https://anidb.net/anime/4324,TV Series,AniDB
+most_popular,8,.hack//Sekai no Mukou ni,N/A,https://anidb.net/anime/8606,Movie,AniDB
+most_popular,9,.hack//Sign,N/A,https://anidb.net/anime/24,TV Series,AniDB
+most_popular,10,.hack//Tasogare no Udewa Densetsu,N/A,https://anidb.net/anime/447,TV Series,AniDB
+most_popular,11,"""0""",N/A,https://anidb.net/anime/10143,Music Video,AniDB
+most_popular,12,"""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",N/A,https://anidb.net/anime/3689,Movie,AniDB
+most_popular,13,"""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",N/A,https://anidb.net/anime/17129,Web,AniDB
+most_popular,14,"""Eiji""",N/A,https://anidb.net/anime/4317,Movie,AniDB
+most_popular,15,"""Eikou Naki Tensai-tachi"" kara no Monogatari",N/A,https://anidb.net/anime/12936,TV Special,AniDB
+most_popular,16,"""Eiyuu"" Kaitai",N/A,https://anidb.net/anime/12142,OVA,AniDB
+most_popular,17,"""Fate/Grand Order"" Memorial Movie 2023",N/A,https://anidb.net/anime/18160,Music Video,AniDB
+most_popular,18,"""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",N/A,https://anidb.net/anime/15460,Movie,AniDB
+most_popular,19,"""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",N/A,https://anidb.net/anime/19310,TV Series,AniDB
+most_popular,20,"""Oshi no Ko""",N/A,https://anidb.net/anime/17449,TV Series,AniDB
+most_watched,1,Anime #1,N/A,https://anidb.net/anime/12876,Movie,AniDB
+most_watched,2,.hack//G.U. Returner,N/A,https://anidb.net/anime/5391,OVA,AniDB
+most_watched,3,.hack//G.U. Trilogy,N/A,https://anidb.net/anime/5459,Movie,AniDB
+most_watched,4,.hack//Gift,N/A,https://anidb.net/anime/1135,OVA,AniDB
+most_watched,5,.hack//Liminality,N/A,https://anidb.net/anime/222,OVA,AniDB
+most_watched,6,.hack//Quantum,N/A,https://anidb.net/anime/7883,OVA,AniDB
+most_watched,7,.hack//Roots,N/A,https://anidb.net/anime/4324,TV Series,AniDB
+most_watched,8,.hack//Sekai no Mukou ni,N/A,https://anidb.net/anime/8606,Movie,AniDB
+most_watched,9,.hack//Sign,N/A,https://anidb.net/anime/24,TV Series,AniDB
+most_watched,10,.hack//Tasogare no Udewa Densetsu,N/A,https://anidb.net/anime/447,TV Series,AniDB
+most_watched,11,"""0""",N/A,https://anidb.net/anime/10143,Music Video,AniDB
+most_watched,12,"""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",N/A,https://anidb.net/anime/3689,Movie,AniDB
+most_watched,13,"""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",N/A,https://anidb.net/anime/17129,Web,AniDB
+most_watched,14,"""Eiji""",N/A,https://anidb.net/anime/4317,Movie,AniDB
+most_watched,15,"""Eikou Naki Tensai-tachi"" kara no Monogatari",N/A,https://anidb.net/anime/12936,TV Special,AniDB
+most_watched,16,"""Eiyuu"" Kaitai",N/A,https://anidb.net/anime/12142,OVA,AniDB
+most_watched,17,"""Fate/Grand Order"" Memorial Movie 2023",N/A,https://anidb.net/anime/18160,Music Video,AniDB
+most_watched,18,"""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",N/A,https://anidb.net/anime/15460,Movie,AniDB
+most_watched,19,"""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",N/A,https://anidb.net/anime/19310,TV Series,AniDB
+most_watched,20,"""Oshi no Ko""",N/A,https://anidb.net/anime/17449,TV Series,AniDB
+newest,1,Anime #1,N/A,https://anidb.net/anime/12876,Movie,AniDB
+newest,2,.hack//G.U. Returner,N/A,https://anidb.net/anime/5391,OVA,AniDB
+newest,3,.hack//G.U. Trilogy,N/A,https://anidb.net/anime/5459,Movie,AniDB
+newest,4,.hack//Gift,N/A,https://anidb.net/anime/1135,OVA,AniDB
+newest,5,.hack//Liminality,N/A,https://anidb.net/anime/222,OVA,AniDB
+newest,6,.hack//Quantum,N/A,https://anidb.net/anime/7883,OVA,AniDB
+newest,7,.hack//Roots,N/A,https://anidb.net/anime/4324,TV Series,AniDB
+newest,8,.hack//Sekai no Mukou ni,N/A,https://anidb.net/anime/8606,Movie,AniDB
+newest,9,.hack//Sign,N/A,https://anidb.net/anime/24,TV Series,AniDB
+newest,10,.hack//Tasogare no Udewa Densetsu,N/A,https://anidb.net/anime/447,TV Series,AniDB
+newest,11,"""0""",N/A,https://anidb.net/anime/10143,Music Video,AniDB
+newest,12,"""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",N/A,https://anidb.net/anime/3689,Movie,AniDB
+newest,13,"""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",N/A,https://anidb.net/anime/17129,Web,AniDB
+newest,14,"""Eiji""",N/A,https://anidb.net/anime/4317,Movie,AniDB
+newest,15,"""Eikou Naki Tensai-tachi"" kara no Monogatari",N/A,https://anidb.net/anime/12936,TV Special,AniDB
+newest,16,"""Eiyuu"" Kaitai",N/A,https://anidb.net/anime/12142,OVA,AniDB
+newest,17,"""Fate/Grand Order"" Memorial Movie 2023",N/A,https://anidb.net/anime/18160,Music Video,AniDB
+newest,18,"""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",N/A,https://anidb.net/anime/15460,Movie,AniDB
+newest,19,"""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",N/A,https://anidb.net/anime/19310,TV Series,AniDB
+newest,20,"""Oshi no Ko""",N/A,https://anidb.net/anime/17449,TV Series,AniDB

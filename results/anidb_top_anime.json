@@ -1,0 +1,812 @@
+{
+  "top_anime": [
+    {
+      "rank": "1",
+      "title": "Anime #1",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12876",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "2",
+      "title": ".hack//G.U. Returner",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5391",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "3",
+      "title": ".hack//G.U. Trilogy",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5459",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "4",
+      "title": ".hack//Gift",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/1135",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "5",
+      "title": ".hack//Liminality",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/222",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "6",
+      "title": ".hack//Quantum",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/7883",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "7",
+      "title": ".hack//Roots",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/4324",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "8",
+      "title": ".hack//Sekai no Mukou ni",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/8606",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "9",
+      "title": ".hack//Sign",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/24",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "10",
+      "title": ".hack//Tasogare no Udewa Densetsu",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/447",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "11",
+      "title": "\"0\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/10143",
+      "additional_info": "Music Video",
+      "source": "AniDB"
+    },
+    {
+      "rank": "12",
+      "title": "\"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/3689",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "13",
+      "title": "\"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/17129",
+      "additional_info": "Web",
+      "source": "AniDB"
+    },
+    {
+      "rank": "14",
+      "title": "\"Eiji\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/4317",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "15",
+      "title": "\"Eikou Naki Tensai-tachi\" kara no Monogatari",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12936",
+      "additional_info": "TV Special",
+      "source": "AniDB"
+    },
+    {
+      "rank": "16",
+      "title": "\"Eiyuu\" Kaitai",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12142",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "17",
+      "title": "\"Fate/Grand Order\" Memorial Movie 2023",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/18160",
+      "additional_info": "Music Video",
+      "source": "AniDB"
+    },
+    {
+      "rank": "18",
+      "title": "\"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/15460",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "19",
+      "title": "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/19310",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "20",
+      "title": "\"Oshi no Ko\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/17449",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    }
+  ],
+  "highest_rated": [
+    {
+      "rank": "1",
+      "title": "Anime #1",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12876",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "2",
+      "title": ".hack//G.U. Returner",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5391",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "3",
+      "title": ".hack//G.U. Trilogy",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5459",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "4",
+      "title": ".hack//Gift",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/1135",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "5",
+      "title": ".hack//Liminality",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/222",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "6",
+      "title": ".hack//Quantum",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/7883",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "7",
+      "title": ".hack//Roots",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/4324",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "8",
+      "title": ".hack//Sekai no Mukou ni",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/8606",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "9",
+      "title": ".hack//Sign",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/24",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "10",
+      "title": ".hack//Tasogare no Udewa Densetsu",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/447",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "11",
+      "title": "\"0\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/10143",
+      "additional_info": "Music Video",
+      "source": "AniDB"
+    },
+    {
+      "rank": "12",
+      "title": "\"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/3689",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "13",
+      "title": "\"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/17129",
+      "additional_info": "Web",
+      "source": "AniDB"
+    },
+    {
+      "rank": "14",
+      "title": "\"Eiji\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/4317",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "15",
+      "title": "\"Eikou Naki Tensai-tachi\" kara no Monogatari",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12936",
+      "additional_info": "TV Special",
+      "source": "AniDB"
+    },
+    {
+      "rank": "16",
+      "title": "\"Eiyuu\" Kaitai",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12142",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "17",
+      "title": "\"Fate/Grand Order\" Memorial Movie 2023",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/18160",
+      "additional_info": "Music Video",
+      "source": "AniDB"
+    },
+    {
+      "rank": "18",
+      "title": "\"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/15460",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "19",
+      "title": "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/19310",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "20",
+      "title": "\"Oshi no Ko\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/17449",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    }
+  ],
+  "most_popular": [
+    {
+      "rank": "1",
+      "title": "Anime #1",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12876",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "2",
+      "title": ".hack//G.U. Returner",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5391",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "3",
+      "title": ".hack//G.U. Trilogy",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5459",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "4",
+      "title": ".hack//Gift",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/1135",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "5",
+      "title": ".hack//Liminality",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/222",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "6",
+      "title": ".hack//Quantum",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/7883",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "7",
+      "title": ".hack//Roots",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/4324",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "8",
+      "title": ".hack//Sekai no Mukou ni",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/8606",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "9",
+      "title": ".hack//Sign",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/24",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "10",
+      "title": ".hack//Tasogare no Udewa Densetsu",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/447",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "11",
+      "title": "\"0\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/10143",
+      "additional_info": "Music Video",
+      "source": "AniDB"
+    },
+    {
+      "rank": "12",
+      "title": "\"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/3689",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "13",
+      "title": "\"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/17129",
+      "additional_info": "Web",
+      "source": "AniDB"
+    },
+    {
+      "rank": "14",
+      "title": "\"Eiji\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/4317",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "15",
+      "title": "\"Eikou Naki Tensai-tachi\" kara no Monogatari",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12936",
+      "additional_info": "TV Special",
+      "source": "AniDB"
+    },
+    {
+      "rank": "16",
+      "title": "\"Eiyuu\" Kaitai",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12142",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "17",
+      "title": "\"Fate/Grand Order\" Memorial Movie 2023",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/18160",
+      "additional_info": "Music Video",
+      "source": "AniDB"
+    },
+    {
+      "rank": "18",
+      "title": "\"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/15460",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "19",
+      "title": "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/19310",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "20",
+      "title": "\"Oshi no Ko\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/17449",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    }
+  ],
+  "most_watched": [
+    {
+      "rank": "1",
+      "title": "Anime #1",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12876",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "2",
+      "title": ".hack//G.U. Returner",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5391",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "3",
+      "title": ".hack//G.U. Trilogy",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5459",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "4",
+      "title": ".hack//Gift",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/1135",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "5",
+      "title": ".hack//Liminality",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/222",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "6",
+      "title": ".hack//Quantum",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/7883",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "7",
+      "title": ".hack//Roots",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/4324",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "8",
+      "title": ".hack//Sekai no Mukou ni",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/8606",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "9",
+      "title": ".hack//Sign",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/24",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "10",
+      "title": ".hack//Tasogare no Udewa Densetsu",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/447",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "11",
+      "title": "\"0\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/10143",
+      "additional_info": "Music Video",
+      "source": "AniDB"
+    },
+    {
+      "rank": "12",
+      "title": "\"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/3689",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "13",
+      "title": "\"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/17129",
+      "additional_info": "Web",
+      "source": "AniDB"
+    },
+    {
+      "rank": "14",
+      "title": "\"Eiji\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/4317",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "15",
+      "title": "\"Eikou Naki Tensai-tachi\" kara no Monogatari",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12936",
+      "additional_info": "TV Special",
+      "source": "AniDB"
+    },
+    {
+      "rank": "16",
+      "title": "\"Eiyuu\" Kaitai",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12142",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "17",
+      "title": "\"Fate/Grand Order\" Memorial Movie 2023",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/18160",
+      "additional_info": "Music Video",
+      "source": "AniDB"
+    },
+    {
+      "rank": "18",
+      "title": "\"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/15460",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "19",
+      "title": "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/19310",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "20",
+      "title": "\"Oshi no Ko\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/17449",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    }
+  ],
+  "newest": [
+    {
+      "rank": "1",
+      "title": "Anime #1",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12876",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "2",
+      "title": ".hack//G.U. Returner",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5391",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "3",
+      "title": ".hack//G.U. Trilogy",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5459",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "4",
+      "title": ".hack//Gift",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/1135",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "5",
+      "title": ".hack//Liminality",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/222",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "6",
+      "title": ".hack//Quantum",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/7883",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "7",
+      "title": ".hack//Roots",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/4324",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "8",
+      "title": ".hack//Sekai no Mukou ni",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/8606",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "9",
+      "title": ".hack//Sign",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/24",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "10",
+      "title": ".hack//Tasogare no Udewa Densetsu",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/447",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "11",
+      "title": "\"0\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/10143",
+      "additional_info": "Music Video",
+      "source": "AniDB"
+    },
+    {
+      "rank": "12",
+      "title": "\"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/3689",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "13",
+      "title": "\"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/17129",
+      "additional_info": "Web",
+      "source": "AniDB"
+    },
+    {
+      "rank": "14",
+      "title": "\"Eiji\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/4317",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "15",
+      "title": "\"Eikou Naki Tensai-tachi\" kara no Monogatari",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12936",
+      "additional_info": "TV Special",
+      "source": "AniDB"
+    },
+    {
+      "rank": "16",
+      "title": "\"Eiyuu\" Kaitai",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12142",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "17",
+      "title": "\"Fate/Grand Order\" Memorial Movie 2023",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/18160",
+      "additional_info": "Music Video",
+      "source": "AniDB"
+    },
+    {
+      "rank": "18",
+      "title": "\"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/15460",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "19",
+      "title": "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/19310",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    },
+    {
+      "rank": "20",
+      "title": "\"Oshi no Ko\"",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/17449",
+      "additional_info": "TV Series",
+      "source": "AniDB"
+    }
+  ]
+}
