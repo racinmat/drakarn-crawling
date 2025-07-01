@@ -4,7 +4,7 @@ AnimePlanet Top Anime Scraper
 Scrapes top 20 anime from various categories on AnimePlanet
 """
 
-import requests
+import tls_client
 from bs4 import BeautifulSoup
 import json
 import csv
@@ -16,9 +16,14 @@ from typing import List, Dict, Optional
 class AnimePlanetScraper:
     def __init__(self):
         self.base_url = "https://www.anime-planet.com"
-        self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        self.session = tls_client.Session(
+            client_identifier="chrome_120",
+            random_tls_extension_order=True
+        )
+        
+        # Set headers
+        self.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
             'Accept-Language': 'en-US,en;q=0.5',
             'Accept-Encoding': 'gzip, deflate, br',
@@ -27,7 +32,7 @@ class AnimePlanetScraper:
             'Sec-Fetch-Dest': 'document',
             'Sec-Fetch-Mode': 'navigate',
             'Sec-Fetch-Site': 'none'
-        })
+        }
         
         # Available categories on AnimePlanet
         self.categories = {
@@ -56,18 +61,27 @@ class AnimePlanetScraper:
             # Try multiple times with increasing delays
             for attempt in range(3):
                 try:
-                    response = self.session.get(url, timeout=30)
-                    response.raise_for_status()
-                    break
-                except requests.exceptions.HTTPError as e:
-                    if response.status_code == 403:
+                    response = self.session.get(url, headers=self.headers, timeout_seconds=30)
+                    
+                    if response.status_code == 200:
+                        break
+                    elif response.status_code == 403:
                         print(f"Attempt {attempt + 1}: Got 403 Forbidden, waiting {5 * (attempt + 1)} seconds...")
                         time.sleep(5 * (attempt + 1))
                         if attempt == 2:  # Last attempt
                             print("All attempts failed. AnimePlanet may be blocking requests.")
                             return []
                     else:
-                        raise e
+                        print(f"Unexpected status code: {response.status_code}")
+                        if attempt == 2:
+                            return []
+                        time.sleep(5)
+                        
+                except Exception as e:
+                    print(f"Request error on attempt {attempt + 1}: {e}")
+                    if attempt == 2:
+                        return []
+                    time.sleep(5)
             
             soup = BeautifulSoup(response.content, 'html.parser')
             
@@ -89,7 +103,7 @@ class AnimePlanetScraper:
             
             return anime_list
             
-        except requests.RequestException as e:
+        except Exception as e:
             print(f"Error scraping {category}: {e}")
             return []
     
@@ -247,20 +261,29 @@ class AnimePlanetScraper:
                 writer.writeheader()
                 writer.writerows(all_anime)
             print(f"Data saved to {filename}")
+    
+    def close(self):
+        """Close the TLS session"""
+        self.session.close()
 
 
 def main():
     scraper = AnimePlanetScraper()
     
-    # Option 1: Scrape specific category
-    # category_data = scraper.scrape_category('highest_rated', 20)
-    
-    # Option 2: Scrape all categories
-    all_data = scraper.scrape_all_categories(20)
-    
-    # Save data
-    scraper.save_to_json(all_data, 'animeplanet_top_anime.json')
-    scraper.save_to_csv(all_data, 'animeplanet_top_anime.csv')
+    try:
+        # Option 1: Scrape specific category
+        # category_data = scraper.scrape_category('highest_rated', 20)
+        
+        # Option 2: Scrape all categories
+        all_data = scraper.scrape_all_categories(20)
+        
+        # Save data
+        scraper.save_to_json(all_data, 'animeplanet_top_anime.json')
+        scraper.save_to_csv(all_data, 'animeplanet_top_anime.csv')
+        
+    finally:
+        # Clean up
+        scraper.close()
 
 
 if __name__ == "__main__":
