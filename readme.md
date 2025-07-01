@@ -10,7 +10,9 @@
 
 ## anidb tags
 
-only 4 categories here, search by tags
+Only 4 categories here, search by tags. 
+Search by tags can be done here https://anidb.net/search/anime 
+Anime have rating and average scores here, use only the rating, do not use average, sort by the rating.
 
 - first: action, adventure, shounen
 - second: romance
@@ -19,7 +21,8 @@ only 4 categories here, search by tags
 
 ## anime planet
 
-search by tags
+Here are 5 categories, search by tags. Tags can be searched here https://www.anime-planet.com/anime/all
+use popularity, the star rating, as score. Because there are 1-5 stars, multiply it by 2 to get 2-10 score.
 
 - first: action, adventure, shounen
 - second: romance
