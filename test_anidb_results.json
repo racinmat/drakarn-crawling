@@ -1,0 +1,86 @@
+{
+  "highest_rated": [
+    {
+      "rank": "1",
+      "title": "Anime #1",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12876",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "2",
+      "title": ".hack//G.U. Returner",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5391",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "3",
+      "title": ".hack//G.U. Trilogy",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5459",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "4",
+      "title": ".hack//Gift",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/1135",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "5",
+      "title": ".hack//Liminality",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/222",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    }
+  ],
+  "top_anime": [
+    {
+      "rank": "1",
+      "title": "Anime #1",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/12876",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "2",
+      "title": ".hack//G.U. Returner",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5391",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "3",
+      "title": ".hack//G.U. Trilogy",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/5459",
+      "additional_info": "Movie",
+      "source": "AniDB"
+    },
+    {
+      "rank": "4",
+      "title": ".hack//Gift",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/1135",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    },
+    {
+      "rank": "5",
+      "title": ".hack//Liminality",
+      "score": "N/A",
+      "url": "https://anidb.net/anime/222",
+      "additional_info": "OVA",
+      "source": "AniDB"
+    }
+  ]
+}

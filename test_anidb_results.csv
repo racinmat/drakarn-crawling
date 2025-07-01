@@ -1,0 +1,11 @@
+category,rank,title,score,url,additional_info,source
+highest_rated,1,Anime #1,N/A,https://anidb.net/anime/12876,Movie,AniDB
+highest_rated,2,.hack//G.U. Returner,N/A,https://anidb.net/anime/5391,OVA,AniDB
+highest_rated,3,.hack//G.U. Trilogy,N/A,https://anidb.net/anime/5459,Movie,AniDB
+highest_rated,4,.hack//Gift,N/A,https://anidb.net/anime/1135,OVA,AniDB
+highest_rated,5,.hack//Liminality,N/A,https://anidb.net/anime/222,OVA,AniDB
+top_anime,1,Anime #1,N/A,https://anidb.net/anime/12876,Movie,AniDB
+top_anime,2,.hack//G.U. Returner,N/A,https://anidb.net/anime/5391,OVA,AniDB
+top_anime,3,.hack//G.U. Trilogy,N/A,https://anidb.net/anime/5459,Movie,AniDB
+top_anime,4,.hack//Gift,N/A,https://anidb.net/anime/1135,OVA,AniDB
+top_anime,5,.hack//Liminality,N/A,https://anidb.net/anime/222,OVA,AniDB
