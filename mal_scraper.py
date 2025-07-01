@@ -10,7 +10,9 @@ import json
 import csv
 import time
 import os
+import hashlib
 from typing import List, Dict, Optional
+import re
 
 
 class MALScraper:
@@ -20,6 +22,10 @@ class MALScraper:
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         })
+        
+        # Create directories if they don't exist
+        os.makedirs('html_cache', exist_ok=True)
+        os.makedirs('results', exist_ok=True)
         
         # Available categories on MAL
         self.categories = {
@@ -34,6 +40,65 @@ class MALScraper:
             'most_favorited': '/topanime.php?type=favorite'
         }
     
+    def _get_cache_filename(self, url: str) -> str:
+        """Generate a cache filename based on URL"""
+        # Extract the path and query from URL
+        url_part = url.replace(self.base_url, '').lstrip('/')
+        # Replace all non-alphanumeric characters with underscores
+        clean_name = re.sub(r'[^a-zA-Z0-9]', '_', url_part)
+        # Remove multiple consecutive underscores and trailing underscores
+        clean_name = re.sub(r'_+', '_', clean_name).strip('_')
+        # If empty, use 'main'
+        clean_name = clean_name or 'main'
+        
+        filename = f"mal_{clean_name}.html"
+        return os.path.join('html_cache', filename)
+    
+    def _load_cached_html(self, url: str) -> Optional[str]:
+        """Load HTML from cache if it exists"""
+        cache_file = self._get_cache_filename(url)
+        if os.path.exists(cache_file):
+            print(f"Loading cached HTML from {cache_file}")
+            try:
+                with open(cache_file, 'r', encoding='utf-8') as f:
+                    return f.read()
+            except Exception as e:
+                print(f"Error loading cached HTML: {e}")
+                return None
+        return None
+    
+    def _save_html_to_cache(self, url: str, html_content: str):
+        """Save HTML content to cache"""
+        cache_file = self._get_cache_filename(url)
+        try:
+            with open(cache_file, 'w', encoding='utf-8') as f:
+                f.write(html_content)
+            print(f"HTML cached to {cache_file}")
+        except Exception as e:
+            print(f"Error saving HTML to cache: {e}")
+    
+    def _get_html_content(self, url: str) -> Optional[str]:
+        """Get HTML content either from cache or by downloading"""
+        # First try to load from cache
+        cached_html = self._load_cached_html(url)
+        if cached_html:
+            return cached_html
+        
+        # If not cached, download it
+        print(f"Downloading HTML from {url}")
+        
+        try:
+            response = self.session.get(url)
+            response.raise_for_status()
+            html_content = response.text
+            # Save to cache for future use
+            self._save_html_to_cache(url, html_content)
+            return html_content
+            
+        except requests.RequestException as e:
+            print(f"Error downloading HTML: {e}")
+            return None
+
     def scrape_category(self, category: str, limit: int = 20) -> List[Dict]:
         """Scrape top anime from a specific category"""
         if category not in self.categories:
@@ -43,10 +108,13 @@ class MALScraper:
         url = self.base_url + self.categories[category]
         print(f"Scraping {category} from {url}")
         
+        # Get HTML content (either from cache or download)
+        html_content = self._get_html_content(url)
+        if not html_content:
+            return []
+        
         try:
-            response = self.session.get(url)
-            response.raise_for_status()
-            soup = BeautifulSoup(response.content, 'html.parser')
+            soup = BeautifulSoup(html_content, 'html.parser')
             
             anime_list = []
             ranking_items = soup.find_all('tr', class_='ranking-list')
@@ -64,7 +132,7 @@ class MALScraper:
             
             return anime_list
             
-        except requests.RequestException as e:
+        except Exception as e:
             print(f"Error scraping {category}: {e}")
             return []
     
@@ -122,9 +190,10 @@ class MALScraper:
     
     def save_to_json(self, data: Dict, filename: str = 'mal_anime_data.json'):
         """Save data to JSON file"""
-        with open(filename, 'w', encoding='utf-8') as f:
+        filepath = os.path.join('results', filename)
+        with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"Data saved to {filename}")
+        print(f"Data saved to {filepath}")
     
     def save_to_csv(self, data: Dict, filename: str = 'mal_anime_data.csv'):
         """Save data to CSV file"""
@@ -136,11 +205,12 @@ class MALScraper:
         
         if all_anime:
             fieldnames = ['category', 'rank', 'title', 'score', 'url', 'additional_info', 'source']
-            with open(filename, 'w', newline='', encoding='utf-8') as f:
+            filepath = os.path.join('results', filename)
+            with open(filepath, 'w', newline='', encoding='utf-8') as f:
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
                 writer.writerows(all_anime)
-            print(f"Data saved to {filename}")
+            print(f"Data saved to {filepath}")
 
 
 def main():

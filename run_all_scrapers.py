@@ -6,6 +6,7 @@ Scrapes top 20 anime from MyAnimeList, AniDB, and AnimePlanet
 
 import json
 import time
+import os
 from mal_scraper import MALScraper
 from anidb_scraper import AniDBScraper
 from animeplanet_scraper import AnimePlanetScraper
@@ -14,6 +15,9 @@ from animeplanet_scraper import AnimePlanetScraper
 def run_all_scrapers(limit: int = 20):
     """Run all three scrapers and combine results"""
     print("Starting anime scraping from all sources...")
+    
+    # Ensure results directory exists
+    os.makedirs('results', exist_ok=True)
     
     all_results = {}
     
@@ -63,6 +67,7 @@ def run_all_scrapers(limit: int = 20):
         all_results['animeplanet'] = animeplanet_data
         animeplanet_scraper.save_to_json(animeplanet_data, 'animeplanet_top_anime.json')
         animeplanet_scraper.save_to_csv(animeplanet_data, 'animeplanet_top_anime.csv')
+        animeplanet_scraper.close()
         print("AnimePlanet scraping completed successfully!")
     except Exception as e:
         print(f"Error scraping AnimePlanet: {e}")
@@ -73,13 +78,16 @@ def run_all_scrapers(limit: int = 20):
     print("SAVING COMBINED RESULTS")
     print("="*50)
     
-    with open('all_anime_data_combined.json', 'w', encoding='utf-8') as f:
+    combined_results_path = os.path.join('results', 'all_anime_data_combined.json')
+    with open(combined_results_path, 'w', encoding='utf-8') as f:
         json.dump(all_results, f, ensure_ascii=False, indent=2)
+    print(f"Combined results saved to {combined_results_path}")
     
     # Create summary report
     create_summary_report(all_results)
     
-    print("All scraping completed! Check the generated files for results.")
+    print("All scraping completed! Check the 'results' directory for output files.")
+    print("Check the 'html_cache' directory for cached HTML files.")
 
 
 def create_summary_report(all_results):
@@ -103,8 +111,10 @@ def create_summary_report(all_results):
         
         summary['sources'][source] = source_summary
     
-    with open('scraping_summary.json', 'w', encoding='utf-8') as f:
+    summary_path = os.path.join('results', 'scraping_summary.json')
+    with open(summary_path, 'w', encoding='utf-8') as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
+    print(f"Summary report saved to {summary_path}")
     
     # Print summary to console
     print("\nSCRAPING SUMMARY:")

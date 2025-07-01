@@ -10,16 +10,23 @@ import json
 import csv
 import time
 import re
+import os
+import hashlib
 from typing import List, Dict, Optional
 
 
 class AnimePlanetScraper:
     def __init__(self):
+        # the very same headers did not work with httpx with http2 nor with requests, interesting.
         self.base_url = "https://www.anime-planet.com"
         self.session = tls_client.Session(
             client_identifier="chrome_120",
             random_tls_extension_order=True
         )
+        
+        # Create directories if they don't exist
+        os.makedirs('html_cache', exist_ok=True)
+        os.makedirs('results', exist_ok=True)
         
         # Set headers
         self.headers = {
@@ -45,14 +52,52 @@ class AnimePlanetScraper:
             'most_popular': '/anime/top-anime?sort=popularity&order=desc'
         }
     
-    def scrape_category(self, category: str, limit: int = 20) -> List[Dict]:
-        """Scrape top anime from a specific category"""
-        if category not in self.categories:
-            print(f"Category '{category}' not found. Available categories: {list(self.categories.keys())}")
-            return []
+    def _get_cache_filename(self, url: str) -> str:
+        """Generate a cache filename based on URL"""
+        # Extract the path and query from URL
+        url_part = url.replace(self.base_url, '').lstrip('/')
+        # Replace all non-alphanumeric characters with underscores
+        clean_name = re.sub(r'[^a-zA-Z0-9]', '_', url_part)
+        # Remove multiple consecutive underscores and trailing underscores
+        clean_name = re.sub(r'_+', '_', clean_name).strip('_')
+        # If empty, use 'main'
+        clean_name = clean_name or 'main'
         
-        url = self.base_url + self.categories[category]
-        print(f"Scraping {category} from {url}")
+        filename = f"animeplanet_{clean_name}.html"
+        return os.path.join('html_cache', filename)
+    
+    def _load_cached_html(self, url: str) -> Optional[str]:
+        """Load HTML from cache if it exists"""
+        cache_file = self._get_cache_filename(url)
+        if os.path.exists(cache_file):
+            print(f"Loading cached HTML from {cache_file}")
+            try:
+                with open(cache_file, 'r', encoding='utf-8') as f:
+                    return f.read()
+            except Exception as e:
+                print(f"Error loading cached HTML: {e}")
+                return None
+        return None
+    
+    def _save_html_to_cache(self, url: str, html_content: str):
+        """Save HTML content to cache"""
+        cache_file = self._get_cache_filename(url)
+        try:
+            with open(cache_file, 'w', encoding='utf-8') as f:
+                f.write(html_content)
+            print(f"HTML cached to {cache_file}")
+        except Exception as e:
+            print(f"Error saving HTML to cache: {e}")
+    
+    def _get_html_content(self, url: str) -> Optional[str]:
+        """Get HTML content either from cache or by downloading"""
+        # First try to load from cache
+        cached_html = self._load_cached_html(url)
+        if cached_html:
+            return cached_html
+        
+        # If not cached, download it
+        print(f"Downloading HTML from {url}")
         
         # Add initial delay to avoid immediate blocking
         time.sleep(2)
@@ -64,26 +109,50 @@ class AnimePlanetScraper:
                     response = self.session.get(url, headers=self.headers, timeout_seconds=30)
                     
                     if response.status_code == 200:
-                        break
+                        html_content = response.text
+                        # Save to cache for future use
+                        self._save_html_to_cache(url, html_content)
+                        return html_content
                     elif response.status_code == 403:
                         print(f"Attempt {attempt + 1}: Got 403 Forbidden, waiting {5 * (attempt + 1)} seconds...")
                         time.sleep(5 * (attempt + 1))
                         if attempt == 2:  # Last attempt
                             print("All attempts failed. AnimePlanet may be blocking requests.")
-                            return []
+                            return None
                     else:
                         print(f"Unexpected status code: {response.status_code}")
                         if attempt == 2:
-                            return []
+                            return None
                         time.sleep(5)
                         
                 except Exception as e:
                     print(f"Request error on attempt {attempt + 1}: {e}")
                     if attempt == 2:
-                        return []
+                        return None
                     time.sleep(5)
             
-            soup = BeautifulSoup(response.content, 'html.parser')
+        except Exception as e:
+            print(f"Error downloading HTML: {e}")
+            return None
+        
+        return None
+
+    def scrape_category(self, category: str, limit: int = 20) -> List[Dict]:
+        """Scrape top anime from a specific category"""
+        if category not in self.categories:
+            print(f"Category '{category}' not found. Available categories: {list(self.categories.keys())}")
+            return []
+        
+        url = self.base_url + self.categories[category]
+        print(f"Scraping {category} from {url}")
+        
+        # Get HTML content (either from cache or download)
+        html_content = self._get_html_content(url)
+        if not html_content:
+            return []
+        
+        try:
+            soup = BeautifulSoup(html_content, 'html.parser')
             
             anime_list = []
             
@@ -242,9 +311,10 @@ class AnimePlanetScraper:
     
     def save_to_json(self, data: Dict, filename: str = 'animeplanet_anime_data.json'):
         """Save data to JSON file"""
-        with open(filename, 'w', encoding='utf-8') as f:
+        filepath = os.path.join('results', filename)
+        with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"Data saved to {filename}")
+        print(f"Data saved to {filepath}")
     
     def save_to_csv(self, data: Dict, filename: str = 'animeplanet_anime_data.csv'):
         """Save data to CSV file"""
@@ -256,11 +326,12 @@ class AnimePlanetScraper:
         
         if all_anime:
             fieldnames = ['category', 'rank', 'title', 'score', 'url', 'additional_info', 'source']
-            with open(filename, 'w', newline='', encoding='utf-8') as f:
+            filepath = os.path.join('results', filename)
+            with open(filepath, 'w', newline='', encoding='utf-8') as f:
                 writer = csv.DictWriter(f, fieldnames=fieldnames)
                 writer.writeheader()
                 writer.writerows(all_anime)
-            print(f"Data saved to {filename}")
+            print(f"Data saved to {filepath}")
     
     def close(self):
         """Close the TLS session"""
