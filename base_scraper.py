@@ -44,6 +44,7 @@ class BaseScraper(ABC):
     
     def _get_page_content(self, url: str, timeout: int = 10) -> Optional[str]:
         """Get HTML content from URL with caching"""
+        print(f"Checking page: {url}")
         cache_file = self._get_cache_filename(url)
         
         # Try to load from cache first
