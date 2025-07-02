@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 AniDB Tag-Based Anime Scraper
-Scrapes top 20 anime from tag-based categories on AniDB using search functionality
+Scrapes top 20 anime from tag-based categories on AniDB using numeric tag IDs
 """
 
 import re
@@ -18,7 +18,7 @@ from base_scraper import BaseScraper
 class AniDBScraper(BaseScraper):
     def __init__(self):
         super().__init__("anidb")
-        self.search_url = "https://anidb.net/search/anime"
+        self.base_anime_url = "https://anidb.net/anime/"
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -29,26 +29,38 @@ class AniDBScraper(BaseScraper):
             'Upgrade-Insecure-Requests': '1'
         })
         
-        # Tag-based categories as requested (4 categories)
+        # Tag-based categories with numeric AniDB tag IDs
+        # Based on AniDB tag list: https://anidb.net/tag
+        # Using confirmed IDs from search results
         self.categories = {
             'action_adventure_shounen': {
                 'name': 'Action, Adventure, Shounen',
-                'tags': ['action', 'adventure', 'shounen'],
+                'tags': {
+                    2841: 100,  # Action
+                    2850: 100,  # Adventure
+                    922: 0   # Shounen
+                },
                 'description': 'Action, adventure, shounen anime'
             },
             'romance': {
                 'name': 'Romance',
-                'tags': ['romance'],
+                'tags': {
+                    2858: 100   # Romance
+                },
                 'description': 'Romance anime'
             },
             'ecchi': {
                 'name': 'Ecchi',
-                'tags': ['ecchi'],
+                'tags': {
+                    2856: 100   # Ecchi
+                },
                 'description': 'Ecchi anime'
             },
             'comedy': {
                 'name': 'Comedy',
-                'tags': ['comedy'],
+                'tags': {
+                    2853: 100   # Comedy
+                },
                 'description': 'Comedy anime'
             }
         }
@@ -69,6 +81,17 @@ class AniDBScraper(BaseScraper):
             print(f"Request failed: {e}")
             return None
 
+    def _build_tag_search_url(self, tags: Dict[int, int]) -> str:
+        """Build AniDB search URL with proper tag IDs and ordering"""
+        # Base URL with proper ordering: rating descending, then name ascending
+        url = f"{self.base_anime_url}?h=1&noalias=1&orderby.name=1.1&orderby.rating=0.2"
+        
+        # Add tag filters using numeric IDs
+        for tag_id, value in tags.items():
+            url += f"&tag.{tag_id}={value}"
+        
+        return url
+
     def scrape_category(self, category_key: str, limit: int = 20) -> List[Dict]:
         """Scrape anime from a specific tag-based category"""
         if category_key not in self.categories:
@@ -78,17 +101,12 @@ class AniDBScraper(BaseScraper):
         category = self.categories[category_key]
         print(f"Scraping {category['name']} ({category['description']})...")
         
-        # Use anime listing page with tag filters instead of search
-        # AniDB anime list: https://anidb.net/anime/?tag.include=comedy&orderby.name=rating.rating&orderby.order=desc
-        
-        # Join tags with comma for AniDB's format
-        tag_params = ",".join(category['tags'])
-        
-        # Build URL for tag-filtered anime list, sorted by rating descending
-        url = f"{self.base_url}/anime/?tag.include={urllib.parse.quote(tag_params)}&orderby.name=rating.rating&orderby.order=desc"
+        # Build search URL with tag filters
+        search_url = self._build_tag_search_url(category['tags'])
+        print(f"Search URL: {search_url}")
         
         try:
-            html_content = self._get_page_content(url)
+            html_content = self._get_page_content(search_url)
             if not html_content:
                 print(f"Failed to get content for {category['name']}")
                 return []
@@ -108,61 +126,66 @@ class AniDBScraper(BaseScraper):
             soup = BeautifulSoup(html_content, 'html.parser')
             anime_list = []
             
-            # AniDB anime list uses table structure
-            # Find the main anime table
-            anime_table = soup.find('table', class_='animelist')
+            # AniDB anime list uses table structure with id 'animelist'
+            anime_table = soup.find('table', id='animelist')
             if not anime_table:
-                print("No anime table found on page")
+                # Try alternative selectors
+                anime_table = soup.find('table', class_='animelist')
+                if not anime_table:
+                    print("No anime table found on page")
+                    return []
+            
+            # Find anime rows in the table body (skip header)
+            tbody = anime_table.find('tbody')
+            if not tbody:
+                print("No table body found")
                 return []
             
-            # Find anime rows in the table
-            anime_rows = anime_table.find_all('tr')[1:]  # Skip header row
+            anime_rows = tbody.find_all('tr')
             
             for i, row in enumerate(anime_rows[:limit]):
                 if i >= limit:
                     break
                 
                 try:
-                    cells = row.find_all('td')
-                    if len(cells) < 3:  # Need at least title, rating, etc.
-                        continue
-                    
-                    # Extract anime data from table cells
-                    # Usually: Title | Type | Episodes | Year | Rating | ... 
-                    title_cell = cells[0] if cells else None
-                    rating_cell = None
-                    
-                    # Find rating cell (usually contains numbers and decimal)
-                    for cell in cells:
-                        cell_text = cell.get_text(strip=True)
-                        if re.match(r'\d+\.\d+', cell_text):
-                            rating_cell = cell
-                            break
-                    
+                    # Extract title and URL from the title cell
+                    title_cell = row.find('td', class_='name')
                     if not title_cell:
                         continue
                     
-                    # Extract title and URL
                     title_link = title_cell.find('a')
-                    if title_link:
-                        title = title_link.get_text(strip=True)
-                        anime_url = title_link.get('href', '')
-                        if anime_url and not anime_url.startswith('http'):
-                            anime_url = self.base_url + anime_url
-                    else:
-                        title = title_cell.get_text(strip=True)
-                        anime_url = "N/A"
+                    if not title_link:
+                        continue
                     
-                    # Extract rating
+                    title = title_link.get_text(strip=True)
+                    anime_url = title_link.get('href', '')
+                    if anime_url and not anime_url.startswith('http'):
+                        anime_url = self.base_url + anime_url
+                    
+                    # Extract rating from the rating cell
+                    rating_cell = row.find('td', class_='rating')
                     rating = "N/A"
                     if rating_cell:
                         rating_text = rating_cell.get_text(strip=True)
+                        # Rating format: "9.73 (3700)" - extract the first number
                         rating_match = re.search(r'(\d+\.\d+)', rating_text)
                         if rating_match:
                             rating = rating_match.group(1)
                     
-                    # Extract additional info from other cells
-                    additional_info = " | ".join([cell.get_text(strip=True) for cell in cells[1:3]]) if len(cells) > 1 else "N/A"
+                    # Extract additional info (type, episodes, etc.)
+                    type_cell = row.find('td', class_='type')
+                    eps_cell = row.find('td', class_='eps')
+                    
+                    info_parts = []
+                    if type_cell:
+                        info_parts.append(f"Type: {type_cell.get_text(strip=True)}")
+                    if eps_cell:
+                        info_parts.append(f"Episodes: {eps_cell.get_text(strip=True)}")
+                    
+                    additional_info = " | ".join(info_parts) if info_parts else "N/A"
+                    
+                    if not title:
+                        continue  # Skip if we couldn't extract title
                     
                     anime_data = {
                         'rank': str(i + 1),
@@ -194,6 +217,9 @@ class AniDBScraper(BaseScraper):
             print(f"\nScraping category: {category_key}")
             category_data = self.scrape_category(category_key, limit)
             all_data[category_key] = category_data
+            
+            # Add delay between categories to be respectful
+            time.sleep(3)
 
         return all_data
     
