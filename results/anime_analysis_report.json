@@ -904,16 +904,15 @@
     "overall_categories": {
       "action_adventure_shounen": 60,
       "romance": 60,
-      "ecchi_erotica": 20,
+      "ecchi": 60,
       "slice_of_life": 40,
-      "comedy": 60,
-      "ecchi": 40
+      "comedy": 60
     },
     "by_source": {
       "myanimelist": {
         "action_adventure_shounen": 20,
         "romance": 20,
-        "ecchi_erotica": 20,
+        "ecchi": 20,
         "slice_of_life": 20,
         "comedy": 20
       },
@@ -1014,7 +1013,7 @@
     }
   },
   "metadata": {
-    "analysis_timestamp": "2025-07-02 10:50:02",
+    "analysis_timestamp": "2025-07-02 10:59:35",
     "source_file": "results/all_anime_data_combined.json",
     "analyzer_version": "1.0"
   }

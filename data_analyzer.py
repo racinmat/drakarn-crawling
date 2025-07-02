@@ -205,15 +205,16 @@ class AnimeDataAnalyzer:
         
         for source, categories in self.data.items():
             for category, anime_list in categories.items():
+                normalized_category = self.normalize_category_name(category)
                 count = len(anime_list)
-                category_counts[category] += count
-                category_by_source[source][category] = count
+                category_counts[normalized_category] += count
+                category_by_source[source][normalized_category] += count
         
-        print("Most populated categories across all sources:")
+        print("Most populated categories across all sources (normalized):")
         for category, count in category_counts.most_common(15):
             print(f"  {category}: {count} entries")
         
-        print("\nCategory distribution by source:")
+        print("\nCategory distribution by source (normalized):")
         for source, categories in category_by_source.items():
             print(f"\n{source.upper()}:")
             for category, count in categories.most_common(10):
@@ -323,6 +324,16 @@ class AnimeDataAnalyzer:
         title = re.sub(r'[^\w\s]', '', title)  # Remove special characters
         return title.strip()
     
+    def normalize_category_name(self, category: str) -> str:
+        """Normalize category names to group similar categories together"""
+        category_lower = category.lower()
+        
+        # Combine ecchi-related categories
+        if 'ecchi' in category_lower or 'erotica' in category_lower:
+            return 'ecchi'
+        
+        return category.lower()
+    
     def export_analysis(self):
         """Export analysis results to JSON file"""
         output_file = 'results/anime_analysis_report.json'
@@ -375,29 +386,30 @@ class AnimeDataAnalyzer:
         print("EXPORTING CATEGORY CSV FILES")
         print("="*50)
         
-        # Get all unique categories across all sources
-        all_categories = set()
+        # Get all unique categories across all sources and normalize them
+        category_data_combined = {}
+        
         for source, categories in self.data.items():
-            all_categories.update(categories.keys())
+            for category, anime_list in categories.items():
+                normalized_category = self.normalize_category_name(category)
+                
+                if normalized_category not in category_data_combined:
+                    category_data_combined[normalized_category] = []
+                
+                for anime in anime_list:
+                    # Add source to the anime data
+                    anime_with_source = anime.copy()
+                    anime_with_source['data_source'] = source
+                    anime_with_source['original_category'] = category  # Keep original for reference
+                    category_data_combined[normalized_category].append(anime_with_source)
         
         exported_files = []
         
-        for category in sorted(all_categories):
+        for normalized_category, category_data in sorted(category_data_combined.items()):
             # Clean category name for filename
-            safe_category = re.sub(r'[^\w\s-]', '', category).strip()
+            safe_category = re.sub(r'[^\w\s-]', '', normalized_category).strip()
             safe_category = re.sub(r'\s+', '_', safe_category)
             filename = f'results/category_{safe_category}.csv'
-            
-            # Collect all anime from this category across sources
-            category_data = []
-            
-            for source, categories in self.data.items():
-                if category in categories:
-                    for anime in categories[category]:
-                        # Add source to the anime data
-                        anime_with_source = anime.copy()
-                        anime_with_source['data_source'] = source
-                        category_data.append(anime_with_source)
             
             if category_data:
                 # Export to CSV with semicolon separator
@@ -415,17 +427,18 @@ class AnimeDataAnalyzer:
                             anime.get('title', 'N/A'),
                             anime.get('score', 'N/A'),
                             anime.get('data_source', anime.get('source', 'N/A')),
-                            anime.get('category', category),
+                            anime.get('original_category', normalized_category),
                             anime.get('url', 'N/A'),
                             anime.get('additional_info', 'N/A')
                         ]
                         writer.writerow(row)
                 
                 exported_files.append(filename)
-                print(f"Exported {len(category_data)} entries for '{category}' to {filename}")
+                print(f"Exported {len(category_data)} entries for '{normalized_category}' to {filename}")
         
         print(f"\nSuccessfully exported {len(exported_files)} category CSV files with ';' separators")
         print("Files are ready for Excel import!")
+        print("Note: 'ecchi' and 'ecchi_erotica' categories have been combined into 'ecchi'")
         
         # Also create a combined file with all categories
         self.export_combined_categories_csv()
@@ -439,9 +452,12 @@ class AnimeDataAnalyzer:
         all_anime_data = []
         for source, categories in self.data.items():
             for category, anime_list in categories.items():
+                normalized_category = self.normalize_category_name(category)
                 for anime in anime_list:
                     anime_with_source = anime.copy()
                     anime_with_source['data_source'] = source
+                    anime_with_source['normalized_category'] = normalized_category
+                    anime_with_source['original_category'] = category
                     all_anime_data.append(anime_with_source)
         
         if all_anime_data:
@@ -459,7 +475,7 @@ class AnimeDataAnalyzer:
                         anime.get('title', 'N/A'),
                         anime.get('score', 'N/A'),
                         anime.get('data_source', anime.get('source', 'N/A')),
-                        anime.get('category', 'N/A'),
+                        anime.get('original_category', 'N/A'),
                         anime.get('url', 'N/A'),
                         anime.get('additional_info', 'N/A')
                     ]
