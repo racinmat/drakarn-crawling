@@ -912,2190 +912,1644 @@
     ]
   },
   "anidb": {
-    "top_anime": [
+    "action_adventure_shounen": [
       {
         "rank": "1",
-        "title": "Anime #1",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12876",
-        "additional_info": "Movie",
+        "title": "1",
+        "score": "2.15",
+        "url": "N/A",
+        "additional_info": " | ?",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "2",
-        "title": ".hack//G.U. Returner",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/5391",
-        "additional_info": "OVA",
+        "title": "2",
+        "score": "3.96",
+        "url": "N/A",
+        "additional_info": " | .hack//G.U. Returner",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "3",
-        "title": ".hack//G.U. Trilogy",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/5459",
-        "additional_info": "Movie",
+        "title": "3",
+        "score": "4.96",
+        "url": "N/A",
+        "additional_info": " | .hack//G.U. Trilogy",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "4",
-        "title": ".hack//Gift",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/1135",
-        "additional_info": "OVA",
+        "title": "4",
+        "score": "2.58",
+        "url": "N/A",
+        "additional_info": " | .hack//Gift",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "5",
-        "title": ".hack//Liminality",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/222",
-        "additional_info": "OVA",
+        "title": "5",
+        "score": "4.04",
+        "url": "N/A",
+        "additional_info": " | .hack//Liminality",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "6",
-        "title": ".hack//Quantum",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/7883",
-        "additional_info": "OVA",
+        "title": "6",
+        "score": "6.63",
+        "url": "N/A",
+        "additional_info": " | .hack//Quantum",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "7",
-        "title": ".hack//Roots",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/4324",
-        "additional_info": "TV Series",
+        "title": "7",
+        "score": "4.45",
+        "url": "N/A",
+        "additional_info": " | .hack//Roots",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "8",
-        "title": ".hack//Sekai no Mukou ni",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/8606",
-        "additional_info": "Movie",
+        "title": "8",
+        "score": "5.68",
+        "url": "N/A",
+        "additional_info": " | .hack//Sekai no Mukou ni",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "9",
-        "title": ".hack//Sign",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/24",
-        "additional_info": "TV Series",
+        "title": "9",
+        "score": "5.18",
+        "url": "N/A",
+        "additional_info": " | .hack//Sign",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "10",
-        "title": ".hack//Tasogare no Udewa Densetsu",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/447",
-        "additional_info": "TV Series",
+        "title": "10",
+        "score": "3.99",
+        "url": "N/A",
+        "additional_info": " | .hack//Tasogare no Udewa Densetsu",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "11",
-        "title": "\"0\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/10143",
-        "additional_info": "Music Video",
+        "title": "11",
+        "score": "2.81",
+        "url": "N/A",
+        "additional_info": " | \"0\"",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "12",
-        "title": "\"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/3689",
-        "additional_info": "Movie",
+        "title": "12",
+        "score": "21.03",
+        "url": "N/A",
+        "additional_info": " | \"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "13",
-        "title": "\"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/17129",
-        "additional_info": "Web",
+        "title": "13",
+        "score": "5.24",
+        "url": "N/A",
+        "additional_info": " | \"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "14",
-        "title": "\"Eiji\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/4317",
-        "additional_info": "Movie",
+        "title": "14",
+        "score": "4.44",
+        "url": "N/A",
+        "additional_info": " | \"Eiji\"",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "15",
-        "title": "\"Eikou Naki Tensai-tachi\" kara no Monogatari",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12936",
-        "additional_info": "TV Special",
+        "title": "15",
+        "score": "25.03",
+        "url": "N/A",
+        "additional_info": " | \"Eikou Naki Tensai-tachi\" kara no Monogatari",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "16",
-        "title": "\"Eiyuu\" Kaitai",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12142",
-        "additional_info": "OVA",
+        "title": "16",
+        "score": "4.35",
+        "url": "N/A",
+        "additional_info": " | \"Eiyuu\" Kaitai",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "17",
-        "title": "\"Fate/Grand Order\" Memorial Movie 2023",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/18160",
-        "additional_info": "Music Video",
+        "title": "17",
+        "score": "6.48",
+        "url": "N/A",
+        "additional_info": " | \"Fate/Grand Order\" Memorial Movie 2023",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "18",
-        "title": "\"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/15460",
-        "additional_info": "Movie",
+        "title": "18",
+        "score": "5.29",
+        "url": "N/A",
+        "additional_info": " | \"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "19",
-        "title": "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "title": "19",
         "score": "N/A",
-        "url": "https://anidb.net/anime/19310",
-        "additional_info": "TV Series",
+        "url": "N/A",
+        "additional_info": " | \"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
         "rank": "20",
-        "title": "\"Oshi no Ko\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/17449",
-        "additional_info": "TV Series",
+        "title": "20",
+        "score": "8.57",
+        "url": "N/A",
+        "additional_info": " | \"Oshi no Ko\"",
         "source": "AniDB",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       }
     ],
-    "highest_rated": [
+    "romance": [
       {
         "rank": "1",
-        "title": "Anime #1",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12876",
-        "additional_info": "Movie",
+        "title": "1",
+        "score": "2.15",
+        "url": "N/A",
+        "additional_info": " | ?",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "2",
-        "title": ".hack//G.U. Returner",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/5391",
-        "additional_info": "OVA",
+        "title": "2",
+        "score": "3.96",
+        "url": "N/A",
+        "additional_info": " | .hack//G.U. Returner",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "3",
-        "title": ".hack//G.U. Trilogy",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/5459",
-        "additional_info": "Movie",
+        "title": "3",
+        "score": "4.96",
+        "url": "N/A",
+        "additional_info": " | .hack//G.U. Trilogy",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "4",
-        "title": ".hack//Gift",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/1135",
-        "additional_info": "OVA",
+        "title": "4",
+        "score": "2.58",
+        "url": "N/A",
+        "additional_info": " | .hack//Gift",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "5",
-        "title": ".hack//Liminality",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/222",
-        "additional_info": "OVA",
+        "title": "5",
+        "score": "4.04",
+        "url": "N/A",
+        "additional_info": " | .hack//Liminality",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "6",
-        "title": ".hack//Quantum",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/7883",
-        "additional_info": "OVA",
+        "title": "6",
+        "score": "6.63",
+        "url": "N/A",
+        "additional_info": " | .hack//Quantum",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "7",
-        "title": ".hack//Roots",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/4324",
-        "additional_info": "TV Series",
+        "title": "7",
+        "score": "4.45",
+        "url": "N/A",
+        "additional_info": " | .hack//Roots",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "8",
-        "title": ".hack//Sekai no Mukou ni",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/8606",
-        "additional_info": "Movie",
+        "title": "8",
+        "score": "5.68",
+        "url": "N/A",
+        "additional_info": " | .hack//Sekai no Mukou ni",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "9",
-        "title": ".hack//Sign",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/24",
-        "additional_info": "TV Series",
+        "title": "9",
+        "score": "5.18",
+        "url": "N/A",
+        "additional_info": " | .hack//Sign",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "10",
-        "title": ".hack//Tasogare no Udewa Densetsu",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/447",
-        "additional_info": "TV Series",
+        "title": "10",
+        "score": "3.99",
+        "url": "N/A",
+        "additional_info": " | .hack//Tasogare no Udewa Densetsu",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "11",
-        "title": "\"0\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/10143",
-        "additional_info": "Music Video",
+        "title": "11",
+        "score": "2.81",
+        "url": "N/A",
+        "additional_info": " | \"0\"",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "12",
-        "title": "\"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/3689",
-        "additional_info": "Movie",
+        "title": "12",
+        "score": "21.03",
+        "url": "N/A",
+        "additional_info": " | \"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "13",
-        "title": "\"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/17129",
-        "additional_info": "Web",
+        "title": "13",
+        "score": "5.24",
+        "url": "N/A",
+        "additional_info": " | \"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "14",
-        "title": "\"Eiji\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/4317",
-        "additional_info": "Movie",
+        "title": "14",
+        "score": "4.44",
+        "url": "N/A",
+        "additional_info": " | \"Eiji\"",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "15",
-        "title": "\"Eikou Naki Tensai-tachi\" kara no Monogatari",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12936",
-        "additional_info": "TV Special",
+        "title": "15",
+        "score": "25.03",
+        "url": "N/A",
+        "additional_info": " | \"Eikou Naki Tensai-tachi\" kara no Monogatari",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "16",
-        "title": "\"Eiyuu\" Kaitai",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12142",
-        "additional_info": "OVA",
+        "title": "16",
+        "score": "4.35",
+        "url": "N/A",
+        "additional_info": " | \"Eiyuu\" Kaitai",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "17",
-        "title": "\"Fate/Grand Order\" Memorial Movie 2023",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/18160",
-        "additional_info": "Music Video",
+        "title": "17",
+        "score": "6.48",
+        "url": "N/A",
+        "additional_info": " | \"Fate/Grand Order\" Memorial Movie 2023",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "18",
-        "title": "\"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/15460",
-        "additional_info": "Movie",
+        "title": "18",
+        "score": "5.29",
+        "url": "N/A",
+        "additional_info": " | \"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "19",
-        "title": "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "title": "19",
         "score": "N/A",
-        "url": "https://anidb.net/anime/19310",
-        "additional_info": "TV Series",
+        "url": "N/A",
+        "additional_info": " | \"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
         "rank": "20",
-        "title": "\"Oshi no Ko\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/17449",
-        "additional_info": "TV Series",
+        "title": "20",
+        "score": "8.57",
+        "url": "N/A",
+        "additional_info": " | \"Oshi no Ko\"",
         "source": "AniDB",
-        "category": "highest_rated"
+        "category": "Romance"
       }
     ],
-    "most_popular": [
+    "ecchi": [
       {
         "rank": "1",
-        "title": "Anime #1",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12876",
-        "additional_info": "Movie",
+        "title": "1",
+        "score": "2.15",
+        "url": "N/A",
+        "additional_info": " | ?",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "2",
-        "title": ".hack//G.U. Returner",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/5391",
-        "additional_info": "OVA",
+        "title": "2",
+        "score": "3.96",
+        "url": "N/A",
+        "additional_info": " | .hack//G.U. Returner",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "3",
-        "title": ".hack//G.U. Trilogy",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/5459",
-        "additional_info": "Movie",
+        "title": "3",
+        "score": "4.96",
+        "url": "N/A",
+        "additional_info": " | .hack//G.U. Trilogy",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "4",
-        "title": ".hack//Gift",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/1135",
-        "additional_info": "OVA",
+        "title": "4",
+        "score": "2.58",
+        "url": "N/A",
+        "additional_info": " | .hack//Gift",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "5",
-        "title": ".hack//Liminality",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/222",
-        "additional_info": "OVA",
+        "title": "5",
+        "score": "4.04",
+        "url": "N/A",
+        "additional_info": " | .hack//Liminality",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "6",
-        "title": ".hack//Quantum",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/7883",
-        "additional_info": "OVA",
+        "title": "6",
+        "score": "6.63",
+        "url": "N/A",
+        "additional_info": " | .hack//Quantum",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "7",
-        "title": ".hack//Roots",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/4324",
-        "additional_info": "TV Series",
+        "title": "7",
+        "score": "4.45",
+        "url": "N/A",
+        "additional_info": " | .hack//Roots",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "8",
-        "title": ".hack//Sekai no Mukou ni",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/8606",
-        "additional_info": "Movie",
+        "title": "8",
+        "score": "5.68",
+        "url": "N/A",
+        "additional_info": " | .hack//Sekai no Mukou ni",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "9",
-        "title": ".hack//Sign",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/24",
-        "additional_info": "TV Series",
+        "title": "9",
+        "score": "5.18",
+        "url": "N/A",
+        "additional_info": " | .hack//Sign",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "10",
-        "title": ".hack//Tasogare no Udewa Densetsu",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/447",
-        "additional_info": "TV Series",
+        "title": "10",
+        "score": "3.99",
+        "url": "N/A",
+        "additional_info": " | .hack//Tasogare no Udewa Densetsu",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "11",
-        "title": "\"0\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/10143",
-        "additional_info": "Music Video",
+        "title": "11",
+        "score": "2.81",
+        "url": "N/A",
+        "additional_info": " | \"0\"",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "12",
-        "title": "\"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/3689",
-        "additional_info": "Movie",
+        "title": "12",
+        "score": "21.03",
+        "url": "N/A",
+        "additional_info": " | \"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "13",
-        "title": "\"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/17129",
-        "additional_info": "Web",
+        "title": "13",
+        "score": "5.24",
+        "url": "N/A",
+        "additional_info": " | \"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "14",
-        "title": "\"Eiji\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/4317",
-        "additional_info": "Movie",
+        "title": "14",
+        "score": "4.44",
+        "url": "N/A",
+        "additional_info": " | \"Eiji\"",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "15",
-        "title": "\"Eikou Naki Tensai-tachi\" kara no Monogatari",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12936",
-        "additional_info": "TV Special",
+        "title": "15",
+        "score": "25.03",
+        "url": "N/A",
+        "additional_info": " | \"Eikou Naki Tensai-tachi\" kara no Monogatari",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "16",
-        "title": "\"Eiyuu\" Kaitai",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12142",
-        "additional_info": "OVA",
+        "title": "16",
+        "score": "4.35",
+        "url": "N/A",
+        "additional_info": " | \"Eiyuu\" Kaitai",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "17",
-        "title": "\"Fate/Grand Order\" Memorial Movie 2023",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/18160",
-        "additional_info": "Music Video",
+        "title": "17",
+        "score": "6.48",
+        "url": "N/A",
+        "additional_info": " | \"Fate/Grand Order\" Memorial Movie 2023",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "18",
-        "title": "\"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/15460",
-        "additional_info": "Movie",
+        "title": "18",
+        "score": "5.29",
+        "url": "N/A",
+        "additional_info": " | \"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "19",
-        "title": "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "title": "19",
         "score": "N/A",
-        "url": "https://anidb.net/anime/19310",
-        "additional_info": "TV Series",
+        "url": "N/A",
+        "additional_info": " | \"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       },
       {
         "rank": "20",
-        "title": "\"Oshi no Ko\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/17449",
-        "additional_info": "TV Series",
+        "title": "20",
+        "score": "8.57",
+        "url": "N/A",
+        "additional_info": " | \"Oshi no Ko\"",
         "source": "AniDB",
-        "category": "most_popular"
+        "category": "Ecchi"
       }
     ],
-    "most_watched": [
+    "comedy": [
       {
         "rank": "1",
-        "title": "Anime #1",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12876",
-        "additional_info": "Movie",
+        "title": "1",
+        "score": "2.15",
+        "url": "N/A",
+        "additional_info": " | ?",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "2",
-        "title": ".hack//G.U. Returner",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/5391",
-        "additional_info": "OVA",
+        "title": "2",
+        "score": "3.96",
+        "url": "N/A",
+        "additional_info": " | .hack//G.U. Returner",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "3",
-        "title": ".hack//G.U. Trilogy",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/5459",
-        "additional_info": "Movie",
+        "title": "3",
+        "score": "4.96",
+        "url": "N/A",
+        "additional_info": " | .hack//G.U. Trilogy",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "4",
-        "title": ".hack//Gift",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/1135",
-        "additional_info": "OVA",
+        "title": "4",
+        "score": "2.58",
+        "url": "N/A",
+        "additional_info": " | .hack//Gift",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "5",
-        "title": ".hack//Liminality",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/222",
-        "additional_info": "OVA",
+        "title": "5",
+        "score": "4.04",
+        "url": "N/A",
+        "additional_info": " | .hack//Liminality",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "6",
-        "title": ".hack//Quantum",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/7883",
-        "additional_info": "OVA",
+        "title": "6",
+        "score": "6.63",
+        "url": "N/A",
+        "additional_info": " | .hack//Quantum",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "7",
-        "title": ".hack//Roots",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/4324",
-        "additional_info": "TV Series",
+        "title": "7",
+        "score": "4.45",
+        "url": "N/A",
+        "additional_info": " | .hack//Roots",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "8",
-        "title": ".hack//Sekai no Mukou ni",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/8606",
-        "additional_info": "Movie",
+        "title": "8",
+        "score": "5.68",
+        "url": "N/A",
+        "additional_info": " | .hack//Sekai no Mukou ni",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "9",
-        "title": ".hack//Sign",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/24",
-        "additional_info": "TV Series",
+        "title": "9",
+        "score": "5.18",
+        "url": "N/A",
+        "additional_info": " | .hack//Sign",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "10",
-        "title": ".hack//Tasogare no Udewa Densetsu",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/447",
-        "additional_info": "TV Series",
+        "title": "10",
+        "score": "3.99",
+        "url": "N/A",
+        "additional_info": " | .hack//Tasogare no Udewa Densetsu",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "11",
-        "title": "\"0\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/10143",
-        "additional_info": "Music Video",
+        "title": "11",
+        "score": "2.81",
+        "url": "N/A",
+        "additional_info": " | \"0\"",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "12",
-        "title": "\"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/3689",
-        "additional_info": "Movie",
+        "title": "12",
+        "score": "21.03",
+        "url": "N/A",
+        "additional_info": " | \"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "13",
-        "title": "\"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/17129",
-        "additional_info": "Web",
+        "title": "13",
+        "score": "5.24",
+        "url": "N/A",
+        "additional_info": " | \"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "14",
-        "title": "\"Eiji\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/4317",
-        "additional_info": "Movie",
+        "title": "14",
+        "score": "4.44",
+        "url": "N/A",
+        "additional_info": " | \"Eiji\"",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "15",
-        "title": "\"Eikou Naki Tensai-tachi\" kara no Monogatari",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12936",
-        "additional_info": "TV Special",
+        "title": "15",
+        "score": "25.03",
+        "url": "N/A",
+        "additional_info": " | \"Eikou Naki Tensai-tachi\" kara no Monogatari",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "16",
-        "title": "\"Eiyuu\" Kaitai",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12142",
-        "additional_info": "OVA",
+        "title": "16",
+        "score": "4.35",
+        "url": "N/A",
+        "additional_info": " | \"Eiyuu\" Kaitai",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "17",
-        "title": "\"Fate/Grand Order\" Memorial Movie 2023",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/18160",
-        "additional_info": "Music Video",
+        "title": "17",
+        "score": "6.48",
+        "url": "N/A",
+        "additional_info": " | \"Fate/Grand Order\" Memorial Movie 2023",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "18",
-        "title": "\"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/15460",
-        "additional_info": "Movie",
+        "title": "18",
+        "score": "5.29",
+        "url": "N/A",
+        "additional_info": " | \"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "19",
-        "title": "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
+        "title": "19",
         "score": "N/A",
-        "url": "https://anidb.net/anime/19310",
-        "additional_info": "TV Series",
+        "url": "N/A",
+        "additional_info": " | \"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
         "source": "AniDB",
-        "category": "most_watched"
+        "category": "Comedy"
       },
       {
         "rank": "20",
-        "title": "\"Oshi no Ko\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/17449",
-        "additional_info": "TV Series",
+        "title": "20",
+        "score": "8.57",
+        "url": "N/A",
+        "additional_info": " | \"Oshi no Ko\"",
         "source": "AniDB",
-        "category": "most_watched"
-      }
-    ],
-    "newest": [
-      {
-        "rank": "1",
-        "title": "Anime #1",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12876",
-        "additional_info": "Movie",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "2",
-        "title": ".hack//G.U. Returner",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/5391",
-        "additional_info": "OVA",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "3",
-        "title": ".hack//G.U. Trilogy",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/5459",
-        "additional_info": "Movie",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "4",
-        "title": ".hack//Gift",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/1135",
-        "additional_info": "OVA",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "5",
-        "title": ".hack//Liminality",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/222",
-        "additional_info": "OVA",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "6",
-        "title": ".hack//Quantum",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/7883",
-        "additional_info": "OVA",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "7",
-        "title": ".hack//Roots",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/4324",
-        "additional_info": "TV Series",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "8",
-        "title": ".hack//Sekai no Mukou ni",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/8606",
-        "additional_info": "Movie",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "9",
-        "title": ".hack//Sign",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/24",
-        "additional_info": "TV Series",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "10",
-        "title": ".hack//Tasogare no Udewa Densetsu",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/447",
-        "additional_info": "TV Series",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "11",
-        "title": "\"0\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/10143",
-        "additional_info": "Music Video",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "12",
-        "title": "\"Aesop\" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/3689",
-        "additional_info": "Movie",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "13",
-        "title": "\"Anata o Hitokoto de Arawashite Kudasai\" no Shitsumon ga Nigate da.",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/17129",
-        "additional_info": "Web",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "14",
-        "title": "\"Eiji\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/4317",
-        "additional_info": "Movie",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "15",
-        "title": "\"Eikou Naki Tensai-tachi\" kara no Monogatari",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12936",
-        "additional_info": "TV Special",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "16",
-        "title": "\"Eiyuu\" Kaitai",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/12142",
-        "additional_info": "OVA",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "17",
-        "title": "\"Fate/Grand Order\" Memorial Movie 2023",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/18160",
-        "additional_info": "Music Video",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "18",
-        "title": "\"Hataraku Saibou!!\" Saikyou no Teki, Futatabi. Karada no Naka wa \"Chou\" Oosawagi!",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/15460",
-        "additional_info": "Movie",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "19",
-        "title": "\"Omae Gotoki ga Maou ni Kateru to Omou na\" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/19310",
-        "additional_info": "TV Series",
-        "source": "AniDB",
-        "category": "newest"
-      },
-      {
-        "rank": "20",
-        "title": "\"Oshi no Ko\"",
-        "score": "N/A",
-        "url": "https://anidb.net/anime/17449",
-        "additional_info": "TV Series",
-        "source": "AniDB",
-        "category": "newest"
+        "category": "Comedy"
       }
     ]
   },
   "animeplanet": {
-    "top_anime": [
+    "action_adventure_shounen": [
       {
         "rank": "1",
-        "title": "N/A",
-        "score": "N/A",
-        "url": "N/A",
-        "additional_info": "Title | Type Year | StatusEpsRating",
-        "source": "AnimePlanet",
-        "category": "top_anime"
-      },
-      {
-        "rank": "2",
         "title": "Frieren: Beyond Journey's End",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/frieren-beyond-journeys-end",
-        "additional_info": "Eps",
+        "additional_info": "TV (28 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "3",
+        "rank": "2",
         "title": "The Apothecary Diaries",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-apothecary-diaries",
-        "additional_info": "Eps",
+        "additional_info": "TV (24 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "4",
+        "rank": "3",
         "title": "The Apothecary Diaries 2nd Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-apothecary-diaries-2nd-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (23+ eps) | 2025 - ?",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "5",
+        "rank": "4",
         "title": "Fullmetal Alchemist: Brotherhood",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/fullmetal-alchemist-brotherhood",
-        "additional_info": "Eps",
+        "additional_info": "TV (64 eps) | 2009 - 2010",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "6",
+        "rank": "5",
         "title": "Solo Leveling Season 2: Arise from the Shadow",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/solo-leveling-season-2-arise-from-the-shadow",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2025",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "7",
+        "rank": "6",
         "title": "Heaven Official's Blessing 2nd Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-2nd-season",
-        "additional_info": "Eps",
+        "additional_info": "Web (12 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "8",
+        "rank": "7",
         "title": "The Master of Diabolism 3",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-master-of-diabolism-3",
-        "additional_info": "Eps",
+        "additional_info": "Web (12 eps) | 2021",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "9",
+        "rank": "8",
         "title": "Demon Slayer: Kimetsu no Yaiba - Entertainment District Arc",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/demon-slayer-kimetsu-no-yaiba-entertainment-district-arc",
-        "additional_info": "Eps",
+        "additional_info": "TV (11 eps) | 2021 - 2022",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "10",
+        "rank": "9",
         "title": "ALIEN STAGE",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/alien-stage",
-        "additional_info": "Eps",
+        "additional_info": "Web (11 eps) | 2022",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "11",
+        "rank": "10",
         "title": "Fruits Basket the Final Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/fruits-basket-the-final-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2021",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "12",
+        "rank": "11",
         "title": "Attack on Titan 3rd Season: Part II",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/attack-on-titan-3rd-season-part-ii",
-        "additional_info": "Eps",
+        "additional_info": "TV (10 eps) | 2019",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "13",
+        "rank": "12",
         "title": "Haikyuu!! Karasuno High School vs Shiratorizawa Academy",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/haikyuu-karasuno-high-school-vs-shiratorizawa-academy",
-        "additional_info": "Eps",
+        "additional_info": "TV (10 eps) | 2016",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "14",
+        "rank": "13",
         "title": "Bleach: Thousand-Year Blood War",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/bleach-thousand-year-blood-war",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2022",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "15",
+        "rank": "14",
         "title": "A Silent Voice",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/a-silent-voice",
-        "additional_info": "Eps",
+        "additional_info": "Movie (1 ep) | 2016",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "16",
+        "rank": "15",
         "title": "Haikyuu!! Second Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/haikyuu-second-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (25 eps) | 2015 - 2016",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "17",
+        "rank": "16",
         "title": "your name.",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/your-name",
-        "additional_info": "Eps",
+        "additional_info": "Movie (1 ep) | 2016",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "18",
+        "rank": "17",
         "title": "Jujutsu Kaisen",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/jujutsu-kaisen",
-        "additional_info": "Eps",
+        "additional_info": "TV (24 eps) | 2020 - 2021",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "19",
+        "rank": "18",
         "title": "Attack on Titan The Final Season: The Final Chapters",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/attack-on-titan-the-final-season-the-final-chapters",
-        "additional_info": "Eps",
+        "additional_info": "TV Special (2 eps) | 2023",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
       },
       {
-        "rank": "20",
+        "rank": "19",
         "title": "Heaven Official's Blessing Special",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-special",
-        "additional_info": "Eps",
+        "additional_info": "Web (1 ep) | 2021",
         "source": "AnimePlanet",
-        "category": "top_anime"
+        "category": "Action, Adventure, Shounen"
+      },
+      {
+        "rank": "20",
+        "title": "Hunter x Hunter (2011)",
+        "score": "N/A",
+        "url": "https://www.anime-planet.com/anime/hunter-x-hunter-2011",
+        "additional_info": "TV (148 eps) | 2011 - 2014",
+        "source": "AnimePlanet",
+        "category": "Action, Adventure, Shounen"
       }
     ],
-    "highest_rated": [
+    "romance": [
       {
         "rank": "1",
-        "title": "N/A",
-        "score": "N/A",
-        "url": "N/A",
-        "additional_info": "Title | Type Year | StatusEpsRating",
-        "source": "AnimePlanet",
-        "category": "highest_rated"
-      },
-      {
-        "rank": "2",
         "title": "Frieren: Beyond Journey's End",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/frieren-beyond-journeys-end",
-        "additional_info": "Eps",
+        "additional_info": "TV (28 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "3",
+        "rank": "2",
         "title": "The Apothecary Diaries",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-apothecary-diaries",
-        "additional_info": "Eps",
+        "additional_info": "TV (24 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "4",
+        "rank": "3",
         "title": "The Apothecary Diaries 2nd Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-apothecary-diaries-2nd-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (23+ eps) | 2025 - ?",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "5",
+        "rank": "4",
         "title": "Fullmetal Alchemist: Brotherhood",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/fullmetal-alchemist-brotherhood",
-        "additional_info": "Eps",
+        "additional_info": "TV (64 eps) | 2009 - 2010",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "6",
+        "rank": "5",
         "title": "Solo Leveling Season 2: Arise from the Shadow",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/solo-leveling-season-2-arise-from-the-shadow",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2025",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "7",
+        "rank": "6",
         "title": "Heaven Official's Blessing 2nd Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-2nd-season",
-        "additional_info": "Eps",
+        "additional_info": "Web (12 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "8",
+        "rank": "7",
         "title": "The Master of Diabolism 3",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-master-of-diabolism-3",
-        "additional_info": "Eps",
+        "additional_info": "Web (12 eps) | 2021",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "9",
+        "rank": "8",
         "title": "Demon Slayer: Kimetsu no Yaiba - Entertainment District Arc",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/demon-slayer-kimetsu-no-yaiba-entertainment-district-arc",
-        "additional_info": "Eps",
+        "additional_info": "TV (11 eps) | 2021 - 2022",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "10",
+        "rank": "9",
         "title": "ALIEN STAGE",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/alien-stage",
-        "additional_info": "Eps",
+        "additional_info": "Web (11 eps) | 2022",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "11",
+        "rank": "10",
         "title": "Fruits Basket the Final Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/fruits-basket-the-final-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2021",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "12",
+        "rank": "11",
         "title": "Attack on Titan 3rd Season: Part II",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/attack-on-titan-3rd-season-part-ii",
-        "additional_info": "Eps",
+        "additional_info": "TV (10 eps) | 2019",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "13",
+        "rank": "12",
         "title": "Haikyuu!! Karasuno High School vs Shiratorizawa Academy",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/haikyuu-karasuno-high-school-vs-shiratorizawa-academy",
-        "additional_info": "Eps",
+        "additional_info": "TV (10 eps) | 2016",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "14",
+        "rank": "13",
         "title": "Bleach: Thousand-Year Blood War",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/bleach-thousand-year-blood-war",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2022",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "15",
+        "rank": "14",
         "title": "A Silent Voice",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/a-silent-voice",
-        "additional_info": "Eps",
+        "additional_info": "Movie (1 ep) | 2016",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "16",
+        "rank": "15",
         "title": "Haikyuu!! Second Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/haikyuu-second-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (25 eps) | 2015 - 2016",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "17",
+        "rank": "16",
         "title": "your name.",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/your-name",
-        "additional_info": "Eps",
+        "additional_info": "Movie (1 ep) | 2016",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "18",
+        "rank": "17",
         "title": "Jujutsu Kaisen",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/jujutsu-kaisen",
-        "additional_info": "Eps",
+        "additional_info": "TV (24 eps) | 2020 - 2021",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "19",
+        "rank": "18",
         "title": "Attack on Titan The Final Season: The Final Chapters",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/attack-on-titan-the-final-season-the-final-chapters",
-        "additional_info": "Eps",
+        "additional_info": "TV Special (2 eps) | 2023",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
       },
       {
-        "rank": "20",
+        "rank": "19",
         "title": "Heaven Official's Blessing Special",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-special",
-        "additional_info": "Eps",
+        "additional_info": "Web (1 ep) | 2021",
         "source": "AnimePlanet",
-        "category": "highest_rated"
+        "category": "Romance"
+      },
+      {
+        "rank": "20",
+        "title": "Hunter x Hunter (2011)",
+        "score": "N/A",
+        "url": "https://www.anime-planet.com/anime/hunter-x-hunter-2011",
+        "additional_info": "TV (148 eps) | 2011 - 2014",
+        "source": "AnimePlanet",
+        "category": "Romance"
       }
     ],
-    "most_watched": [
+    "ecchi": [
       {
         "rank": "1",
-        "title": "N/A",
-        "score": "N/A",
-        "url": "N/A",
-        "additional_info": "Title | Type Year | StatusEpsRating",
-        "source": "AnimePlanet",
-        "category": "most_watched"
-      },
-      {
-        "rank": "2",
         "title": "Frieren: Beyond Journey's End",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/frieren-beyond-journeys-end",
-        "additional_info": "Eps",
+        "additional_info": "TV (28 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "3",
+        "rank": "2",
         "title": "The Apothecary Diaries",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-apothecary-diaries",
-        "additional_info": "Eps",
+        "additional_info": "TV (24 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "4",
+        "rank": "3",
         "title": "The Apothecary Diaries 2nd Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-apothecary-diaries-2nd-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (23+ eps) | 2025 - ?",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "5",
+        "rank": "4",
         "title": "Fullmetal Alchemist: Brotherhood",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/fullmetal-alchemist-brotherhood",
-        "additional_info": "Eps",
+        "additional_info": "TV (64 eps) | 2009 - 2010",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "6",
+        "rank": "5",
         "title": "Solo Leveling Season 2: Arise from the Shadow",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/solo-leveling-season-2-arise-from-the-shadow",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2025",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "7",
+        "rank": "6",
         "title": "Heaven Official's Blessing 2nd Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-2nd-season",
-        "additional_info": "Eps",
+        "additional_info": "Web (12 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "8",
+        "rank": "7",
         "title": "The Master of Diabolism 3",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-master-of-diabolism-3",
-        "additional_info": "Eps",
+        "additional_info": "Web (12 eps) | 2021",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "9",
+        "rank": "8",
         "title": "Demon Slayer: Kimetsu no Yaiba - Entertainment District Arc",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/demon-slayer-kimetsu-no-yaiba-entertainment-district-arc",
-        "additional_info": "Eps",
+        "additional_info": "TV (11 eps) | 2021 - 2022",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "10",
+        "rank": "9",
         "title": "ALIEN STAGE",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/alien-stage",
-        "additional_info": "Eps",
+        "additional_info": "Web (11 eps) | 2022",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "11",
+        "rank": "10",
         "title": "Fruits Basket the Final Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/fruits-basket-the-final-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2021",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "12",
+        "rank": "11",
         "title": "Attack on Titan 3rd Season: Part II",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/attack-on-titan-3rd-season-part-ii",
-        "additional_info": "Eps",
+        "additional_info": "TV (10 eps) | 2019",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "13",
+        "rank": "12",
         "title": "Haikyuu!! Karasuno High School vs Shiratorizawa Academy",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/haikyuu-karasuno-high-school-vs-shiratorizawa-academy",
-        "additional_info": "Eps",
+        "additional_info": "TV (10 eps) | 2016",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "14",
+        "rank": "13",
         "title": "Bleach: Thousand-Year Blood War",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/bleach-thousand-year-blood-war",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2022",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "15",
+        "rank": "14",
         "title": "A Silent Voice",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/a-silent-voice",
-        "additional_info": "Eps",
+        "additional_info": "Movie (1 ep) | 2016",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "16",
+        "rank": "15",
         "title": "Haikyuu!! Second Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/haikyuu-second-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (25 eps) | 2015 - 2016",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "17",
+        "rank": "16",
         "title": "your name.",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/your-name",
-        "additional_info": "Eps",
+        "additional_info": "Movie (1 ep) | 2016",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "18",
+        "rank": "17",
         "title": "Jujutsu Kaisen",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/jujutsu-kaisen",
-        "additional_info": "Eps",
+        "additional_info": "TV (24 eps) | 2020 - 2021",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "19",
+        "rank": "18",
         "title": "Attack on Titan The Final Season: The Final Chapters",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/attack-on-titan-the-final-season-the-final-chapters",
-        "additional_info": "Eps",
+        "additional_info": "TV Special (2 eps) | 2023",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
       },
       {
-        "rank": "20",
+        "rank": "19",
         "title": "Heaven Official's Blessing Special",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-special",
-        "additional_info": "Eps",
+        "additional_info": "Web (1 ep) | 2021",
         "source": "AnimePlanet",
-        "category": "most_watched"
+        "category": "Ecchi"
+      },
+      {
+        "rank": "20",
+        "title": "Hunter x Hunter (2011)",
+        "score": "N/A",
+        "url": "https://www.anime-planet.com/anime/hunter-x-hunter-2011",
+        "additional_info": "TV (148 eps) | 2011 - 2014",
+        "source": "AnimePlanet",
+        "category": "Ecchi"
       }
     ],
-    "most_completed": [
+    "slice_of_life": [
       {
         "rank": "1",
-        "title": "N/A",
-        "score": "N/A",
-        "url": "N/A",
-        "additional_info": "Title | Type Year | StatusEpsRating",
-        "source": "AnimePlanet",
-        "category": "most_completed"
-      },
-      {
-        "rank": "2",
         "title": "Frieren: Beyond Journey's End",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/frieren-beyond-journeys-end",
-        "additional_info": "Eps",
+        "additional_info": "TV (28 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "3",
+        "rank": "2",
         "title": "The Apothecary Diaries",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-apothecary-diaries",
-        "additional_info": "Eps",
+        "additional_info": "TV (24 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "4",
+        "rank": "3",
         "title": "The Apothecary Diaries 2nd Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-apothecary-diaries-2nd-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (23+ eps) | 2025 - ?",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "5",
+        "rank": "4",
         "title": "Fullmetal Alchemist: Brotherhood",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/fullmetal-alchemist-brotherhood",
-        "additional_info": "Eps",
+        "additional_info": "TV (64 eps) | 2009 - 2010",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "6",
+        "rank": "5",
         "title": "Solo Leveling Season 2: Arise from the Shadow",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/solo-leveling-season-2-arise-from-the-shadow",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2025",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "7",
+        "rank": "6",
         "title": "Heaven Official's Blessing 2nd Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-2nd-season",
-        "additional_info": "Eps",
+        "additional_info": "Web (12 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "8",
+        "rank": "7",
         "title": "The Master of Diabolism 3",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-master-of-diabolism-3",
-        "additional_info": "Eps",
+        "additional_info": "Web (12 eps) | 2021",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "9",
+        "rank": "8",
         "title": "Demon Slayer: Kimetsu no Yaiba - Entertainment District Arc",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/demon-slayer-kimetsu-no-yaiba-entertainment-district-arc",
-        "additional_info": "Eps",
+        "additional_info": "TV (11 eps) | 2021 - 2022",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "10",
+        "rank": "9",
         "title": "ALIEN STAGE",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/alien-stage",
-        "additional_info": "Eps",
+        "additional_info": "Web (11 eps) | 2022",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "11",
+        "rank": "10",
         "title": "Fruits Basket the Final Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/fruits-basket-the-final-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2021",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "12",
+        "rank": "11",
         "title": "Attack on Titan 3rd Season: Part II",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/attack-on-titan-3rd-season-part-ii",
-        "additional_info": "Eps",
+        "additional_info": "TV (10 eps) | 2019",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "13",
+        "rank": "12",
         "title": "Haikyuu!! Karasuno High School vs Shiratorizawa Academy",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/haikyuu-karasuno-high-school-vs-shiratorizawa-academy",
-        "additional_info": "Eps",
+        "additional_info": "TV (10 eps) | 2016",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "14",
+        "rank": "13",
         "title": "Bleach: Thousand-Year Blood War",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/bleach-thousand-year-blood-war",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2022",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "15",
+        "rank": "14",
         "title": "A Silent Voice",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/a-silent-voice",
-        "additional_info": "Eps",
+        "additional_info": "Movie (1 ep) | 2016",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "16",
+        "rank": "15",
         "title": "Haikyuu!! Second Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/haikyuu-second-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (25 eps) | 2015 - 2016",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "17",
+        "rank": "16",
         "title": "your name.",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/your-name",
-        "additional_info": "Eps",
+        "additional_info": "Movie (1 ep) | 2016",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "18",
+        "rank": "17",
         "title": "Jujutsu Kaisen",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/jujutsu-kaisen",
-        "additional_info": "Eps",
+        "additional_info": "TV (24 eps) | 2020 - 2021",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "19",
+        "rank": "18",
         "title": "Attack on Titan The Final Season: The Final Chapters",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/attack-on-titan-the-final-season-the-final-chapters",
-        "additional_info": "Eps",
+        "additional_info": "TV Special (2 eps) | 2023",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
       },
       {
-        "rank": "20",
+        "rank": "19",
         "title": "Heaven Official's Blessing Special",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-special",
-        "additional_info": "Eps",
+        "additional_info": "Web (1 ep) | 2021",
         "source": "AnimePlanet",
-        "category": "most_completed"
+        "category": "Slice of Life"
+      },
+      {
+        "rank": "20",
+        "title": "Hunter x Hunter (2011)",
+        "score": "N/A",
+        "url": "https://www.anime-planet.com/anime/hunter-x-hunter-2011",
+        "additional_info": "TV (148 eps) | 2011 - 2014",
+        "source": "AnimePlanet",
+        "category": "Slice of Life"
       }
     ],
-    "most_want_to_watch": [
+    "comedy": [
       {
         "rank": "1",
-        "title": "N/A",
-        "score": "N/A",
-        "url": "N/A",
-        "additional_info": "Title | Type Year | StatusEpsRating",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "2",
         "title": "Frieren: Beyond Journey's End",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/frieren-beyond-journeys-end",
-        "additional_info": "Eps",
+        "additional_info": "TV (28 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "3",
-        "title": "The Apothecary Diaries",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/the-apothecary-diaries",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "4",
-        "title": "The Apothecary Diaries 2nd Season",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/the-apothecary-diaries-2nd-season",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "5",
-        "title": "Fullmetal Alchemist: Brotherhood",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/fullmetal-alchemist-brotherhood",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "6",
-        "title": "Solo Leveling Season 2: Arise from the Shadow",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/solo-leveling-season-2-arise-from-the-shadow",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "7",
-        "title": "Heaven Official's Blessing 2nd Season",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-2nd-season",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "8",
-        "title": "The Master of Diabolism 3",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/the-master-of-diabolism-3",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "9",
-        "title": "Demon Slayer: Kimetsu no Yaiba - Entertainment District Arc",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/demon-slayer-kimetsu-no-yaiba-entertainment-district-arc",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "10",
-        "title": "ALIEN STAGE",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/alien-stage",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "11",
-        "title": "Fruits Basket the Final Season",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/fruits-basket-the-final-season",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "12",
-        "title": "Attack on Titan 3rd Season: Part II",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/attack-on-titan-3rd-season-part-ii",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "13",
-        "title": "Haikyuu!! Karasuno High School vs Shiratorizawa Academy",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/haikyuu-karasuno-high-school-vs-shiratorizawa-academy",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "14",
-        "title": "Bleach: Thousand-Year Blood War",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/bleach-thousand-year-blood-war",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "15",
-        "title": "A Silent Voice",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/a-silent-voice",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "16",
-        "title": "Haikyuu!! Second Season",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/haikyuu-second-season",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "17",
-        "title": "your name.",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/your-name",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "18",
-        "title": "Jujutsu Kaisen",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/jujutsu-kaisen",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "19",
-        "title": "Attack on Titan The Final Season: The Final Chapters",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/attack-on-titan-the-final-season-the-final-chapters",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      },
-      {
-        "rank": "20",
-        "title": "Heaven Official's Blessing Special",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-special",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_want_to_watch"
-      }
-    ],
-    "newest": [
-      {
-        "rank": "1",
-        "title": "N/A",
-        "score": "N/A",
-        "url": "N/A",
-        "additional_info": "Title | Type Year | StatusEpsRating",
-        "source": "AnimePlanet",
-        "category": "newest"
+        "category": "Comedy"
       },
       {
         "rank": "2",
-        "title": "Frieren: Beyond Journey's End",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/frieren-beyond-journeys-end",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "3",
         "title": "The Apothecary Diaries",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-apothecary-diaries",
-        "additional_info": "Eps",
+        "additional_info": "TV (24 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "4",
-        "title": "The Apothecary Diaries 2nd Season",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/the-apothecary-diaries-2nd-season",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "5",
-        "title": "Fullmetal Alchemist: Brotherhood",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/fullmetal-alchemist-brotherhood",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "6",
-        "title": "Solo Leveling Season 2: Arise from the Shadow",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/solo-leveling-season-2-arise-from-the-shadow",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "7",
-        "title": "Heaven Official's Blessing 2nd Season",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-2nd-season",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "8",
-        "title": "The Master of Diabolism 3",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/the-master-of-diabolism-3",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "9",
-        "title": "Demon Slayer: Kimetsu no Yaiba - Entertainment District Arc",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/demon-slayer-kimetsu-no-yaiba-entertainment-district-arc",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "10",
-        "title": "ALIEN STAGE",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/alien-stage",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "11",
-        "title": "Fruits Basket the Final Season",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/fruits-basket-the-final-season",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "12",
-        "title": "Attack on Titan 3rd Season: Part II",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/attack-on-titan-3rd-season-part-ii",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "13",
-        "title": "Haikyuu!! Karasuno High School vs Shiratorizawa Academy",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/haikyuu-karasuno-high-school-vs-shiratorizawa-academy",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "14",
-        "title": "Bleach: Thousand-Year Blood War",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/bleach-thousand-year-blood-war",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "15",
-        "title": "A Silent Voice",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/a-silent-voice",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "16",
-        "title": "Haikyuu!! Second Season",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/haikyuu-second-season",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "17",
-        "title": "your name.",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/your-name",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "18",
-        "title": "Jujutsu Kaisen",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/jujutsu-kaisen",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "19",
-        "title": "Attack on Titan The Final Season: The Final Chapters",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/attack-on-titan-the-final-season-the-final-chapters",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      },
-      {
-        "rank": "20",
-        "title": "Heaven Official's Blessing Special",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-special",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "newest"
-      }
-    ],
-    "most_popular": [
-      {
-        "rank": "1",
-        "title": "N/A",
-        "score": "N/A",
-        "url": "N/A",
-        "additional_info": "Title | Type Year | StatusEpsRating",
-        "source": "AnimePlanet",
-        "category": "most_popular"
-      },
-      {
-        "rank": "2",
-        "title": "Frieren: Beyond Journey's End",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/frieren-beyond-journeys-end",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
         "rank": "3",
-        "title": "The Apothecary Diaries",
-        "score": "N/A",
-        "url": "https://www.anime-planet.com/anime/the-apothecary-diaries",
-        "additional_info": "Eps",
-        "source": "AnimePlanet",
-        "category": "most_popular"
-      },
-      {
-        "rank": "4",
         "title": "The Apothecary Diaries 2nd Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-apothecary-diaries-2nd-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (23+ eps) | 2025 - ?",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "5",
+        "rank": "4",
         "title": "Fullmetal Alchemist: Brotherhood",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/fullmetal-alchemist-brotherhood",
-        "additional_info": "Eps",
+        "additional_info": "TV (64 eps) | 2009 - 2010",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "6",
+        "rank": "5",
         "title": "Solo Leveling Season 2: Arise from the Shadow",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/solo-leveling-season-2-arise-from-the-shadow",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2025",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "7",
+        "rank": "6",
         "title": "Heaven Official's Blessing 2nd Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-2nd-season",
-        "additional_info": "Eps",
+        "additional_info": "Web (12 eps) | 2023 - 2024",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "8",
+        "rank": "7",
         "title": "The Master of Diabolism 3",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/the-master-of-diabolism-3",
-        "additional_info": "Eps",
+        "additional_info": "Web (12 eps) | 2021",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "9",
+        "rank": "8",
         "title": "Demon Slayer: Kimetsu no Yaiba - Entertainment District Arc",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/demon-slayer-kimetsu-no-yaiba-entertainment-district-arc",
-        "additional_info": "Eps",
+        "additional_info": "TV (11 eps) | 2021 - 2022",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "10",
+        "rank": "9",
         "title": "ALIEN STAGE",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/alien-stage",
-        "additional_info": "Eps",
+        "additional_info": "Web (11 eps) | 2022",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "11",
+        "rank": "10",
         "title": "Fruits Basket the Final Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/fruits-basket-the-final-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2021",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "12",
+        "rank": "11",
         "title": "Attack on Titan 3rd Season: Part II",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/attack-on-titan-3rd-season-part-ii",
-        "additional_info": "Eps",
+        "additional_info": "TV (10 eps) | 2019",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "13",
+        "rank": "12",
         "title": "Haikyuu!! Karasuno High School vs Shiratorizawa Academy",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/haikyuu-karasuno-high-school-vs-shiratorizawa-academy",
-        "additional_info": "Eps",
+        "additional_info": "TV (10 eps) | 2016",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "14",
+        "rank": "13",
         "title": "Bleach: Thousand-Year Blood War",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/bleach-thousand-year-blood-war",
-        "additional_info": "Eps",
+        "additional_info": "TV (13 eps) | 2022",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "15",
+        "rank": "14",
         "title": "A Silent Voice",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/a-silent-voice",
-        "additional_info": "Eps",
+        "additional_info": "Movie (1 ep) | 2016",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "16",
+        "rank": "15",
         "title": "Haikyuu!! Second Season",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/haikyuu-second-season",
-        "additional_info": "Eps",
+        "additional_info": "TV (25 eps) | 2015 - 2016",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "17",
+        "rank": "16",
         "title": "your name.",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/your-name",
-        "additional_info": "Eps",
+        "additional_info": "Movie (1 ep) | 2016",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "18",
+        "rank": "17",
         "title": "Jujutsu Kaisen",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/jujutsu-kaisen",
-        "additional_info": "Eps",
+        "additional_info": "TV (24 eps) | 2020 - 2021",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "19",
+        "rank": "18",
         "title": "Attack on Titan The Final Season: The Final Chapters",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/attack-on-titan-the-final-season-the-final-chapters",
-        "additional_info": "Eps",
+        "additional_info": "TV Special (2 eps) | 2023",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
       },
       {
-        "rank": "20",
+        "rank": "19",
         "title": "Heaven Official's Blessing Special",
         "score": "N/A",
         "url": "https://www.anime-planet.com/anime/heaven-officials-blessing-special",
-        "additional_info": "Eps",
+        "additional_info": "Web (1 ep) | 2021",
         "source": "AnimePlanet",
-        "category": "most_popular"
+        "category": "Comedy"
+      },
+      {
+        "rank": "20",
+        "title": "Hunter x Hunter (2011)",
+        "score": "N/A",
+        "url": "https://www.anime-planet.com/anime/hunter-x-hunter-2011",
+        "additional_info": "TV (148 eps) | 2011 - 2014",
+        "source": "AnimePlanet",
+        "category": "Comedy"
       }
     ]
   }

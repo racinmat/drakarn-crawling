@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Anime List - AniDB</title>
+		<meta property="og:description" name="description" content="Looking for information about Anime List? AniDB is the right place for you. AniDB is a not-for-profit anime database providing you with all informatio..."/>
+		<meta name="robots" content="index, follow"/>
+		<link rel="stylesheet" href="https://cdn-eu.anidb.net/css/anidbstyle3/anidbstyle3.css?v=2024-09-10T14-53-20" type="text/css" title="Style"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="https://cdn-eu.anidb.net/css/assets/images/touch/apple-touch-icon.png?v=2024-09-10T14-53-20"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="https://cdn-eu.anidb.net/css/assets/images/touch/favicon-32x32.png?v=2024-09-10T14-53-20"/>
+		<link rel="icon" type="image/png" sizes="16x16" href="https://cdn-eu.anidb.net/css/assets/images/touch/favicon-16x16.png?v=2024-09-10T14-53-20"/>
+		<link rel="manifest" href="https://cdn-eu.anidb.net/css/assets/images/touch/site.webmanifest?v=2024-09-10T14-53-20"/>
+		<link rel="mask-icon" href="https://cdn-eu.anidb.net/css/assets/images/touch/safari-pinned-tab.svg?v=2024-09-10T14-53-20" color="#e18e3c"/>
+		<link rel="shortcut icon" href="https://cdn-eu.anidb.net/css/assets/images/touch/favicon.ico?v=2024-09-10T14-53-20"/>
+		<link property="og:url" rel="canonical" href="https://anidb.net/anime/?orderby.name=rating.rating&amp;orderby.order=desc&amp;tag.include=romance"/>
+		<link rel="search" type="application/opensearchdescription+xml" href="https://anidb.net/opensearch.xml" title="AniDB"/>
+		<link rel="alternate" type="application/atom+xml" title="AniDB Latest Files" href="https://anidb.net/feeds/files.atom"/>
+		<link rel="alternate" type="application/atom+xml" title="AniDB Latest News" href="https://anidb.net/feeds/news.atom"/>
+		<meta name="anidb-url" content="" id="anidb-url" data-anidb-url="https://anidb.net/perl-bin/animedb.pl?show=animelist&amp;orderby.name=rating.rating&amp;orderby.order=desc&amp;tag.include=romance"/>
+		<meta name="apple-mobile-web-app-title" content="AniDB"/>
+		<meta name="application-name" content="AniDB"/>
+		<meta name="msapplication-TileColor" content="#da532c"/>
+		<meta name="msapplication-config" content="https://cdn-eu.anidb.net/css/assets/images/touch/browserconfig.xml?v=2024-09-10T14-53-20"/>
+		<meta name="theme-color" content="#ffffff"/>
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:site" content="@anidbstatus"/>
+		<meta name="twitter:creator" content="@anidbstatus"/>
+		<meta property="og:title" content="Anime List - AniDB"/>
+			<script defer src="https://cdn-eu.anidb.net/js/libs/js.cookie.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/libs/jquery.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/libs/jquery.form.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/libs/jquery.fancybox.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/libs/jquery.sortable.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/libs/jquery.tablesorter.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/libs/jquery.toastr.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/libs/jquery.uploadfile.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/libs/jquery.wysibb.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/libs/jqueryui.position.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/libs/select2.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/libs/highcharts.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/legacy/legacy.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/WordSuggest.min.js?v=2025-03-26T22-15-21"></script>
+			<script defer src="https://cdn-eu.anidb.net/js/global.min.js?v=2025-03-26T22-15-21"></script>
+	</head>
+	<body id="anidb" class="animelist">
+<div id="layout-hint" class="hint">
+	<span class="head">HINT:</span>
+	<span class="msg">Don't like the way AniDB looks? There are a number of alternative styles available for registered users.</span>
+</div>
+<div id="layout-nav" class="animelist_nav">
+	<ul id="layout-menu" class="animelist_menu">
+		<li class="sub-menu main" title="Menu">
+			<span class="tab">Menu</span>
+			<ul id="menu-main">
+				<li class="main"><a title="Main" href="/"><span class="text">main</span></a></li>
+				<li class="search"><a title="Advanced search" href="/search/anime"><span class="text">search</span></a></li>
+				<li class="calendar"><a title="Anime calendar" href="/anime/season"><span class="text">season chart</span></a></li>
+				<li class="schedule"><a title="Episode schedule" href="/anime/schedule"><span class="text">schedule</span></a></li>
+				<li class="random"><a title="Random anime" href="/anime/random"><span class="text">random</span></a></li>
+			</ul>
+			<span></span>
+		</li>
+		<li class="sub-menu listings" title="Content">
+			<span class="tab">Content</span>
+			<ul id="menu-lists">
+				<li class="latest"><a title="Latest additions" href="/latest"><span class="text">latest</span></a></li>
+				<li class="anime"><a title="Anime list" href="/anime"><span class="text">anime</span></a></li>
+				<li class="character"><a title="Character list" href="/character"><span class="text">characters</span></a></li>
+				<li class="club"><a title="Club list" href="/club"><span class="text">clubs</span></a></li>
+				<li class="creator"><a title="Creator list" href="/creator"><span class="text">creators</span></a></li>
+				<li class="collection"><a title="Collection list" href="/collection"><span class="text">collections</span></a></li>
+				<li class="group"><a title="Group list" href="/group"><span class="text">groups</span></a></li>
+		   		<li class="song"><a title="Song list" href="/song"><span class="text">songs</span></a></li>
+		   		<li class="tags"><a title="Tag list" href="/tag"><span class="text">tags</span></a></li>
+			</ul>
+			<span></span>
+		</li>
+		<li class="sub-menu support" title="Support">
+			<span class="tab">Support</span>
+			<ul id="menu-support">
+
+				<li class="forum"><a title="Help @ forum" href="/forum"><span class="text">forum</span></a></li>
+				<li class="help"><a title="Help @ wiki" href="https://wiki.anidb.net/Main_Page" data-anidb-rel="anidb::wiki"><span>help</span></a></li>
+				<li class="irc"><a title="Help @ IRC" href="/irc"><span class="text">IRC</span></a></li>
+
+				<li class="report"><a title="Report a mistake" href="https://wiki.anidb.net/Report_mistake" data-anidb-rel="anidb::wiki"><span>report error</span></a></li>
+				<li class="software"><a title="Software to interact with AniDB" href="/software"><span class="text">software</span></a></li>
+				<li class="staff"><a title="AniDB staff" href="/admin/staff"><span class="text">staff</span></a></li>
+			</ul>
+			<span></span>
+		</li>
+		<li class="sub-menu terms" title="Terms &amp; Licenses">
+			<span class="tab">Terms &amp; Licenses</span>
+			<ul id="menu-terms">
+				<li class="donate"><a title="Accounting, Patreon" href="/donation"><span class="text">donate</span></a></li>
+				<li class="credits"><a title="Credits, Software Licenses" href="https://wiki.anidb.net/Credits" data-anidb-rel="anidb::wiki"><span>credits</span></a></li>
+				<li class="policies"><a title="Terms of Service, Privacy Policy, Licenses" href="/policy"><span class="text">policies</span></a></li>
+			</ul>
+			<span></span>
+		</li>
+		<li class="sub-menu login" title="Register or login">
+			<span class="tab">Register or login</span>
+			<form action="/perl-bin/animedb.pl" method="post">
+				<div>
+					<fieldset><input type="hidden" name="tag.include" value="romance"/><input type="hidden" name="orderby.order" value="desc"/><input type="hidden" name="show" value="animelist"/><input type="hidden" name="orderby.name" value="rating.rating"/>
+					</fieldset>
+					<ul id="menu-login">
+						<li id="user-login" class="user-login"><a title="Show login page" href="/user/login"><span class="text">login</span></a></li>
+						<li id="user-signup" class="user-signup"><a title="Register now" href="/user/register"><span class="text">register</span></a></li>
+						<li id="user-xname" class="user-xname" title="User name"><span><input name="xuser" class="text" maxlength="16" type="text" value=""/></span></li>
+						<li id="user-xpass" class="user-xpass" title="Password"><span><input name="xpass" class="text" maxlength="64" type="password"/></span></li>
+						<li id="user-xkeep" class="user-xkeep" title="Remember login data"><span><label><input name="xdoautologin" type="checkbox" checked="checked"/> <span>stay logged in</span></label></span></li>
+						<li id="user-xauth" class="user-xauth" title="Login"><span><button class="login" name="do.auth" type="submit" value="login"><span>Login</span></button></span></li>
+					</ul>
+					<span></span>
+				</div>
+			</form>
+		</li>
+	</ul>
+	<div class="menu_hr"></div>
+	<div id="layout-search" class="animelist_search">
+		<div class="search container" itemscope itemtype="https://schema.org/WebSite">
+			<span class="hide" itemprop="name">AniDB</span>
+			<a class="hide" rel="canonical" href="https://anidb.net" itemprop="url"></a>
+			<form action="/perl-bin/animedb.pl" method="get" itemprop="potentialAction" itemscope itemtype="https://schema.org/SearchAction">
+				<div itemprop="target" content="https://anidb.net/search/anime/?adb.search={adb.search}&amp;do.search=1">
+					<input itemprop="query-input" id="layout-searchbox" accesskey="s" type="text" name="adb.search" value="" class="text"/>
+	<select name="show" id="layout-searchselect" size="1"><option value="search">all</option><option value="animelist" selected="selected">anime</option><option value="characterlist">character</option><option value="clublist">club</option><option value="collectionlist">collections</option><option value="creatorlist">creator</option><option value="eplist">episodes</option><option value="grouplist">group</option><option value="mylist">mylist</option><option value="songlist">songs</option><option value="taglist">tags</option><option value="userlist">user</option>
+	</select>
+					<button type="submit" name="do.search" value="1" class="submit search">Search</button>
+					<fieldset><input type="hidden" name="cleanurl" value="1"/></fieldset>
+				</div>
+			</form>
+			<form class="random" action="/perl-bin/animedb.pl" method="get">
+				<fieldset>
+					<input type="hidden" name="do.random" value="1"/>
+					<input type="hidden" name="show" value="anime"/>
+				</fieldset>
+				<button type="submit" value="lucky" class="submit random">I'm Feeling Lucky</button>
+			</form>
+			<a title="advsearch" class="advsearch" href="/search/anime"><span class="text">advanced search</span></a>
+		</div>
+	</div>
+</div>
+<div id="layout-content">
+	<div id="layout-tabs">
+		<ul class="main-tabs">
+			<li class="g_odd list selected"><span><a href="/anime"><span class="text">animelist</span></a></span></li>
+			<li class="calendar"><span><a href="/anime/season"><span class="text">season chart</span></a></span></li>
+			<li class="g_odd schedule"><span><a href="/anime/schedule"><span class="text">anime schedule</span></a></span></li>
+			<li class="forum2"><span><a href="/forum/anime/unaired"><span class="text">forum (unaired)</span></a></span></li>
+			<li class="g_odd forum"><span><a href="/forum/anime/airing"><span class="text">forum (airing)</span></a></span></li>
+			<li class="forum3"><span><a href="/forum/1"><span class="text">anime forum</span></a></span></li>
+			<li class="g_odd customise"><span><a href="/anime/customise"><span class="text">customise</span></a></span></li>
+		</ul>
+	</div><!--layout-tabs-->
+	<div id="layout-main">
+<div class="g_breadcrumbs hide" itemscope itemtype="https://schema.org/BreadcrumbList">
+	<div class="node" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+		<meta itemprop="position" content="1"/>
+		<a href="https://anidb.net" itemprop="item"><span itemprop="name">Main</span></a>
+	</div>
+	<div class="node" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+		<meta itemprop="position" content="2"/>
+		<a href="https://anidb.net/anime" itemprop="item"><span itemprop="name">Anime</span></a>
+	</div>
+</div>
+		<h1 class="animelist">Anime List</h1>
+		
+		<div class="g_content animelist_all">
+		<a href="/perl-bin/animedb.pl?show=rzagldhfwyss" style="display:none;">Download (Do <b>NOT</b> click!)</a>
+<div class="g_section g_datatable animelist_list">
+<ul class="g_list jump">
+	<li class="prev selected"><span class="nolink">prev</span></li>
+	<li class="next"><a href="/anime/?h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;page=1&amp;tag.include=0&amp;view=list">next</a></li>
+	<li class="listview selected"><span class="nolink i_icon i_view_list"><span class="text">list</span></span></li>
+	<li class="gridview"><a class="i_icon i_view_grid" href="/anime/?h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=grid"><span class="text">grid</span></a></li>
+	<li class="smallgridview"><a class="i_icon i_view_smallgrid" href="/anime/?h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=smallgrid"><span class="text">smallgrid</span></a></li>
+	<li class="all selected"><span class="nolink">all</span></li>
+	<li class="0-9"><a href="/anime/?char=0&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">0-9</a></li>
+	<li class="a"><a href="/anime/?char=a&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">a</a></li>
+	<li class="b"><a href="/anime/?char=b&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">b</a></li>
+	<li class="c"><a href="/anime/?char=c&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">c</a></li>
+	<li class="d"><a href="/anime/?char=d&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">d</a></li>
+	<li class="e"><a href="/anime/?char=e&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">e</a></li>
+	<li class="f"><a href="/anime/?char=f&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">f</a></li>
+	<li class="g"><a href="/anime/?char=g&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">g</a></li>
+	<li class="h"><a href="/anime/?char=h&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">h</a></li>
+	<li class="i"><a href="/anime/?char=i&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">i</a></li>
+	<li class="j"><a href="/anime/?char=j&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">j</a></li>
+	<li class="k"><a href="/anime/?char=k&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">k</a></li>
+	<li class="l"><a href="/anime/?char=l&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">l</a></li>
+	<li class="m"><a href="/anime/?char=m&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">m</a></li>
+	<li class="n"><a href="/anime/?char=n&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">n</a></li>
+	<li class="o"><a href="/anime/?char=o&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">o</a></li>
+	<li class="p"><a href="/anime/?char=p&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">p</a></li>
+	<li class="q"><a href="/anime/?char=q&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">q</a></li>
+	<li class="r"><a href="/anime/?char=r&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">r</a></li>
+	<li class="s"><a href="/anime/?char=s&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">s</a></li>
+	<li class="t"><a href="/anime/?char=t&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">t</a></li>
+	<li class="u"><a href="/anime/?char=u&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">u</a></li>
+	<li class="v"><a href="/anime/?char=v&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">v</a></li>
+	<li class="w"><a href="/anime/?char=w&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">w</a></li>
+	<li class="x"><a href="/anime/?char=x&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">x</a></li>
+	<li class="y"><a href="/anime/?char=y&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">y</a></li>
+	<li class="z"><a href="/anime/?char=z&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">z</a></li>
+	<li class="other"><a href="/anime/?char=other&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">other</a></li>
+</ul>
+	<div class="g_bubblewrap nowrap g_section">
+	<div class="hide right g_filter">
+		<div class="g_bubble flap hide" title="click to show the filter menu">Filter</div>
+		<div class="content">
+			<span title="Hide Filter" class="fancybox-item fancybox-close"></span>
+			<form action="/perl-bin/animedb.pl" method="get">
+				<div class="g_section g_bubble">
+					<button class="filter" type="submit" name="do.update" value="1">Apply Filter</button>
+					<button class="reset" type="submit" name="do.reset" value="1">Reset</button>
+				</div>
+				<fieldset>
+					<input type="hidden" name="cleanurl" value="1"/>
+			<input type="hidden" name="orderby.name" value="0.1"/>
+
+			<input type="hidden" name="orderby.order" value="desc"/>
+
+			<input type="hidden" name="show" value="animelist"/>
+
+			<input type="hidden" name="tag.include" value="0"/>
+				</fieldset>
+	<div class="g_section filters">
+		<h2><span>Filter</span></h2>
+		<ul class="g_bubblewrap">
+			<li class="g_odd g_bubble">
+		<div class="g_boxwrap"><h3>Airing Status</h3><label class="ignore"><input type="radio" name="airing" value="0" checked="checked"> <span>ignore</span></label><label><input type="radio" name="airing" value="1"> <span>still airing</span></label><label><input type="radio" name="airing" value="2"> <span>finished</span></label><label><input type="radio" name="airing" value="3"> <span>unaired/unknown</span></label></div></li>
+			<li class="g_bubble"><h3>Anime Type</h3>
+		<div class="g_boxwrap"><label><input type="checkbox"  value="1" name="type.movie" > <span>Movie</span></label><label><input type="checkbox"  value="1" name="type.musicvideo" > <span>Music Video</span></label><label><input type="checkbox"  value="1" name="type.other" > <span>Other</span></label><label><input type="checkbox"  value="1" name="type.ova" > <span>OVA</span></label><label><input type="checkbox"  value="1" name="type.tvseries" > <span>TV Series</span></label><label><input type="checkbox"  value="1" name="type.tvspecial" > <span>TV Special</span></label><label><input type="checkbox"  value="1" name="type.unknown" > <span>unknown</span></label><label><input type="checkbox"  value="1" name="type.web" > <span>Web</span></label></div></li>
+			<li class="g_odd g_bubble"><div class="g_boxwrap"><h3>Misc</h3><label><input type="checkbox"  value="1" name="noalias"  checked="checked"> <span>hide synonyms</span></label>
+<label><input type="checkbox"  value="1" name="streamable" > <span>show only streamable</span></label>
+<label><input type="checkbox"  value="1" name="orderbar" > <span>show order bar</span></label></div></li>
+			<li class="g_bubble"><h3>Origin</h3>
+		<div class="g_boxwrap"><label><input type="checkbox"  value="1" name="tag.6152" > <span>China</span></label><label><input type="checkbox"  value="1" name="tag.7885" > <span>Japan</span></label><label><input type="checkbox"  value="1" name="tag.6166" > <span>South Korea</span></label></div></li>
+		</ul>
+	</div>
+			</form>
+		</div>
+	</div>
+		<div class="animelist_list">
+	<table id="animelist" class="animelist">
+		<thead>
+			<tr class="header">
+			<th class="no">No</th>
+			<th class="image" data-sorter="false">Image</th>
+			<th class="title sortable"><a class="ascending" href="/anime/?h=1&amp;noalias=1&amp;orderby.name=0.2&amp;tag.include=0" title="sort descending"><span class="icon i_ascending"></span><span class="text">Title</span></a></th>
+			<th class="award sortable"><a class="inactive" href="/anime/?h=1&amp;noalias=1&amp;orderby.award=0.1&amp;orderby.name=1.1&amp;tag.include=0" title="sort ascending"><span class="icon i_inactive"></span><span class="text">Award</span></a></th>
+			<th class="type sortable"><a class="inactive" href="/anime/?h=1&amp;noalias=1&amp;orderby.name=1.1&amp;orderby.type=0.1&amp;tag.include=0" title="sort ascending"><span class="icon i_inactive"></span><span class="text">Type</span></a></th>
+			<th class="eps sortable"><a class="inactive" href="/anime/?h=1&amp;noalias=1&amp;orderby.eps=0.2&amp;orderby.name=1.1&amp;tag.include=0" title="sort descending"><span class="icon i_inactive"></span><span class="text">Eps</span></a></th>
+			<th class="rating sortable"><a class="inactive" href="/anime/?h=1&amp;noalias=1&amp;orderby.name=1.1&amp;orderby.rating=0.2&amp;tag.include=0" title="sort descending"><span class="icon i_inactive"></span><span class="text">Rating</span></a></th>
+			<th class="average sortable"><a class="inactive" href="/anime/?h=1&amp;noalias=1&amp;orderby.average=0.2&amp;orderby.name=1.1&amp;tag.include=0" title="sort descending"><span class="icon i_inactive"></span><span class="text">Average</span></a></th>
+			<th class="reviews sortable"><a class="inactive" href="/anime/?h=1&amp;noalias=1&amp;orderby.attavg=0.2&amp;orderby.name=1.1&amp;tag.include=0" title="sort descending"><span class="icon i_inactive"></span><span class="text">Reviews</span></a></th>
+			<th class="user sortable"><a class="inactive" href="/anime/?h=1&amp;noalias=1&amp;orderby.name=1.1&amp;orderby.ucnt=0.2&amp;tag.include=0" title="sort descending"><span class="icon i_inactive"></span><span class="text">User</span></a></th>
+			<th class="aired sortable"><a class="inactive" href="/anime/?h=1&amp;noalias=1&amp;orderby.airdate=0.2&amp;orderby.name=1.1&amp;tag.include=0" title="sort descending"><span class="icon i_inactive"></span><span class="text">Aired</span></a></th>
+			<th class="ended sortable"><a class="inactive" href="/anime/?h=1&amp;noalias=1&amp;orderby.enddate=0.2&amp;orderby.name=1.1&amp;tag.include=0" title="sort descending"><span class="icon i_inactive"></span><span class="text">Ended</span></a></th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr class="g_odd" id="a12876">
+		<td data-label="No" class="number">1
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/12876"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/198730.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="?" src="https://cdn-eu.anidb.net/images/65/198730.jpg-thumb.jpg" height="47" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/12876">?</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type movie">Movie
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">2.15 (183)
+			</td>
+			<td data-label="Average" class="rating avg">4.14 (187)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">347
+			</td>
+			<td data-label="Aired" class="date airdate">??.??.1932
+			</td>
+			<td data-label="Ended" class="date enddate">??.??.1932
+			</td>
+		</tr>
+		<tr id="a5391">
+		<td data-label="No" class="number">2
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/5391"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/221098.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt=".hack//G.U. Returner" src="https://cdn-eu.anidb.net/images/65/221098.jpg-thumb.jpg" height="91" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/5391">.hack//G.U. Returner</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type ova">OVA
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">3.96 (817)
+			</td>
+			<td data-label="Average" class="rating avg">6.21 (831)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">2836
+			</td>
+			<td data-label="Aired" class="date airdate">??.07.2007
+			</td>
+			<td data-label="Ended" class="date enddate">??.07.2007
+			</td>
+		</tr>
+		<tr class="g_odd" id="a5459">
+		<td data-label="No" class="number">3
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/5459"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/289990.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt=".hack//G.U. Trilogy" src="https://cdn-eu.anidb.net/images/65/289990.jpg-thumb.jpg" height="91" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/5459">.hack//G.U. Trilogy</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type movie">Movie
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">4.96 (1148)
+			</td>
+			<td data-label="Average" class="rating avg">6.79 (1169)
+			</td>
+			<td data-label="Reviews" class="rating review">6.50 (1)
+			</td>
+			<td data-label="User" class="count members">3619
+			</td>
+			<td data-label="Aired" class="date airdate">22.12.2007
+			</td>
+			<td data-label="Ended" class="date enddate">22.12.2007
+			</td>
+		</tr>
+		<tr id="a1135">
+		<td data-label="No" class="number">4
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/1135"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/10754.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt=".hack//Gift" src="https://cdn-eu.anidb.net/images/65/10754.jpg-thumb.jpg" height="82" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/1135">.hack//Gift</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type ova">OVA
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">2.58 (1561)
+			</td>
+			<td data-label="Average" class="rating avg">5.72 (1587)
+			</td>
+			<td data-label="Reviews" class="rating review">3.50 (1)
+			</td>
+			<td data-label="User" class="count members">3935
+			</td>
+			<td data-label="Aired" class="date airdate">16.11.2003
+			</td>
+			<td data-label="Ended" class="date enddate">16.11.2003
+			</td>
+		</tr>
+		<tr class="g_odd" id="a222">
+		<td data-label="No" class="number">5
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/222"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/221100.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt=".hack//Liminality" src="https://cdn-eu.anidb.net/images/65/221100.jpg-thumb.jpg" height="88" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/222">.hack//Liminality</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type ova">OVA
+			</td>
+			<td data-label="Eps" class="count eps">4
+			</td>
+			<td data-label="Rating" class="rating weighted">4.04 (2430)
+			</td>
+			<td data-label="Average" class="rating avg">6.57 (2453)
+			</td>
+			<td data-label="Reviews" class="rating review">6.16 (2)
+			</td>
+			<td data-label="User" class="count members">6024
+			</td>
+			<td data-label="Aired" class="date airdate">20.06.2002
+			</td>
+			<td data-label="Ended" class="date enddate">10.04.2003
+			</td>
+		</tr>
+		<tr id="a7883">
+		<td data-label="No" class="number">6
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/7883"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/300650.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt=".hack//Quantum" src="https://cdn-eu.anidb.net/images/65/300650.jpg-thumb.jpg" height="93" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/7883">.hack//Quantum</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type ova">OVA
+			</td>
+			<td data-label="Eps" class="count eps">3
+			</td>
+			<td data-label="Rating" class="rating weighted">6.63 (1054)
+			</td>
+			<td data-label="Average" class="rating avg">7.18 (1063)
+			</td>
+			<td data-label="Reviews" class="rating review">4.50 (1)
+			</td>
+			<td data-label="User" class="count members">3082
+			</td>
+			<td data-label="Aired" class="date airdate">27.11.2010
+			</td>
+			<td data-label="Ended" class="date enddate">22.01.2011
+			</td>
+		</tr>
+		<tr class="g_odd" id="a4324">
+		<td data-label="No" class="number">7
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/4324"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/224023.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt=".hack//Roots" src="https://cdn-eu.anidb.net/images/65/224023.jpg-thumb.jpg" height="88" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/4324">.hack//Roots</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type tv_series">TV Series
+			</td>
+			<td data-label="Eps" class="count eps">26
+			</td>
+			<td data-label="Rating" class="rating weighted">4.45 (2599)
+			</td>
+			<td data-label="Average" class="rating avg">6.86 (2659)
+			</td>
+			<td data-label="Reviews" class="rating review">6.78 (8)
+			</td>
+			<td data-label="User" class="count members">6908
+			</td>
+			<td data-label="Aired" class="date airdate">06.04.2006
+			</td>
+			<td data-label="Ended" class="date enddate">28.09.2006
+			</td>
+		</tr>
+		<tr id="a8606">
+		<td data-label="No" class="number">8
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/8606"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/221181.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt=".hack//Sekai no Mukou ni" src="https://cdn-eu.anidb.net/images/65/221181.jpg-thumb.jpg" height="92" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/8606">.hack//Sekai no Mukou ni</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type movie">Movie
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">5.68 (626)
+			</td>
+			<td data-label="Average" class="rating avg">6.73 (634)
+			</td>
+			<td data-label="Reviews" class="rating review">3.50 (1)
+			</td>
+			<td data-label="User" class="count members">1897
+			</td>
+			<td data-label="Aired" class="date airdate">21.01.2012
+			</td>
+			<td data-label="Ended" class="date enddate">21.01.2012
+			</td>
+		</tr>
+		<tr class="g_odd" id="a24">
+		<td data-label="No" class="number">9
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/24"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/300649.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt=".hack//Sign" src="https://cdn-eu.anidb.net/images/65/300649.jpg-thumb.jpg" height="89" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/24">.hack//Sign</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards"><span class="i_icon i_award_arc2002" title="ARC Awards 2002"><span>ARC Awards 2002</span></span>
+			</td>
+			<td data-label="Type" class="type tv_series">TV Series
+			</td>
+			<td data-label="Eps" class="count eps">26
+			</td>
+			<td data-label="Rating" class="rating weighted">5.18 (7030)
+			</td>
+			<td data-label="Average" class="rating avg">7.12 (7168)
+			</td>
+			<td data-label="Reviews" class="rating review">7.94 (21)
+			</td>
+			<td data-label="User" class="count members">13780
+			</td>
+			<td data-label="Aired" class="date airdate">04.04.2002
+			</td>
+			<td data-label="Ended" class="date enddate">26.09.2002
+			</td>
+		</tr>
+		<tr id="a447">
+		<td data-label="No" class="number">10
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/447"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/221182.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt=".hack//Tasogare no Udewa Densetsu" src="https://cdn-eu.anidb.net/images/65/221182.jpg-thumb.jpg" height="88" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/447">.hack//Tasogare no Udewa Densetsu</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type tv_series">TV Series
+			</td>
+			<td data-label="Eps" class="count eps">12
+			</td>
+			<td data-label="Rating" class="rating weighted">3.99 (2976)
+			</td>
+			<td data-label="Average" class="rating avg">6.62 (3021)
+			</td>
+			<td data-label="Reviews" class="rating review">4.77 (6)
+			</td>
+			<td data-label="User" class="count members">7045
+			</td>
+			<td data-label="Aired" class="date airdate">09.01.2003
+			</td>
+			<td data-label="Ended" class="date enddate">27.03.2003
+			</td>
+		</tr>
+		<tr class="g_odd" id="a10143">
+		<td data-label="No" class="number">11
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/10143"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/143437.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="&quot;0&quot;" src="https://cdn-eu.anidb.net/images/65/143437.jpg-thumb.jpg" height="65" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/10143">"0"</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type music_video">Music Video
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">2.81 (236)
+			</td>
+			<td data-label="Average" class="rating avg">4.43 (237)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">461
+			</td>
+			<td data-label="Aired" class="date airdate">23.10.2013
+			</td>
+			<td data-label="Ended" class="date enddate">23.10.2013
+			</td>
+		</tr>
+		<tr id="a3689">
+		<td data-label="No" class="number">12
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/3689"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/5423.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="&quot;Aesop&quot; no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu" src="https://cdn-eu.anidb.net/images/65/5423.jpg-thumb.jpg" height="42" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/3689">"Aesop" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type movie">Movie
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">N/A (7)
+			</td>
+			<td data-label="Average" class="rating avg">N/A (7)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">59
+			</td>
+			<td data-label="Aired" class="date airdate">21.03.1970
+			</td>
+			<td data-label="Ended" class="date enddate">21.03.1970
+			</td>
+		</tr>
+		<tr class="g_odd" id="a17129">
+		<td data-label="No" class="number">13
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/17129"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/268744.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="&quot;Anata o Hitokoto de Arawashite Kudasai&quot; no Shitsumon ga Nigate da." src="https://cdn-eu.anidb.net/images/65/268744.jpg-thumb.jpg" height="37" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/17129">"Anata o Hitokoto de Arawashite Kudasai" no Shitsumon ga Nigate da.</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type web">Web
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">5.24 (45)
+			</td>
+			<td data-label="Average" class="rating avg">5.80 (45)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">112
+			</td>
+			<td data-label="Aired" class="date airdate">12.01.2022
+			</td>
+			<td data-label="Ended" class="date enddate">12.01.2022
+			</td>
+		</tr>
+		<tr id="a4317">
+		<td data-label="No" class="number">14
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/4317"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/239576.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="&quot;Eiji&quot;" src="https://cdn-eu.anidb.net/images/65/239576.jpg-thumb.jpg" height="100" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/4317">"Eiji"</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type movie">Movie
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">4.44 (175)
+			</td>
+			<td data-label="Average" class="rating avg">5.47 (176)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">456
+			</td>
+			<td data-label="Aired" class="date airdate">25.08.1990
+			</td>
+			<td data-label="Ended" class="date enddate">25.08.1990
+			</td>
+		</tr>
+		<tr class="g_odd" id="a12936">
+		<td data-label="No" class="number">15
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/12936"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/201932.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="&quot;Eikou Naki Tensai-tachi&quot; kara no Monogatari" src="https://cdn-eu.anidb.net/images/65/201932.jpg-thumb.jpg" height="37" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/12936">"Eikou Naki Tensai-tachi" kara no Monogatari</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type tv_special">TV Special
+			</td>
+			<td data-label="Eps" class="count eps">2
+			</td>
+			<td data-label="Rating" class="rating weighted">N/A (6)
+			</td>
+			<td data-label="Average" class="rating avg">N/A (7)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">51
+			</td>
+			<td data-label="Aired" class="date airdate">25.03.2017
+			</td>
+			<td data-label="Ended" class="date enddate">28.05.2017
+			</td>
+		</tr>
+		<tr id="a12142">
+		<td data-label="No" class="number">16
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/12142"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/221947.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="&quot;Eiyuu&quot; Kaitai" src="https://cdn-eu.anidb.net/images/65/221947.jpg-thumb.jpg" height="89" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/12142">"Eiyuu" Kaitai</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type ova">OVA
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">4.35 (200)
+			</td>
+			<td data-label="Average" class="rating avg">5.64 (202)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">480
+			</td>
+			<td data-label="Aired" class="date airdate">23.11.2016
+			</td>
+			<td data-label="Ended" class="date enddate">23.11.2016
+			</td>
+		</tr>
+		<tr class="g_odd" id="a18160">
+		<td data-label="No" class="number">17
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/18160"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/293211.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="&quot;Fate/Grand Order&quot; Memorial Movie 2023" src="https://cdn-eu.anidb.net/images/65/293211.jpg-thumb.jpg" height="36" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/18160">"Fate/Grand Order" Memorial Movie 2023</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type music_video">Music Video
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">6.48 (36)
+			</td>
+			<td data-label="Average" class="rating avg">6.93 (37)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">103
+			</td>
+			<td data-label="Aired" class="date airdate">30.07.2023
+			</td>
+			<td data-label="Ended" class="date enddate">30.07.2023
+			</td>
+		</tr>
+		<tr id="a15460">
+		<td data-label="No" class="number">18
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/15460"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/279848.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="&quot;Hataraku Saibou!!&quot; Saikyou no Teki, Futatabi. Karada no Naka wa &quot;Chou&quot; Oosawagi!" src="https://cdn-eu.anidb.net/images/65/279848.jpg-thumb.jpg" height="92" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/15460">"Hataraku Saibou!!" Saikyou no Teki, Futatabi. Karada no Naka wa "Chou" Oosawagi!</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type movie">Movie
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">5.29 (41)
+			</td>
+			<td data-label="Average" class="rating avg">6.44 (42)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">259
+			</td>
+			<td data-label="Aired" class="date airdate">05.09.2020
+			</td>
+			<td data-label="Ended" class="date enddate">05.09.2020
+			</td>
+		</tr>
+		<tr class="g_odd" id="a19310">
+		<td data-label="No" class="number">19
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/19310"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/317821.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="&quot;Omae Gotoki ga Maou ni Kateru to Omou na&quot; to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai" src="https://cdn-eu.anidb.net/images/65/317821.jpg-thumb.jpg" height="91" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/19310">"Omae Gotoki ga Maou ni Kateru to Omou na" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type tv_series">TV Series
+			</td>
+			<td data-label="Eps" class="count eps"><span class="g_italic" title="to be confirmed">TBC</span>
+			</td>
+			<td data-label="Rating" class="rating weighted">N/A (0)
+			</td>
+			<td data-label="Average" class="rating avg">N/A (0)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">0
+			</td>
+			<td data-label="Aired" class="date airdate">??.??.2026
+			</td>
+			<td data-label="Ended" class="date enddate">-
+			</td>
+		</tr>
+		<tr id="a17449">
+		<td data-label="No" class="number">20
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/17449"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/287142.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="&quot;Oshi no Ko&quot;" src="https://cdn-eu.anidb.net/images/65/287142.jpg-thumb.jpg" height="92" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/17449">"Oshi no Ko"</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type tv_series">TV Series
+			</td>
+			<td data-label="Eps" class="count eps">11
+			</td>
+			<td data-label="Rating" class="rating weighted">8.57 (1769)
+			</td>
+			<td data-label="Average" class="rating avg">8.04 (1796)
+			</td>
+			<td data-label="Reviews" class="rating review">7.50 (3)
+			</td>
+			<td data-label="User" class="count members">4517
+			</td>
+			<td data-label="Aired" class="date airdate">17.03.2023
+			</td>
+			<td data-label="Ended" class="date enddate">28.06.2023
+			</td>
+		</tr>
+		<tr class="g_odd" id="a18086">
+		<td data-label="No" class="number">21
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/18086"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/304486.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="&quot;Oshi no Ko&quot; (2024)" src="https://cdn-eu.anidb.net/images/65/304486.jpg-thumb.jpg" height="92" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/18086">"Oshi no Ko" (2024)</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type tv_series">TV Series
+			</td>
+			<td data-label="Eps" class="count eps">13
+			</td>
+			<td data-label="Rating" class="rating weighted">8.47 (790)
+			</td>
+			<td data-label="Average" class="rating avg">7.98 (800)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">2294
+			</td>
+			<td data-label="Aired" class="date airdate">03.07.2024
+			</td>
+			<td data-label="Ended" class="date enddate">06.10.2024
+			</td>
+		</tr>
+		<tr id="a18901">
+		<td data-label="No" class="number">22
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/18901"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/312533.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="&quot;Oshi no Ko&quot; (2026)" src="https://cdn-eu.anidb.net/images/65/312533.jpg-thumb.jpg" height="92" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/18901">"Oshi no Ko" (2026)</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type tv_series">TV Series
+			</td>
+			<td data-label="Eps" class="count eps"><span class="g_italic" title="to be confirmed">TBC</span>
+			</td>
+			<td data-label="Rating" class="rating weighted">N/A (0)
+			</td>
+			<td data-label="Average" class="rating avg">N/A (0)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">3
+			</td>
+			<td data-label="Aired" class="date airdate">??.??.2026
+			</td>
+			<td data-label="Ended" class="date enddate">-
+			</td>
+		</tr>
+		<tr class="g_odd" id="a15157">
+		<td data-label="No" class="number">23
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/15157"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/262209.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="&quot;Uchuu Senkan Yamato&quot; to Iu Jidai: Seireki 2202-nen no Sentaku" src="https://cdn-eu.anidb.net/images/65/262209.jpg-thumb.jpg" height="92" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/15157">"Uchuu Senkan Yamato" to Iu Jidai: Seireki 2202-nen no Sentaku</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type movie">Movie
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">5.20 (16)
+			</td>
+			<td data-label="Average" class="rating avg">6.16 (16)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">97
+			</td>
+			<td data-label="Aired" class="date airdate">11.06.2021
+			</td>
+			<td data-label="Ended" class="date enddate">11.06.2021
+			</td>
+		</tr>
+		<tr id="a17754">
+		<td data-label="No" class="number">24
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/17754"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/314394.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="#Compass 2.0: Sentou Setsuri Kaiseki System" src="https://cdn-eu.anidb.net/images/65/314394.jpg-thumb.jpg" height="91" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/17754">#Compass 2.0: Sentou Setsuri Kaiseki System</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type tv_series">TV Series
+			</td>
+			<td data-label="Eps" class="count eps">12
+			</td>
+			<td data-label="Rating" class="rating weighted">2.10 (35)
+			</td>
+			<td data-label="Average" class="rating avg">4.56 (36)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">252
+			</td>
+			<td data-label="Aired" class="date airdate">08.04.2025
+			</td>
+			<td data-label="Ended" class="date enddate">24.06.2025
+			</td>
+		</tr>
+		<tr class="g_odd" id="a18736">
+		<td data-label="No" class="number">25
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/18736"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/307053.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="0-saiji Start Dash Monogatari" src="https://cdn-eu.anidb.net/images/65/307053.jpg-thumb.jpg" height="92" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/18736">0-saiji Start Dash Monogatari</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type tv_series">TV Series
+			</td>
+			<td data-label="Eps" class="count eps">12
+			</td>
+			<td data-label="Rating" class="rating weighted">2.65 (51)
+			</td>
+			<td data-label="Average" class="rating avg">4.92 (52)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">175
+			</td>
+			<td data-label="Aired" class="date airdate">07.07.2024
+			</td>
+			<td data-label="Ended" class="date enddate">22.09.2024
+			</td>
+		</tr>
+		<tr id="a19119">
+		<td data-label="No" class="number">26
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/19119"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/314635.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="0-saiji Start Dash Monogatari (2025)" src="https://cdn-eu.anidb.net/images/65/314635.jpg-thumb.jpg" height="92" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/19119">0-saiji Start Dash Monogatari (2025)</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type tv_series">TV Series
+			</td>
+			<td data-label="Eps" class="count eps">12
+			</td>
+			<td data-label="Rating" class="rating weighted">2.87 (16)
+			</td>
+			<td data-label="Average" class="rating avg">4.59 (16)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">75
+			</td>
+			<td data-label="Aired" class="date airdate">05.01.2025
+			</td>
+			<td data-label="Ended" class="date enddate">23.03.2025
+			</td>
+		</tr>
+		<tr class="g_odd" id="a11391">
+		<td data-label="No" class="number">27
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/11391"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/175534.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="00:08" src="https://cdn-eu.anidb.net/images/65/175534.jpg-thumb.jpg" height="43" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/11391">00:08</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type movie">Movie
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">3.00 (320)
+			</td>
+			<td data-label="Average" class="rating avg">4.56 (327)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">493
+			</td>
+			<td data-label="Aired" class="date airdate">??.??.2014
+			</td>
+			<td data-label="Ended" class="date enddate">??.??.2014
+			</td>
+		</tr>
+		<tr id="a11392">
+		<td data-label="No" class="number">28
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/11392"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/175535.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="001" src="https://cdn-eu.anidb.net/images/65/175535.jpg-thumb.jpg" height="36" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/11392">001</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type web">Web
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">1.47 (501)
+			</td>
+			<td data-label="Average" class="rating avg">3.17 (520)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">761
+			</td>
+			<td data-label="Aired" class="date airdate">07.02.2013
+			</td>
+			<td data-label="Ended" class="date enddate">07.02.2013
+			</td>
+		</tr>
+		<tr class="g_odd" id="a8699">
+		<td data-label="No" class="number">29
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/8699"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/126644.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="009 Re:Cyborg" src="https://cdn-eu.anidb.net/images/65/126644.jpg-thumb.jpg" height="92" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/8699">009 Re:Cyborg</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type movie">Movie
+			</td>
+			<td data-label="Eps" class="count eps">1
+			</td>
+			<td data-label="Rating" class="rating weighted">4.74 (450)
+			</td>
+			<td data-label="Average" class="rating avg">6.27 (459)
+			</td>
+			<td data-label="Reviews" class="rating review">N/A (0)
+			</td>
+			<td data-label="User" class="count members">1295
+			</td>
+			<td data-label="Aired" class="date airdate">27.10.2012
+			</td>
+			<td data-label="Ended" class="date enddate">27.10.2012
+			</td>
+		</tr>
+		<tr id="a4637">
+		<td data-label="No" class="number">30
+		</td>
+		<td data-label="Image" class="thumb anime">
+			<a href="/anime/4637"><picture>
+			  <source srcset="https://cdn-eu.anidb.net/images/main/288734.jpg" media="(max-width: 1000px)"/>
+			  <img loading="lazy" alt="009-1" src="https://cdn-eu.anidb.net/images/65/288734.jpg-thumb.jpg" height="94" width="65" class="g_image g_bubble thumb"/>
+		</picture></a>
+		</td>
+		<td data-label="Title" class="name main anime">
+			<a href="/anime/4637">009-1</a>
+				<span class="icons"></span>
+			</td>
+			<td data-label="Award" class="awards">
+			</td>
+			<td data-label="Type" class="type tv_series">TV Series
+			</td>
+			<td data-label="Eps" class="count eps">12
+			</td>
+			<td data-label="Rating" class="rating weighted">4.09 (810)
+			</td>
+			<td data-label="Average" class="rating avg">6.15 (828)
+			</td>
+			<td data-label="Reviews" class="rating review">7.99 (4)
+			</td>
+			<td data-label="User" class="count members">2800
+			</td>
+			<td data-label="Aired" class="date airdate">06.10.2006
+			</td>
+			<td data-label="Ended" class="date enddate">22.12.2006
+			</td>
+		</tr>
+		</tbody>
+	</table>
+		</div>
+	</div>
+<ul class="g_list jump">
+	<li class="prev selected"><span class="nolink">prev</span></li>
+	<li class="next"><a href="/anime/?h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;page=1&amp;tag.include=0&amp;view=list">next</a></li>
+	<li class="listview selected"><span class="nolink i_icon i_view_list"><span class="text">list</span></span></li>
+	<li class="gridview"><a class="i_icon i_view_grid" href="/anime/?h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=grid"><span class="text">grid</span></a></li>
+	<li class="smallgridview"><a class="i_icon i_view_smallgrid" href="/anime/?h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=smallgrid"><span class="text">smallgrid</span></a></li>
+	<li class="all selected"><span class="nolink">all</span></li>
+	<li class="0-9"><a href="/anime/?char=0&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">0-9</a></li>
+	<li class="a"><a href="/anime/?char=a&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">a</a></li>
+	<li class="b"><a href="/anime/?char=b&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">b</a></li>
+	<li class="c"><a href="/anime/?char=c&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">c</a></li>
+	<li class="d"><a href="/anime/?char=d&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">d</a></li>
+	<li class="e"><a href="/anime/?char=e&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">e</a></li>
+	<li class="f"><a href="/anime/?char=f&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">f</a></li>
+	<li class="g"><a href="/anime/?char=g&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">g</a></li>
+	<li class="h"><a href="/anime/?char=h&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">h</a></li>
+	<li class="i"><a href="/anime/?char=i&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">i</a></li>
+	<li class="j"><a href="/anime/?char=j&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">j</a></li>
+	<li class="k"><a href="/anime/?char=k&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">k</a></li>
+	<li class="l"><a href="/anime/?char=l&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">l</a></li>
+	<li class="m"><a href="/anime/?char=m&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">m</a></li>
+	<li class="n"><a href="/anime/?char=n&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">n</a></li>
+	<li class="o"><a href="/anime/?char=o&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">o</a></li>
+	<li class="p"><a href="/anime/?char=p&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">p</a></li>
+	<li class="q"><a href="/anime/?char=q&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">q</a></li>
+	<li class="r"><a href="/anime/?char=r&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">r</a></li>
+	<li class="s"><a href="/anime/?char=s&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">s</a></li>
+	<li class="t"><a href="/anime/?char=t&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">t</a></li>
+	<li class="u"><a href="/anime/?char=u&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">u</a></li>
+	<li class="v"><a href="/anime/?char=v&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">v</a></li>
+	<li class="w"><a href="/anime/?char=w&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">w</a></li>
+	<li class="x"><a href="/anime/?char=x&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">x</a></li>
+	<li class="y"><a href="/anime/?char=y&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">y</a></li>
+	<li class="z"><a href="/anime/?char=z&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">z</a></li>
+	<li class="other"><a href="/anime/?char=other&amp;h=1&amp;noalias=1&amp;orderby.name=0.1&amp;orderby.order=desc&amp;tag.include=0&amp;view=list">other</a></li>
+</ul>
+</div>
+		<ul class="g_list links">
+			<li class="g_odd back"><span><a href="/">back</a></span></li>
+		</ul>
+		</div><!--g_content-->
+		<div class="g_end"></div>
+	</div><!--layout-main-->
+</div><!--layout-content-->
+
+<div id="layout-footer">
+	<p><a href="https://anidb.net" property="cc:attributionName">AniDB</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+	<p>v 2022-04, &copy; 2002-2022 by AniDB; all rights reserved. [0s] - <span title="generated at">01.07.2025 23:36:45</span></p>
+	<div itemscope itemtype="https://schema.org/Organization">
+		<a class="hide" itemprop="url" href="https://anidb.net">Home</a>
+		<img loading="lazy" class="hide" alt="AniDB" itemprop="logo" src="https://cdn-eu.anidb.net/css/assets/images/touch/android-chrome-512x512.png"/>
+		<span class="hide" itemprop="name">AniDB</span>
+		<div class="links">
+			<a class="i_icon brand i_resource_twitter" itemprop="sameAs" title="Stay up2date with AniDB on Twitter!" href="https://twitter.com/AniDBStatus" data-anidb-rel="anidb::extern"><span class="text">Twitter</span></a>
+			<a class="i_icon brand i_resource_patreon" itemprop="sameAs" title="Become a patron for AniDB!" href="https://www.patreon.com/AniDB" data-anidb-rel="anidb::extern"><span class="text">Become a patron!</span></a>
+		</div>
+	</div>
+		<a href="/perl-bin/animedb.pl?show=rzagldhfwyss" style="display:none;">Download (Do <b>NOT</b> click!)</a>
+</div>
+	</body>
+</html>

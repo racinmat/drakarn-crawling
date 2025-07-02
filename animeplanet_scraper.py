@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-AnimePlanet Top Anime Scraper
-Scrapes top 20 anime from various categories on AnimePlanet
+AnimePlanet Tag-Based Anime Scraper
+Scrapes top 20 anime from tag-based categories on AnimePlanet using search functionality
 """
 
 import tls_client
@@ -13,12 +13,14 @@ import re
 import os
 import hashlib
 from typing import List, Dict, Optional
+import urllib.parse
 
 
 class AnimePlanetScraper:
     def __init__(self):
         # the very same headers did not work with httpx with http2 nor with requests, interesting.
         self.base_url = "https://www.anime-planet.com"
+        self.search_url = "https://www.anime-planet.com/anime/all"
         self.session = tls_client.Session(
             client_identifier="chrome_120",
             random_tls_extension_order=True
@@ -41,15 +43,33 @@ class AnimePlanetScraper:
             'Sec-Fetch-Site': 'none'
         }
         
-        # Available categories on AnimePlanet
+        # Tag-based categories as requested (5 categories)
         self.categories = {
-            'top_anime': '/anime/top-anime',
-            'highest_rated': '/anime/top-anime?sort=rating&order=desc',
-            'most_watched': '/anime/top-anime?sort=watching&order=desc',
-            'most_completed': '/anime/top-anime?sort=completed&order=desc',
-            'most_want_to_watch': '/anime/top-anime?sort=want_to_watch&order=desc',
-            'newest': '/anime/top-anime?sort=newest&order=desc',
-            'most_popular': '/anime/top-anime?sort=popularity&order=desc'
+            'action_adventure_shounen': {
+                'name': 'Action, Adventure, Shounen',
+                'tags': ['action', 'adventure', 'shounen'],
+                'description': 'Action, adventure, shounen anime'
+            },
+            'romance': {
+                'name': 'Romance',
+                'tags': ['romance'],
+                'description': 'Romance anime'
+            },
+            'ecchi': {
+                'name': 'Ecchi',
+                'tags': ['ecchi'],
+                'description': 'Ecchi anime'
+            },
+            'slice_of_life': {
+                'name': 'Slice of Life',
+                'tags': ['slice of life'],
+                'description': 'Slice of life anime'
+            },
+            'comedy': {
+                'name': 'Comedy',
+                'tags': ['comedy'],
+                'description': 'Comedy anime'
+            }
         }
     
     def _get_cache_filename(self, url: str) -> str:
@@ -137,17 +157,34 @@ class AnimePlanetScraper:
         
         return None
 
-    def scrape_category(self, category: str, limit: int = 20) -> List[Dict]:
-        """Scrape top anime from a specific category"""
-        if category not in self.categories:
-            print(f"Category '{category}' not found. Available categories: {list(self.categories.keys())}")
+    def _build_search_url(self, tags: List[str]) -> str:
+        """Build AnimePlanet search URL with tags, sorted by popularity"""
+        # For AnimePlanet, we'll build the URL with tag filters
+        # Example: https://www.anime-planet.com/anime/all?tags=action&sort=average&order=desc
+        
+        # Join tags with commas for AnimePlanet's format
+        tag_params = ','.join(tags)
+        
+        # Build URL with search parameters, sorted by average rating (popularity)
+        search_url = f"{self.search_url}?tags={urllib.parse.quote(tag_params)}&sort=average&order=desc"
+        
+        return search_url
+
+    def scrape_category(self, category_key: str, limit: int = 20) -> List[Dict]:
+        """Scrape anime from a specific tag-based category"""
+        if category_key not in self.categories:
+            print(f"Category '{category_key}' not found. Available categories: {list(self.categories.keys())}")
             return []
         
-        url = self.base_url + self.categories[category]
-        print(f"Scraping {category} from {url}")
+        category = self.categories[category_key]
+        print(f"Scraping {category['name']} ({category['description']})...")
+        
+        # Build search URL for this category
+        search_url = self._build_search_url(category['tags'])
+        print(f"Search URL: {search_url}")
         
         # Get HTML content (either from cache or download)
-        html_content = self._get_html_content(url)
+        html_content = self._get_html_content(search_url)
         if not html_content:
             return []
         
@@ -163,7 +200,7 @@ class AnimePlanetScraper:
                 if i >= limit:
                     break
                     
-                anime_data = self._extract_anime_data(card, i + 1)
+                anime_data = self._extract_anime_data(card, i + 1, category['name'])
                 if anime_data:
                     anime_list.append(anime_data)
                 
@@ -173,114 +210,65 @@ class AnimePlanetScraper:
             return anime_list
             
         except Exception as e:
-            print(f"Error scraping {category}: {e}")
+            print(f"Error scraping {category['name']}: {e}")
             return []
     
     def _find_anime_cards(self, soup):
-        """Find anime cards using multiple possible selectors"""
-        # Try different possible selectors for AnimePlanet
-        selectors = [
-            'div.cardDeck ul li',
-            '.entryBar',
-            'tr.card',
-            '.cardName',
-            'li[data-type="anime"]',
-            'div.card',
-            'table.pure-table tr'
-        ]
+        """Find anime cards using the correct AnimePlanet structure"""
+        # AnimePlanet uses ul.cardDeck with li.card elements
+        anime_cards = soup.select('ul.cardDeck li.card')
         
-        for selector in selectors:
-            cards = soup.select(selector)
-            if cards and len(cards) >= 5:  # Reasonable number of results
-                return cards
+        if anime_cards:
+            print(f"Found {len(anime_cards)} anime cards")
+            return anime_cards
         
-        # Fallback: look for list items or table rows
-        fallback_selectors = ['li', 'tr']
-        for selector in fallback_selectors:
-            elements = soup.select(selector)
-            # Filter elements that likely contain anime data
-            anime_elements = []
-            for elem in elements:
-                if elem.find('a') and len(elem.text.strip()) > 10:
-                    anime_elements.append(elem)
-            if len(anime_elements) >= 5:
-                return anime_elements[:50]  # Limit to reasonable number
-        
+        print("No anime cards found")
         return []
     
-    def _extract_anime_data(self, card, rank: int) -> Optional[Dict]:
+    def _extract_anime_data(self, card, rank: int, category_name: str) -> Optional[Dict]:
         """Extract anime data from a card element"""
         try:
-            # Title and URL
+            # Title and URL from the main link
             title = "N/A"
             anime_url = "N/A"
             
-            # Look for main anime link
-            links = card.find_all('a')
-            anime_link = None
+            # Find the main anime link
+            main_link = card.select_one('a[href*="/anime/"]')
+            if main_link:
+                anime_url = self.base_url + main_link.get('href', '')
+                
+                # Get title from cardName h3
+                title_elem = card.select_one('h3.cardName')
+                if title_elem:
+                    title = title_elem.get_text(strip=True)
             
-            for link in links:
-                href = link.get('href', '')
-                if '/anime/' in href and link.text.strip():
-                    anime_link = link
-                    break
-            
-            if anime_link:
-                title = anime_link.text.strip()
-                anime_url = self.base_url + anime_link.get('href', '')
-            
-            # Rating/Score
+            # Rating/Score - AnimePlanet doesn't show ratings in static HTML
+            # They are loaded via JavaScript, so we'll mark as N/A
             score = "N/A"
             
-            # Look for rating indicators
-            rating_selectors = [
-                '.avgRating',
-                '.rating',
-                '.score',
-                '[class*="rating"]',
-                '[class*="score"]'
-            ]
-            
-            for selector in rating_selectors:
-                rating_elem = card.select_one(selector)
-                if rating_elem:
-                    rating_text = rating_elem.text.strip()
-                    score_match = re.search(r'(\d+\.?\d*)', rating_text)
-                    if score_match:
-                        score = score_match.group(1)
-                        break
-            
-            # Additional info
+            # Additional info from entryBar
             additional_info = ""
+            entry_bar = card.select('.entryBar li')
+            if entry_bar:
+                info_parts = [li.get_text(strip=True) for li in entry_bar[:3]]
+                additional_info = " | ".join(info_parts)
             
-            # Look for metadata
-            info_selectors = [
-                '.type',
-                '.year',
-                '.episodes',
-                '.metadata',
-                '.tags'
-            ]
-            
-            info_parts = []
-            for selector in info_selectors:
-                info_elem = card.select_one(selector)
-                if info_elem:
-                    info_text = info_elem.text.strip()
-                    if info_text and info_text != title:
-                        info_parts.append(info_text)
-            
-            additional_info = " | ".join(info_parts[:3])  # Limit to first 3 pieces of info
-            
-            # If no specific info found, try to extract from general text
+            # If no entryBar, try to get info from tooltip
             if not additional_info:
-                card_text = card.text.strip()
-                lines = [line.strip() for line in card_text.split('\n') if line.strip()]
-                # Get lines that aren't the title and look informative
-                for line in lines[1:4]:  # Skip title, take next few lines
-                    if len(line) < 100 and line != title:  # Reasonable length
-                        additional_info += line + " | "
-                additional_info = additional_info.rstrip(" | ")
+                tooltip_content = main_link.get('title', '') if main_link else ''
+                if tooltip_content:
+                    # Extract type and year from tooltip
+                    import re
+                    type_match = re.search(r'<li class=.*?type.*?>(.*?)</li>', tooltip_content)
+                    year_match = re.search(r'<li class=.*?iconYear.*?>(.*?)</li>', tooltip_content)
+                    
+                    info_parts = []
+                    if type_match:
+                        info_parts.append(type_match.group(1))
+                    if year_match:
+                        info_parts.append(year_match.group(1))
+                    
+                    additional_info = " | ".join(info_parts)
             
             return {
                 'rank': str(rank),
@@ -288,7 +276,8 @@ class AnimePlanetScraper:
                 'score': score,
                 'url': anime_url,
                 'additional_info': additional_info,
-                'source': 'AnimePlanet'
+                'source': 'AnimePlanet',
+                'category': category_name
             }
             
         except Exception as e:
@@ -296,13 +285,13 @@ class AnimePlanetScraper:
             return None
     
     def scrape_all_categories(self, limit: int = 20) -> Dict[str, List[Dict]]:
-        """Scrape all available categories"""
+        """Scrape all available tag-based categories"""
         all_data = {}
         
-        for category in self.categories.keys():
-            print(f"\nScraping category: {category}")
-            category_data = self.scrape_category(category, limit)
-            all_data[category] = category_data
+        for category_key in self.categories.keys():
+            print(f"\nScraping category: {category_key}")
+            category_data = self.scrape_category(category_key, limit)
+            all_data[category_key] = category_data
             
             # Longer delay between categories
             time.sleep(2)
@@ -321,7 +310,6 @@ class AnimePlanetScraper:
         all_anime = []
         for category, anime_list in data.items():
             for anime in anime_list:
-                anime['category'] = category
                 all_anime.append(anime)
         
         if all_anime:
@@ -343,14 +331,14 @@ def main():
     
     try:
         # Option 1: Scrape specific category
-        # category_data = scraper.scrape_category('highest_rated', 20)
+        # category_data = scraper.scrape_category('action_adventure_shounen', 20)
         
         # Option 2: Scrape all categories
         all_data = scraper.scrape_all_categories(20)
         
         # Save data
-        scraper.save_to_json(all_data, 'animeplanet_top_anime.json')
-        scraper.save_to_csv(all_data, 'animeplanet_top_anime.csv')
+        scraper.save_to_json(all_data, 'animeplanet_tag_anime.json')
+        scraper.save_to_csv(all_data, 'animeplanet_tag_anime.csv')
         
     finally:
         # Clean up

@@ -1,6 +1,6 @@
 {
   "total_sources": 3,
-  "scraping_timestamp": "2025-07-02 01:10:18",
+  "scraping_timestamp": "2025-07-02 01:39:38",
   "sources": {
     "myanimelist": {
       "categories_scraped": 5,
@@ -14,27 +14,24 @@
       }
     },
     "anidb": {
-      "categories_scraped": 5,
-      "total_anime_entries": 100,
+      "categories_scraped": 4,
+      "total_anime_entries": 80,
       "categories": {
-        "top_anime": 20,
-        "highest_rated": 20,
-        "most_popular": 20,
-        "most_watched": 20,
-        "newest": 20
+        "action_adventure_shounen": 20,
+        "romance": 20,
+        "ecchi": 20,
+        "comedy": 20
       }
     },
     "animeplanet": {
-      "categories_scraped": 7,
-      "total_anime_entries": 140,
+      "categories_scraped": 5,
+      "total_anime_entries": 100,
       "categories": {
-        "top_anime": 20,
-        "highest_rated": 20,
-        "most_watched": 20,
-        "most_completed": 20,
-        "most_want_to_watch": 20,
-        "newest": 20,
-        "most_popular": 20
+        "action_adventure_shounen": 20,
+        "romance": 20,
+        "ecchi": 20,
+        "slice_of_life": 20,
+        "comedy": 20
       }
     }
   }
