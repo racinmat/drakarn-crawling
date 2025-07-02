@@ -1,81 +1,81 @@
-category,rank,title,score,url,additional_info,source
-"Action, Adventure, Shounen",1,1,2.15,N/A, | ?,AniDB
-"Action, Adventure, Shounen",2,2,3.96,N/A, | .hack//G.U. Returner,AniDB
-"Action, Adventure, Shounen",3,3,4.96,N/A, | .hack//G.U. Trilogy,AniDB
-"Action, Adventure, Shounen",4,4,2.58,N/A, | .hack//Gift,AniDB
-"Action, Adventure, Shounen",5,5,4.04,N/A, | .hack//Liminality,AniDB
-"Action, Adventure, Shounen",6,6,6.63,N/A, | .hack//Quantum,AniDB
-"Action, Adventure, Shounen",7,7,4.45,N/A, | .hack//Roots,AniDB
-"Action, Adventure, Shounen",8,8,5.68,N/A, | .hack//Sekai no Mukou ni,AniDB
-"Action, Adventure, Shounen",9,9,5.18,N/A, | .hack//Sign,AniDB
-"Action, Adventure, Shounen",10,10,3.99,N/A, | .hack//Tasogare no Udewa Densetsu,AniDB
-"Action, Adventure, Shounen",11,11,2.81,N/A," | ""0""",AniDB
-"Action, Adventure, Shounen",12,12,21.03,N/A," | ""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",AniDB
-"Action, Adventure, Shounen",13,13,5.24,N/A," | ""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",AniDB
-"Action, Adventure, Shounen",14,14,4.44,N/A," | ""Eiji""",AniDB
-"Action, Adventure, Shounen",15,15,25.03,N/A," | ""Eikou Naki Tensai-tachi"" kara no Monogatari",AniDB
-"Action, Adventure, Shounen",16,16,4.35,N/A," | ""Eiyuu"" Kaitai",AniDB
-"Action, Adventure, Shounen",17,17,6.48,N/A," | ""Fate/Grand Order"" Memorial Movie 2023",AniDB
-"Action, Adventure, Shounen",18,18,5.29,N/A," | ""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",AniDB
-"Action, Adventure, Shounen",19,19,N/A,N/A," | ""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",AniDB
-"Action, Adventure, Shounen",20,20,8.57,N/A," | ""Oshi no Ko""",AniDB
-Romance,1,1,2.15,N/A, | ?,AniDB
-Romance,2,2,3.96,N/A, | .hack//G.U. Returner,AniDB
-Romance,3,3,4.96,N/A, | .hack//G.U. Trilogy,AniDB
-Romance,4,4,2.58,N/A, | .hack//Gift,AniDB
-Romance,5,5,4.04,N/A, | .hack//Liminality,AniDB
-Romance,6,6,6.63,N/A, | .hack//Quantum,AniDB
-Romance,7,7,4.45,N/A, | .hack//Roots,AniDB
-Romance,8,8,5.68,N/A, | .hack//Sekai no Mukou ni,AniDB
-Romance,9,9,5.18,N/A, | .hack//Sign,AniDB
-Romance,10,10,3.99,N/A, | .hack//Tasogare no Udewa Densetsu,AniDB
-Romance,11,11,2.81,N/A," | ""0""",AniDB
-Romance,12,12,21.03,N/A," | ""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",AniDB
-Romance,13,13,5.24,N/A," | ""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",AniDB
-Romance,14,14,4.44,N/A," | ""Eiji""",AniDB
-Romance,15,15,25.03,N/A," | ""Eikou Naki Tensai-tachi"" kara no Monogatari",AniDB
-Romance,16,16,4.35,N/A," | ""Eiyuu"" Kaitai",AniDB
-Romance,17,17,6.48,N/A," | ""Fate/Grand Order"" Memorial Movie 2023",AniDB
-Romance,18,18,5.29,N/A," | ""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",AniDB
-Romance,19,19,N/A,N/A," | ""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",AniDB
-Romance,20,20,8.57,N/A," | ""Oshi no Ko""",AniDB
-Ecchi,1,1,2.15,N/A, | ?,AniDB
-Ecchi,2,2,3.96,N/A, | .hack//G.U. Returner,AniDB
-Ecchi,3,3,4.96,N/A, | .hack//G.U. Trilogy,AniDB
-Ecchi,4,4,2.58,N/A, | .hack//Gift,AniDB
-Ecchi,5,5,4.04,N/A, | .hack//Liminality,AniDB
-Ecchi,6,6,6.63,N/A, | .hack//Quantum,AniDB
-Ecchi,7,7,4.45,N/A, | .hack//Roots,AniDB
-Ecchi,8,8,5.68,N/A, | .hack//Sekai no Mukou ni,AniDB
-Ecchi,9,9,5.18,N/A, | .hack//Sign,AniDB
-Ecchi,10,10,3.99,N/A, | .hack//Tasogare no Udewa Densetsu,AniDB
-Ecchi,11,11,2.81,N/A," | ""0""",AniDB
-Ecchi,12,12,21.03,N/A," | ""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",AniDB
-Ecchi,13,13,5.24,N/A," | ""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",AniDB
-Ecchi,14,14,4.44,N/A," | ""Eiji""",AniDB
-Ecchi,15,15,25.03,N/A," | ""Eikou Naki Tensai-tachi"" kara no Monogatari",AniDB
-Ecchi,16,16,4.35,N/A," | ""Eiyuu"" Kaitai",AniDB
-Ecchi,17,17,6.48,N/A," | ""Fate/Grand Order"" Memorial Movie 2023",AniDB
-Ecchi,18,18,5.29,N/A," | ""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",AniDB
-Ecchi,19,19,N/A,N/A," | ""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",AniDB
-Ecchi,20,20,8.57,N/A," | ""Oshi no Ko""",AniDB
-Comedy,1,1,2.15,N/A, | ?,AniDB
-Comedy,2,2,3.96,N/A, | .hack//G.U. Returner,AniDB
-Comedy,3,3,4.96,N/A, | .hack//G.U. Trilogy,AniDB
-Comedy,4,4,2.58,N/A, | .hack//Gift,AniDB
-Comedy,5,5,4.04,N/A, | .hack//Liminality,AniDB
-Comedy,6,6,6.63,N/A, | .hack//Quantum,AniDB
-Comedy,7,7,4.45,N/A, | .hack//Roots,AniDB
-Comedy,8,8,5.68,N/A, | .hack//Sekai no Mukou ni,AniDB
-Comedy,9,9,5.18,N/A, | .hack//Sign,AniDB
-Comedy,10,10,3.99,N/A, | .hack//Tasogare no Udewa Densetsu,AniDB
-Comedy,11,11,2.81,N/A," | ""0""",AniDB
-Comedy,12,12,21.03,N/A," | ""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",AniDB
-Comedy,13,13,5.24,N/A," | ""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",AniDB
-Comedy,14,14,4.44,N/A," | ""Eiji""",AniDB
-Comedy,15,15,25.03,N/A," | ""Eikou Naki Tensai-tachi"" kara no Monogatari",AniDB
-Comedy,16,16,4.35,N/A," | ""Eiyuu"" Kaitai",AniDB
-Comedy,17,17,6.48,N/A," | ""Fate/Grand Order"" Memorial Movie 2023",AniDB
-Comedy,18,18,5.29,N/A," | ""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",AniDB
-Comedy,19,19,N/A,N/A," | ""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",AniDB
-Comedy,20,20,8.57,N/A," | ""Oshi no Ko""",AniDB
+additional_info,category,rank,score,source,title,url
+ | ?,"Action, Adventure, Shounen",1,2.15,AniDB,1,N/A
+ | .hack//G.U. Returner,"Action, Adventure, Shounen",2,3.96,AniDB,2,N/A
+ | .hack//G.U. Trilogy,"Action, Adventure, Shounen",3,4.96,AniDB,3,N/A
+ | .hack//Gift,"Action, Adventure, Shounen",4,2.58,AniDB,4,N/A
+ | .hack//Liminality,"Action, Adventure, Shounen",5,4.04,AniDB,5,N/A
+ | .hack//Quantum,"Action, Adventure, Shounen",6,6.63,AniDB,6,N/A
+ | .hack//Roots,"Action, Adventure, Shounen",7,4.45,AniDB,7,N/A
+ | .hack//Sekai no Mukou ni,"Action, Adventure, Shounen",8,5.68,AniDB,8,N/A
+ | .hack//Sign,"Action, Adventure, Shounen",9,5.18,AniDB,9,N/A
+ | .hack//Tasogare no Udewa Densetsu,"Action, Adventure, Shounen",10,3.99,AniDB,10,N/A
+" | ""0""","Action, Adventure, Shounen",11,2.81,AniDB,11,N/A
+" | ""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu","Action, Adventure, Shounen",12,21.03,AniDB,12,N/A
+" | ""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.","Action, Adventure, Shounen",13,5.24,AniDB,13,N/A
+" | ""Eiji""","Action, Adventure, Shounen",14,4.44,AniDB,14,N/A
+" | ""Eikou Naki Tensai-tachi"" kara no Monogatari","Action, Adventure, Shounen",15,25.03,AniDB,15,N/A
+" | ""Eiyuu"" Kaitai","Action, Adventure, Shounen",16,4.35,AniDB,16,N/A
+" | ""Fate/Grand Order"" Memorial Movie 2023","Action, Adventure, Shounen",17,6.48,AniDB,17,N/A
+" | ""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!","Action, Adventure, Shounen",18,5.29,AniDB,18,N/A
+" | ""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai","Action, Adventure, Shounen",19,N/A,AniDB,19,N/A
+" | ""Oshi no Ko""","Action, Adventure, Shounen",20,8.57,AniDB,20,N/A
+ | ?,Romance,1,2.15,AniDB,1,N/A
+ | .hack//G.U. Returner,Romance,2,3.96,AniDB,2,N/A
+ | .hack//G.U. Trilogy,Romance,3,4.96,AniDB,3,N/A
+ | .hack//Gift,Romance,4,2.58,AniDB,4,N/A
+ | .hack//Liminality,Romance,5,4.04,AniDB,5,N/A
+ | .hack//Quantum,Romance,6,6.63,AniDB,6,N/A
+ | .hack//Roots,Romance,7,4.45,AniDB,7,N/A
+ | .hack//Sekai no Mukou ni,Romance,8,5.68,AniDB,8,N/A
+ | .hack//Sign,Romance,9,5.18,AniDB,9,N/A
+ | .hack//Tasogare no Udewa Densetsu,Romance,10,3.99,AniDB,10,N/A
+" | ""0""",Romance,11,2.81,AniDB,11,N/A
+" | ""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",Romance,12,21.03,AniDB,12,N/A
+" | ""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",Romance,13,5.24,AniDB,13,N/A
+" | ""Eiji""",Romance,14,4.44,AniDB,14,N/A
+" | ""Eikou Naki Tensai-tachi"" kara no Monogatari",Romance,15,25.03,AniDB,15,N/A
+" | ""Eiyuu"" Kaitai",Romance,16,4.35,AniDB,16,N/A
+" | ""Fate/Grand Order"" Memorial Movie 2023",Romance,17,6.48,AniDB,17,N/A
+" | ""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",Romance,18,5.29,AniDB,18,N/A
+" | ""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",Romance,19,N/A,AniDB,19,N/A
+" | ""Oshi no Ko""",Romance,20,8.57,AniDB,20,N/A
+ | ?,Ecchi,1,2.15,AniDB,1,N/A
+ | .hack//G.U. Returner,Ecchi,2,3.96,AniDB,2,N/A
+ | .hack//G.U. Trilogy,Ecchi,3,4.96,AniDB,3,N/A
+ | .hack//Gift,Ecchi,4,2.58,AniDB,4,N/A
+ | .hack//Liminality,Ecchi,5,4.04,AniDB,5,N/A
+ | .hack//Quantum,Ecchi,6,6.63,AniDB,6,N/A
+ | .hack//Roots,Ecchi,7,4.45,AniDB,7,N/A
+ | .hack//Sekai no Mukou ni,Ecchi,8,5.68,AniDB,8,N/A
+ | .hack//Sign,Ecchi,9,5.18,AniDB,9,N/A
+ | .hack//Tasogare no Udewa Densetsu,Ecchi,10,3.99,AniDB,10,N/A
+" | ""0""",Ecchi,11,2.81,AniDB,11,N/A
+" | ""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",Ecchi,12,21.03,AniDB,12,N/A
+" | ""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",Ecchi,13,5.24,AniDB,13,N/A
+" | ""Eiji""",Ecchi,14,4.44,AniDB,14,N/A
+" | ""Eikou Naki Tensai-tachi"" kara no Monogatari",Ecchi,15,25.03,AniDB,15,N/A
+" | ""Eiyuu"" Kaitai",Ecchi,16,4.35,AniDB,16,N/A
+" | ""Fate/Grand Order"" Memorial Movie 2023",Ecchi,17,6.48,AniDB,17,N/A
+" | ""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",Ecchi,18,5.29,AniDB,18,N/A
+" | ""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",Ecchi,19,N/A,AniDB,19,N/A
+" | ""Oshi no Ko""",Ecchi,20,8.57,AniDB,20,N/A
+ | ?,Comedy,1,2.15,AniDB,1,N/A
+ | .hack//G.U. Returner,Comedy,2,3.96,AniDB,2,N/A
+ | .hack//G.U. Trilogy,Comedy,3,4.96,AniDB,3,N/A
+ | .hack//Gift,Comedy,4,2.58,AniDB,4,N/A
+ | .hack//Liminality,Comedy,5,4.04,AniDB,5,N/A
+ | .hack//Quantum,Comedy,6,6.63,AniDB,6,N/A
+ | .hack//Roots,Comedy,7,4.45,AniDB,7,N/A
+ | .hack//Sekai no Mukou ni,Comedy,8,5.68,AniDB,8,N/A
+ | .hack//Sign,Comedy,9,5.18,AniDB,9,N/A
+ | .hack//Tasogare no Udewa Densetsu,Comedy,10,3.99,AniDB,10,N/A
+" | ""0""",Comedy,11,2.81,AniDB,11,N/A
+" | ""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",Comedy,12,21.03,AniDB,12,N/A
+" | ""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",Comedy,13,5.24,AniDB,13,N/A
+" | ""Eiji""",Comedy,14,4.44,AniDB,14,N/A
+" | ""Eikou Naki Tensai-tachi"" kara no Monogatari",Comedy,15,25.03,AniDB,15,N/A
+" | ""Eiyuu"" Kaitai",Comedy,16,4.35,AniDB,16,N/A
+" | ""Fate/Grand Order"" Memorial Movie 2023",Comedy,17,6.48,AniDB,17,N/A
+" | ""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",Comedy,18,5.29,AniDB,18,N/A
+" | ""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",Comedy,19,N/A,AniDB,19,N/A
+" | ""Oshi no Ko""",Comedy,20,8.57,AniDB,20,N/A

@@ -6,18 +6,16 @@ Scrapes top 20 anime from tag-based categories on AnimePlanet using search funct
 
 import tls_client
 from bs4 import BeautifulSoup
-import json
-import csv
 import time
 import re
-import os
-import hashlib
 from typing import List, Dict, Optional
 import urllib.parse
+from base_scraper import BaseScraper
 
 
-class AnimePlanetScraper:
+class AnimePlanetScraper(BaseScraper):
     def __init__(self):
+        super().__init__("animeplanet")
         # the very same headers did not work with httpx with http2 nor with requests, interesting.
         self.base_url = "https://www.anime-planet.com"
         self.search_url = "https://www.anime-planet.com/anime/all"
@@ -25,10 +23,6 @@ class AnimePlanetScraper:
             client_identifier="chrome_120",
             random_tls_extension_order=True
         )
-        
-        # Create directories if they don't exist
-        os.makedirs('html_cache', exist_ok=True)
-        os.makedirs('results', exist_ok=True)
         
         # Set headers
         self.headers = {
@@ -72,53 +66,8 @@ class AnimePlanetScraper:
             }
         }
     
-    def _get_cache_filename(self, url: str) -> str:
-        """Generate a cache filename based on URL"""
-        # Extract the path and query from URL
-        url_part = url.replace(self.base_url, '').lstrip('/')
-        # Replace all non-alphanumeric characters with underscores
-        clean_name = re.sub(r'[^a-zA-Z0-9]', '_', url_part)
-        # Remove multiple consecutive underscores and trailing underscores
-        clean_name = re.sub(r'_+', '_', clean_name).strip('_')
-        # If empty, use 'main'
-        clean_name = clean_name or 'main'
-        
-        filename = f"animeplanet_{clean_name}.html"
-        return os.path.join('html_cache', filename)
-    
-    def _load_cached_html(self, url: str) -> Optional[str]:
-        """Load HTML from cache if it exists"""
-        cache_file = self._get_cache_filename(url)
-        if os.path.exists(cache_file):
-            print(f"Loading cached HTML from {cache_file}")
-            try:
-                with open(cache_file, 'r', encoding='utf-8') as f:
-                    return f.read()
-            except Exception as e:
-                print(f"Error loading cached HTML: {e}")
-                return None
-        return None
-    
-    def _save_html_to_cache(self, url: str, html_content: str):
-        """Save HTML content to cache"""
-        cache_file = self._get_cache_filename(url)
-        try:
-            with open(cache_file, 'w', encoding='utf-8') as f:
-                f.write(html_content)
-            print(f"HTML cached to {cache_file}")
-        except Exception as e:
-            print(f"Error saving HTML to cache: {e}")
-    
-    def _get_html_content(self, url: str) -> Optional[str]:
-        """Get HTML content either from cache or by downloading"""
-        # First try to load from cache
-        cached_html = self._load_cached_html(url)
-        if cached_html:
-            return cached_html
-        
-        # If not cached, download it
-        print(f"Downloading HTML from {url}")
-        
+    def _make_request(self, url: str, timeout: int) -> Optional[str]:
+        """Make HTTP request using tls_client with retry logic"""
         # Add initial delay to avoid immediate blocking
         time.sleep(2)
         
@@ -126,13 +75,10 @@ class AnimePlanetScraper:
             # Try multiple times with increasing delays
             for attempt in range(3):
                 try:
-                    response = self.session.get(url, headers=self.headers, timeout_seconds=30)
+                    response = self.session.get(url, headers=self.headers, timeout_seconds=timeout)
                     
                     if response.status_code == 200:
-                        html_content = response.text
-                        # Save to cache for future use
-                        self._save_html_to_cache(url, html_content)
-                        return html_content
+                        return response.text
                     elif response.status_code == 403:
                         print(f"Attempt {attempt + 1}: Got 403 Forbidden, waiting {5 * (attempt + 1)} seconds...")
                         time.sleep(5 * (attempt + 1))
@@ -184,7 +130,7 @@ class AnimePlanetScraper:
         print(f"Search URL: {search_url}")
         
         # Get HTML content (either from cache or download)
-        html_content = self._get_html_content(search_url)
+        html_content = self._get_page_content(search_url)
         if not html_content:
             return []
         
@@ -298,32 +244,10 @@ class AnimePlanetScraper:
         
         return all_data
     
-    def save_to_json(self, data: Dict, filename: str = 'animeplanet_anime_data.json'):
-        """Save data to JSON file"""
-        filepath = os.path.join('results', filename)
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"Data saved to {filepath}")
-    
-    def save_to_csv(self, data: Dict, filename: str = 'animeplanet_anime_data.csv'):
-        """Save data to CSV file"""
-        all_anime = []
-        for category, anime_list in data.items():
-            for anime in anime_list:
-                all_anime.append(anime)
-        
-        if all_anime:
-            fieldnames = ['category', 'rank', 'title', 'score', 'url', 'additional_info', 'source']
-            filepath = os.path.join('results', filename)
-            with open(filepath, 'w', newline='', encoding='utf-8') as f:
-                writer = csv.DictWriter(f, fieldnames=fieldnames)
-                writer.writeheader()
-                writer.writerows(all_anime)
-            print(f"Data saved to {filepath}")
-    
     def close(self):
         """Close the TLS session"""
-        self.session.close()
+        if hasattr(self.session, 'close'):
+            self.session.close()
 
 
 def main():

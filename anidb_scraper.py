@@ -6,18 +6,16 @@ Scrapes top 20 anime from tag-based categories on AniDB using search functionali
 
 import requests
 from bs4 import BeautifulSoup
-import json
-import csv
 import time
 import re
-import os
-import hashlib
 from typing import List, Dict, Optional
 import urllib.parse
+from base_scraper import BaseScraper
 
 
-class AniDBScraper:
+class AniDBScraper(BaseScraper):
     def __init__(self):
+        super().__init__("anidb")
         self.base_url = "https://anidb.net"
         self.search_url = "https://anidb.net/search/anime"
         self.session = requests.Session()
@@ -29,10 +27,6 @@ class AniDBScraper:
             'Connection': 'keep-alive',
             'Upgrade-Insecure-Requests': '1'
         })
-        
-        # Create directories if they don't exist
-        os.makedirs('html_cache', exist_ok=True)
-        os.makedirs('results', exist_ok=True)
         
         # Tag-based categories as requested (4 categories)
         self.categories = {
@@ -58,54 +52,15 @@ class AniDBScraper:
             }
         }
     
-    def _get_cache_filename(self, url: str) -> str:
-        """Generate a cache filename based on URL"""
-        # Extract the path and query from URL
-        url_part = url.replace(self.base_url, '').lstrip('/')
-        # Replace all non-alphanumeric characters with underscores
-        clean_name = re.sub(r'[^a-zA-Z0-9]', '_', url_part)
-        # Remove multiple consecutive underscores and trailing underscores
-        clean_name = re.sub(r'_+', '_', clean_name).strip('_')
-        # If empty, use 'main'
-        clean_name = clean_name or 'main'
-        
-        filename = f"anidb_{clean_name}.html"
-        return os.path.join('html_cache', filename)
-    
-    def _get_page_content(self, url: str) -> Optional[str]:
-        """Get HTML content from URL with caching"""
-        cache_file = self._get_cache_filename(url)
-        
-        # Try to load from cache first
-        if os.path.exists(cache_file):
-            try:
-                with open(cache_file, 'r', encoding='utf-8') as f:
-                    print(f"Loading from cache: {cache_file}")
-                    return f.read()
-            except Exception as e:
-                print(f"Error reading cache file {cache_file}: {e}")
-        
-        # Download if not in cache
+    def _make_request(self, url: str, timeout: int) -> Optional[str]:
+        """Make HTTP request using requests session"""
         try:
-            print(f"Downloading: {url}")
-            response = self.session.get(url, timeout=10)
+            response = self.session.get(url, timeout=timeout)
             response.raise_for_status()
-            
-            # Save to cache
-            try:
-                with open(cache_file, 'w', encoding='utf-8') as f:
-                    f.write(response.text)
-                print(f"HTML cached to {cache_file}")
-            except Exception as e:
-                print(f"Error saving to cache: {e}")
-            
             return response.text
-            
         except Exception as e:
-            print(f"Error downloading {url}: {e}")
+            print(f"Request failed: {e}")
             return None
-
-
 
     def scrape_category(self, category_key: str, limit: int = 20) -> List[Dict]:
         """Scrape anime from a specific tag-based category"""
@@ -224,8 +179,6 @@ class AniDBScraper:
             print(f"Error parsing anime list: {e}")
             return []
     
-
-    
     def scrape_all_categories(self, limit: int = 20) -> Dict[str, List[Dict]]:
         """Scrape all available tag-based categories"""
         all_data = {}
@@ -240,42 +193,25 @@ class AniDBScraper:
         
         return all_data
     
-    def save_to_json(self, data: Dict, filename: str = 'anidb_anime_data.json'):
-        """Save data to JSON file"""
-        filepath = os.path.join('results', filename)
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        print(f"Data saved to {filepath}")
-    
-    def save_to_csv(self, data: Dict, filename: str = 'anidb_anime_data.csv'):
-        """Save data to CSV file"""
-        all_anime = []
-        for category, anime_list in data.items():
-            for anime in anime_list:
-                all_anime.append(anime)
-        
-        if all_anime:
-            fieldnames = ['category', 'rank', 'title', 'score', 'url', 'additional_info', 'source']
-            filepath = os.path.join('results', filename)
-            with open(filepath, 'w', newline='', encoding='utf-8') as f:
-                writer = csv.DictWriter(f, fieldnames=fieldnames)
-                writer.writeheader()
-                writer.writerows(all_anime)
-            print(f"Data saved to {filepath}")
+
 
 
 def main():
     scraper = AniDBScraper()
     
-    # Option 1: Scrape specific category
-    # category_data = scraper.scrape_category('action_adventure_shounen', 20)
-    
-    # Option 2: Scrape all categories
-    all_data = scraper.scrape_all_categories(20)
-    
-    # Save data
-    scraper.save_to_json(all_data, 'anidb_tag_anime.json')
-    scraper.save_to_csv(all_data, 'anidb_tag_anime.csv')
+    try:
+        # Option 1: Scrape specific category
+        # category_data = scraper.scrape_category('action_adventure_shounen', 20)
+        
+        # Option 2: Scrape all categories
+        all_data = scraper.scrape_all_categories(20)
+        
+        # Save data
+        scraper.save_to_json(all_data, 'anidb_tag_anime.json')
+        scraper.save_to_csv(all_data, 'anidb_tag_anime.csv')
+        
+    finally:
+        scraper.close()
 
 
 if __name__ == "__main__":

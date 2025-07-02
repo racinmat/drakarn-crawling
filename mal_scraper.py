@@ -7,26 +7,20 @@ Categories: Action/Adventure/Shounen, Romance, Ecchi/Erotica, Slice of Life, Com
 
 import requests
 from bs4 import BeautifulSoup
-import json
-import csv
 import time
-import os
-import hashlib
 from typing import List, Dict, Optional
 import re
+from base_scraper import BaseScraper
 
 
-class MALScraper:
+class MALScraper(BaseScraper):
     def __init__(self):
+        super().__init__("mal")
         self.base_url = "https://myanimelist.net"
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         })
-        
-        # Create directories if they don't exist
-        os.makedirs('html_cache', exist_ok=True)
-        os.makedirs('results', exist_ok=True)
         
         # Genre-based categories as requested by user
         # Using actual MAL genre IDs and proper search URLs
@@ -61,52 +55,14 @@ class MALScraper:
         # Exclude hentai (ID 12)
         self.excluded_genres = [12]  # Hentai
     
-    def _get_cache_filename(self, url: str) -> str:
-        """Generate a cache filename based on URL"""
-        # Extract the path and query from URL
-        url_part = url.replace(self.base_url, '').lstrip('/')
-        # Replace all non-alphanumeric characters with underscores
-        clean_name = re.sub(r'[^a-zA-Z0-9]', '_', url_part)
-        # Remove multiple consecutive underscores and trailing underscores
-        clean_name = re.sub(r'_+', '_', clean_name).strip('_')
-        # If empty, use 'main'
-        clean_name = clean_name or 'main'
-        
-        filename = f"mal_{clean_name}.html"
-        return os.path.join('html_cache', filename)
-    
-
-    def _get_page_content(self, url: str) -> Optional[str]:
-        """Get HTML content from URL with caching"""
-        cache_file = self._get_cache_filename(url)
-        
-        # Try to load from cache first
-        if os.path.exists(cache_file):
-            try:
-                with open(cache_file, 'r', encoding='utf-8') as f:
-                    print(f"Loading from cache: {cache_file}")
-                    return f.read()
-            except Exception as e:
-                print(f"Error reading cache file {cache_file}: {e}")
-        
-        # Download if not in cache
+    def _make_request(self, url: str, timeout: int) -> Optional[str]:
+        """Make HTTP request using requests session"""
         try:
-            print(f"Downloading: {url}")
-            response = self.session.get(url, timeout=10)
+            response = self.session.get(url, timeout=timeout)
             response.raise_for_status()
-            
-            # Save to cache
-            try:
-                with open(cache_file, 'w', encoding='utf-8') as f:
-                    f.write(response.text)
-                    print(f"Saved to cache: {cache_file}")
-            except Exception as e:
-                print(f"Error saving to cache: {e}")
-            
             return response.text
-            
         except Exception as e:
-            print(f"Error downloading {url}: {e}")
+            print(f"Request failed: {e}")
             return None
     
     def _parse_topanime_list(self, html_content: str, category_name: str, limit: int) -> List[Dict]:
@@ -300,52 +256,25 @@ class MALScraper:
             time.sleep(1)  # Be respectful to the server
         return results
     
-    def save_to_csv(self, data: Dict, filename: str = 'mal_anime_data.csv'):
-        """Save scraped data to CSV file in results directory"""
-        filepath = os.path.join('results', filename)
-        with open(filepath, 'w', newline='', encoding='utf-8') as csvfile:
-            if not data:
-                print("No data to save")
-                return
-            
-            # Get all unique fieldnames from all categories
-            fieldnames = set()
-            for category_data in data.values():
-                if category_data:
-                    for anime in category_data:
-                        fieldnames.update(anime.keys())
-            
-            fieldnames = sorted(list(fieldnames))
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-            writer.writeheader()
-            
-            # Write data from all categories
-            for category, anime_list in data.items():
-                for anime in anime_list:
-                    writer.writerow(anime)
-            
-            print(f"Data saved to {filepath}")
-    
-    def save_to_json(self, data: Dict, filename: str = 'mal_anime_data.json'):
-        """Save scraped data to JSON file in results directory"""
-        filepath = os.path.join('results', filename)
-        with open(filepath, 'w', encoding='utf-8') as jsonfile:
-            json.dump(data, jsonfile, indent=2, ensure_ascii=False)
-            print(f"Data saved to {filepath}")
+
 
 
 def main():
     scraper = MALScraper()
     
-    # Option 1: Scrape specific category
-    # category_data = scraper.scrape_category('action_adventure_shounen', 20)
-    
-    # Option 2: Scrape all genre-based categories
-    all_data = scraper.scrape_all_categories(20)
-    
-    # Save data
-    scraper.save_to_json(all_data, 'mal_genre_anime.json')
-    scraper.save_to_csv(all_data, 'mal_genre_anime.csv')
+    try:
+        # Option 1: Scrape specific category
+        # category_data = scraper.scrape_category('action_adventure_shounen', 20)
+        
+        # Option 2: Scrape all genre-based categories
+        all_data = scraper.scrape_all_categories(20)
+        
+        # Save data
+        scraper.save_to_json(all_data, 'mal_genre_anime.json')
+        scraper.save_to_csv(all_data, 'mal_genre_anime.csv')
+        
+    finally:
+        scraper.close()
 
 
 if __name__ == "__main__":
