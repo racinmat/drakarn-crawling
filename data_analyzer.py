@@ -365,13 +365,118 @@ class AnimeDataAnalyzer:
         
         print(f"Summary exported to {output_file}")
 
+    def export_per_category_csv(self):
+        """Export CSV files per category with semicolon separators for Excel"""
+        if not self.data:
+            print("No data available. Run load_data() first.")
+            return
+        
+        print(f"\n" + "="*50)
+        print("EXPORTING CATEGORY CSV FILES")
+        print("="*50)
+        
+        # Get all unique categories across all sources
+        all_categories = set()
+        for source, categories in self.data.items():
+            all_categories.update(categories.keys())
+        
+        exported_files = []
+        
+        for category in sorted(all_categories):
+            # Clean category name for filename
+            safe_category = re.sub(r'[^\w\s-]', '', category).strip()
+            safe_category = re.sub(r'\s+', '_', safe_category)
+            filename = f'results/category_{safe_category}.csv'
+            
+            # Collect all anime from this category across sources
+            category_data = []
+            
+            for source, categories in self.data.items():
+                if category in categories:
+                    for anime in categories[category]:
+                        # Add source to the anime data
+                        anime_with_source = anime.copy()
+                        anime_with_source['data_source'] = source
+                        category_data.append(anime_with_source)
+            
+            if category_data:
+                # Export to CSV with semicolon separator
+                with open(filename, 'w', newline='', encoding='utf-8') as f:
+                    writer = csv.writer(f, delimiter=';')
+                    
+                    # Write header
+                    header = ['Rank', 'Title', 'Score', 'Source', 'Category', 'URL', 'Additional_Info']
+                    writer.writerow(header)
+                    
+                    # Write data rows
+                    for anime in category_data:
+                        row = [
+                            anime.get('rank', 'N/A'),
+                            anime.get('title', 'N/A'),
+                            anime.get('score', 'N/A'),
+                            anime.get('data_source', anime.get('source', 'N/A')),
+                            anime.get('category', category),
+                            anime.get('url', 'N/A'),
+                            anime.get('additional_info', 'N/A')
+                        ]
+                        writer.writerow(row)
+                
+                exported_files.append(filename)
+                print(f"Exported {len(category_data)} entries for '{category}' to {filename}")
+        
+        print(f"\nSuccessfully exported {len(exported_files)} category CSV files with ';' separators")
+        print("Files are ready for Excel import!")
+        
+        # Also create a combined file with all categories
+        self.export_combined_categories_csv()
+        
+        return exported_files
+
+    def export_combined_categories_csv(self):
+        """Export a single CSV file with all categories combined"""
+        filename = 'results/all_categories_combined.csv'
+        
+        all_anime_data = []
+        for source, categories in self.data.items():
+            for category, anime_list in categories.items():
+                for anime in anime_list:
+                    anime_with_source = anime.copy()
+                    anime_with_source['data_source'] = source
+                    all_anime_data.append(anime_with_source)
+        
+        if all_anime_data:
+            with open(filename, 'w', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f, delimiter=';')
+                
+                # Write header
+                header = ['Rank', 'Title', 'Score', 'Source', 'Category', 'URL', 'Additional_Info']
+                writer.writerow(header)
+                
+                # Write all data
+                for anime in all_anime_data:
+                    row = [
+                        anime.get('rank', 'N/A'),
+                        anime.get('title', 'N/A'),
+                        anime.get('score', 'N/A'),
+                        anime.get('data_source', anime.get('source', 'N/A')),
+                        anime.get('category', 'N/A'),
+                        anime.get('url', 'N/A'),
+                        anime.get('additional_info', 'N/A')
+                    ]
+                    writer.writerow(row)
+            
+            print(f"Exported combined file with {len(all_anime_data)} total entries to {filename}")
+
 
 def main():
     analyzer = AnimeDataAnalyzer()
     analyzer.analyze_all()
     
-    # Also export to CSV
+    # Export to CSV (original summary)
     analyzer.export_to_csv()
+    
+    # Export per category with semicolon separators for Excel
+    analyzer.export_per_category_csv()
 
 
 if __name__ == "__main__":
