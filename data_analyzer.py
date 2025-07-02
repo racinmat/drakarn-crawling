@@ -7,10 +7,8 @@ Analyzes scraped anime data to find patterns, common titles, and interesting ins
 import json
 import csv
 from collections import defaultdict, Counter
-from typing import Dict, List, Set, Tuple
 import re
 from statistics import mean, median
-from config import ANALYSIS_CONFIG
 
 
 class AnimeDataAnalyzer:
@@ -327,7 +325,7 @@ class AnimeDataAnalyzer:
     
     def export_analysis(self):
         """Export analysis results to JSON file"""
-        output_file = 'anime_analysis_report.json'
+        output_file = 'results/anime_analysis_report.json'
         
         self.analysis_results['metadata'] = {
             'analysis_timestamp': __import__('time').strftime('%Y-%m-%d %H:%M:%S'),
@@ -340,7 +338,7 @@ class AnimeDataAnalyzer:
         
         print(f"\nAnalysis results exported to {output_file}")
     
-    def export_to_csv(self, output_file: str = 'anime_analysis_summary.csv'):
+    def export_to_csv(self, output_file: str = 'results/anime_analysis_summary.csv'):
         """Export a summary analysis to CSV"""
         if 'common_anime' not in self.analysis_results:
             print("No analysis data available. Run analyze_all() first.")
