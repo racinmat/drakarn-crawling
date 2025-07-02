@@ -4,13 +4,12 @@ Base Scraper Class
 Contains shared HTTP request and caching logic for all anime scrapers
 """
 
+import csv
+import json
 import os
 import re
-import json
-import csv
-import time
-from typing import Dict, List, Optional
 from abc import ABC, abstractmethod
+from typing import Dict, List, Optional
 
 
 class BaseScraper(ABC):
@@ -23,7 +22,12 @@ class BaseScraper(ABC):
         # Create directories if they don't exist
         os.makedirs('html_cache', exist_ok=True)
         os.makedirs('results', exist_ok=True)
-    
+
+    @property
+    @abstractmethod
+    def base_url(self):
+        pass
+
     def _get_cache_filename(self, url: str) -> str:
         """Generate a cache filename based on URL"""
         # Extract the path and query from URL

@@ -4,19 +4,20 @@ AniDB Tag-Based Anime Scraper
 Scrapes top 20 anime from tag-based categories on AniDB using search functionality
 """
 
+import re
+import time
+import urllib.parse
+from typing import List, Dict, Optional
+
 import requests
 from bs4 import BeautifulSoup
-import time
-import re
-from typing import List, Dict, Optional
-import urllib.parse
+
 from base_scraper import BaseScraper
 
 
 class AniDBScraper(BaseScraper):
     def __init__(self):
         super().__init__("anidb")
-        self.base_url = "https://anidb.net"
         self.search_url = "https://anidb.net/search/anime"
         self.session = requests.Session()
         self.session.headers.update({
@@ -51,9 +52,15 @@ class AniDBScraper(BaseScraper):
                 'description': 'Comedy anime'
             }
         }
-    
+
+    @property
+    def base_url(self):
+        return "https://anidb.net"
+
     def _make_request(self, url: str, timeout: int) -> Optional[str]:
         """Make HTTP request using requests session"""
+        # Add initial delay to avoid immediate blocking
+        time.sleep(2)
         try:
             response = self.session.get(url, timeout=timeout)
             response.raise_for_status()
@@ -187,10 +194,7 @@ class AniDBScraper(BaseScraper):
             print(f"\nScraping category: {category_key}")
             category_data = self.scrape_category(category_key, limit)
             all_data[category_key] = category_data
-            
-            # Longer delay between categories
-            time.sleep(3)
-        
+
         return all_data
     
 

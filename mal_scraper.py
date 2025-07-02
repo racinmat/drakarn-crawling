@@ -16,7 +16,6 @@ from base_scraper import BaseScraper
 class MALScraper(BaseScraper):
     def __init__(self):
         super().__init__("mal")
-        self.base_url = "https://myanimelist.net"
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
@@ -54,9 +53,15 @@ class MALScraper(BaseScraper):
         
         # Exclude hentai (ID 12)
         self.excluded_genres = [12]  # Hentai
-    
+
+    @property
+    def base_url(self):
+        return "https://myanimelist.net"
+
     def _make_request(self, url: str, timeout: int) -> Optional[str]:
         """Make HTTP request using requests session"""
+        # Add initial delay to avoid immediate blocking
+        time.sleep(2)
         try:
             response = self.session.get(url, timeout=timeout)
             response.raise_for_status()
@@ -230,9 +235,6 @@ class MALScraper(BaseScraper):
                 results = self._parse_topanime_list(html_content, category['name'], limit)
                 all_results.extend(results)
                 
-                # Add delay between requests
-                time.sleep(1)
-                
             except Exception as e:
                 print(f"Error scraping genre {genre_id}: {e}")
         
@@ -253,7 +255,6 @@ class MALScraper(BaseScraper):
         results = {}
         for category_key in self.categories.keys():
             results[category_key] = self.scrape_category(category_key, limit)
-            time.sleep(1)  # Be respectful to the server
         return results
     
 
