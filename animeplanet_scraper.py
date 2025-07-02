@@ -71,6 +71,10 @@ class AnimePlanetScraper(BaseScraper):
     def base_url(self):
         return "https://www.anime-planet.com"
 
+    @property
+    def output_file(self):
+        return "animeplanet_tag_anime"
+
     def _make_request(self, url: str, timeout: int) -> Optional[str]:
         """Make HTTP request using tls_client with retry logic"""
         # Add initial delay to avoid immediate blocking

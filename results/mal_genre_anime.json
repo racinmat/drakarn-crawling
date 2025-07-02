@@ -1,0 +1,912 @@
+{
+  "action_adventure_shounen": [
+    {
+      "title": "Sousou no Frieren",
+      "score": "9.30",
+      "rank": "1",
+      "url": "https://myanimelist.net/anime/52991/Sousou_no_Frieren",
+      "additional_info": "TV, 28 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Fullmetal Alchemist: Brotherhood",
+      "score": "9.10",
+      "rank": "2",
+      "url": "https://myanimelist.net/anime/5114/Fullmetal_Alchemist__Brotherhood",
+      "additional_info": "TV, 64 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Shingeki no Kyojin Season 3 Part 2",
+      "score": "9.05",
+      "rank": "3",
+      "url": "https://myanimelist.net/anime/38524/Shingeki_no_Kyojin_Season_3_Part_2",
+      "additional_info": "TV, 10 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Gintama°",
+      "score": "9.05",
+      "rank": "4",
+      "url": "https://myanimelist.net/anime/28977/Gintama°",
+      "additional_info": "TV, 51 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "One Piece Fan Letter",
+      "score": "9.04",
+      "rank": "5",
+      "url": "https://myanimelist.net/anime/60022/One_Piece_Fan_Letter",
+      "additional_info": "TV Special, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Gintama: The Final",
+      "score": "9.04",
+      "rank": "6",
+      "url": "https://myanimelist.net/anime/39486/Gintama__The_Final",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Hunter x Hunter (2011)",
+      "score": "9.03",
+      "rank": "7",
+      "url": "https://myanimelist.net/anime/11061/Hunter_x_Hunter_2011",
+      "additional_info": "TV, 148 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Gintama': Enchousen",
+      "score": "9.02",
+      "rank": "8",
+      "url": "https://myanimelist.net/anime/15417/Gintama__Enchousen",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Gintama'",
+      "score": "9.02",
+      "rank": "9",
+      "url": "https://myanimelist.net/anime/9969/Gintama",
+      "additional_info": "TV, 51 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Bleach: Sennen Kessen-hen",
+      "score": "8.99",
+      "rank": "10",
+      "url": "https://myanimelist.net/anime/41467/Bleach__Sennen_Kessen-hen",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Gintama.",
+      "score": "8.98",
+      "rank": "11",
+      "url": "https://myanimelist.net/anime/34096/Gintama",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Gintama",
+      "score": "8.93",
+      "rank": "12",
+      "url": "https://myanimelist.net/anime/918/Gintama",
+      "additional_info": "TV, 201 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Koe no Katachi",
+      "score": "8.93",
+      "rank": "13",
+      "url": "https://myanimelist.net/anime/28851/Koe_no_Katachi",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Code Geass: Hangyaku no Lelouch R2",
+      "score": "8.91",
+      "rank": "14",
+      "url": "https://myanimelist.net/anime/2904/Code_Geass__Hangyaku_no_Lelouch_R2",
+      "additional_info": "TV, 25 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Gintama Movie 2: Kanketsu-hen - Yorozuya yo Eien Nare",
+      "score": "8.90",
+      "rank": "15",
+      "url": "https://myanimelist.net/anime/15335/Gintama_Movie_2__Kanketsu-hen_-_Yorozuya_yo_Eien_Nare",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Gintama. Shirogane no Tamashii-hen - Kouhan-sen",
+      "score": "8.88",
+      "rank": "16",
+      "url": "https://myanimelist.net/anime/37491/Gintama_Shirogane_no_Tamashii-hen_-_Kouhan-sen",
+      "additional_info": "TV, 14 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Shingeki no Kyojin: The Final Season - Kanketsu-hen",
+      "score": "8.86",
+      "rank": "17",
+      "url": "https://myanimelist.net/anime/51535/Shingeki_no_Kyojin__The_Final_Season_-_Kanketsu-hen",
+      "additional_info": "TV Special, 2 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Kingdom 3rd Season",
+      "score": "8.83",
+      "rank": "18",
+      "url": "https://myanimelist.net/anime/40682/Kingdom_3rd_Season",
+      "additional_info": "TV, 26 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Shingeki no Kyojin Movie: Kanketsu-hen - The Last Attack",
+      "score": "8.82",
+      "rank": "19",
+      "url": "https://myanimelist.net/anime/59571/Shingeki_no_Kyojin_Movie__Kanketsu-hen_-_The_Last_Attack",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    },
+    {
+      "title": "Vinland Saga Season 2",
+      "score": "8.81",
+      "rank": "20",
+      "url": "https://myanimelist.net/anime/49387/Vinland_Saga_Season_2",
+      "additional_info": "TV, 24 episodes",
+      "source": "MyAnimeList",
+      "category": "Action, Adventure, Shounen"
+    }
+  ],
+  "romance": [
+    {
+      "title": "Kaguya-sama wa Kokurasetai: Ultra Romantic",
+      "score": "8.98",
+      "rank": "1",
+      "url": "https://myanimelist.net/anime/43608/Kaguya-sama_wa_Kokurasetai__Ultra_Romantic",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Fruits Basket: The Final",
+      "score": "8.95",
+      "rank": "2",
+      "url": "https://myanimelist.net/anime/42938/Fruits_Basket__The_Final",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Clannad: After Story",
+      "score": "8.93",
+      "rank": "3",
+      "url": "https://myanimelist.net/anime/4181/Clannad__After_Story",
+      "additional_info": "TV, 24 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Monogatari Series: Second Season",
+      "score": "8.76",
+      "rank": "4",
+      "url": "https://myanimelist.net/anime/17074/Monogatari_Series__Second_Season",
+      "additional_info": "TV, 26 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Boku no Kokoro no Yabai Yatsu 2nd Season",
+      "score": "8.74",
+      "rank": "5",
+      "url": "https://myanimelist.net/anime/55690/Boku_no_Kokoro_no_Yabai_Yatsu_2nd_Season",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Kaguya-sama wa Kokurasetai: First Kiss wa Owaranai",
+      "score": "8.73",
+      "rank": "6",
+      "url": "https://myanimelist.net/anime/52198/Kaguya-sama_wa_Kokurasetai__First_Kiss_wa_Owaranai",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen",
+      "score": "8.70",
+      "rank": "7",
+      "url": "https://myanimelist.net/anime/44/Rurouni_Kenshin__Meiji_Kenkaku_Romantan_-_Tsuioku-hen",
+      "additional_info": "OVA, 4 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Howl no Ugoku Shiro",
+      "score": "8.67",
+      "rank": "8",
+      "url": "https://myanimelist.net/anime/431/Howl_no_Ugoku_Shiro",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Shigatsu wa Kimi no Uso",
+      "score": "8.64",
+      "rank": "9",
+      "url": "https://myanimelist.net/anime/23273/Shigatsu_wa_Kimi_no_Uso",
+      "additional_info": "TV, 22 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Kaguya-sama wa Kokurasetai? Tensai-tachi no Renai Zunousen",
+      "score": "8.62",
+      "rank": "10",
+      "url": "https://myanimelist.net/anime/40591/Kaguya-sama_wa_Kokurasetai_Tensai-tachi_no_Renai_Zunousen",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai",
+      "score": "8.59",
+      "rank": "11",
+      "url": "https://myanimelist.net/anime/38329/Seishun_Buta_Yarou_wa_Yumemiru_Shoujo_no_Yume_wo_Minai",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Nana",
+      "score": "8.56",
+      "rank": "12",
+      "url": "https://myanimelist.net/anime/877/Nana",
+      "additional_info": "TV, 47 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Kimi no Suizou wo Tabetai",
+      "score": "8.55",
+      "rank": "13",
+      "url": "https://myanimelist.net/anime/36098/Kimi_no_Suizou_wo_Tabetai",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Yojouhan Shinwa Taikei",
+      "score": "8.55",
+      "rank": "14",
+      "url": "https://myanimelist.net/anime/7785/Yojouhan_Shinwa_Taikei",
+      "additional_info": "TV, 11 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Fruits Basket 2nd Season",
+      "score": "8.53",
+      "rank": "15",
+      "url": "https://myanimelist.net/anime/40417/Fruits_Basket_2nd_Season",
+      "additional_info": "TV, 25 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Bakuman. 3rd Season",
+      "score": "8.52",
+      "rank": "16",
+      "url": "https://myanimelist.net/anime/12365/Bakuman_3rd_Season",
+      "additional_info": "TV, 25 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Kara no Kyoukai Movie 5: Mujun Rasen",
+      "score": "8.51",
+      "rank": "17",
+      "url": "https://myanimelist.net/anime/4282/Kara_no_Kyoukai_Movie_5__Mujun_Rasen",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Kimi ni Todoke 3rd Season",
+      "score": "8.47",
+      "rank": "18",
+      "url": "https://myanimelist.net/anime/56538/Kimi_ni_Todoke_3rd_Season",
+      "additional_info": "ONA, 5 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Karakai Jouzu no Takagi-san Movie",
+      "score": "8.43",
+      "rank": "19",
+      "url": "https://myanimelist.net/anime/49722/Karakai_Jouzu_no_Takagi-san_Movie",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    },
+    {
+      "title": "Saenai Heroine no Sodatekata Fine",
+      "score": "8.41",
+      "rank": "20",
+      "url": "https://myanimelist.net/anime/36885/Saenai_Heroine_no_Sodatekata_Fine",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Romance"
+    }
+  ],
+  "ecchi_erotica": [
+    {
+      "title": "Mushoku Tensei: Isekai Ittara Honki Dasu Part 2",
+      "score": "8.63",
+      "rank": "1",
+      "url": "https://myanimelist.net/anime/45576/Mushoku_Tensei__Isekai_Ittara_Honki_Dasu_Part_2",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2",
+      "score": "8.41",
+      "rank": "2",
+      "url": "https://myanimelist.net/anime/55888/Mushoku_Tensei_II__Isekai_Ittara_Honki_Dasu_Part_2",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+      "score": "8.35",
+      "rank": "3",
+      "url": "https://myanimelist.net/anime/39535/Mushoku_Tensei__Isekai_Ittara_Honki_Dasu",
+      "additional_info": "TV, 11 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Mushoku Tensei II: Isekai Ittara Honki Dasu",
+      "score": "8.22",
+      "rank": "4",
+      "url": "https://myanimelist.net/anime/51179/Mushoku_Tensei_II__Isekai_Ittara_Honki_Dasu",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Nisemonogatari",
+      "score": "8.13",
+      "rank": "5",
+      "url": "https://myanimelist.net/anime/11597/Nisemonogatari",
+      "additional_info": "TV, 11 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Shokugeki no Souma",
+      "score": "8.12",
+      "rank": "6",
+      "url": "https://myanimelist.net/anime/28171/Shokugeki_no_Souma",
+      "additional_info": "TV, 24 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Tsukimonogatari",
+      "score": "8.08",
+      "rank": "7",
+      "url": "https://myanimelist.net/anime/28025/Tsukimonogatari",
+      "additional_info": "TV Special, 4 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Shokugeki no Souma: Ni no Sara",
+      "score": "8.06",
+      "rank": "8",
+      "url": "https://myanimelist.net/anime/32282/Shokugeki_no_Souma__Ni_no_Sara",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "No Game No Life",
+      "score": "8.04",
+      "rank": "9",
+      "url": "https://myanimelist.net/anime/19815/No_Game_No_Life",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Golden Boy",
+      "score": "8.04",
+      "rank": "10",
+      "url": "https://myanimelist.net/anime/268/Golden_Boy",
+      "additional_info": "OVA, 6 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Kill la Kill",
+      "score": "8.03",
+      "rank": "11",
+      "url": "https://myanimelist.net/anime/18679/Kill_la_Kill",
+      "additional_info": "TV, 24 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Ranma ½ (2024)",
+      "score": "8.01",
+      "rank": "12",
+      "url": "https://myanimelist.net/anime/59145/Ranma_½_2024",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Shokugeki no Souma: San no Sara",
+      "score": "7.98",
+      "rank": "13",
+      "url": "https://myanimelist.net/anime/35788/Shokugeki_no_Souma__San_no_Sara",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Shokugeki no Souma: San no Sara - Tootsuki Ressha-hen",
+      "score": "7.93",
+      "rank": "14",
+      "url": "https://myanimelist.net/anime/36949/Shokugeki_no_Souma__San_no_Sara_-_Tootsuki_Ressha-hen",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Nekomonogatari: Kuro",
+      "score": "7.92",
+      "rank": "15",
+      "url": "https://myanimelist.net/anime/15689/Nekomonogatari__Kuro",
+      "additional_info": "TV Special, 4 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Crayon Shin-chan",
+      "score": "7.81",
+      "rank": "16",
+      "url": "https://myanimelist.net/anime/966/Crayon_Shin-chan",
+      "additional_info": "TV, - episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Ranma ½",
+      "score": "7.77",
+      "rank": "17",
+      "url": "https://myanimelist.net/anime/210/Ranma_½",
+      "additional_info": "TV, 161 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Lupin the Third: Mine Fujiko to Iu Onna",
+      "score": "7.76",
+      "rank": "18",
+      "url": "https://myanimelist.net/anime/13203/Lupin_the_Third__Mine_Fujiko_to_Iu_Onna",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Saenai Heroine no Sodatekata ♭",
+      "score": "7.76",
+      "rank": "19",
+      "url": "https://myanimelist.net/anime/30727/Saenai_Heroine_no_Sodatekata_♭",
+      "additional_info": "TV, 11 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    },
+    {
+      "title": "Shokugeki no Souma: Shin no Sara",
+      "score": "7.74",
+      "rank": "20",
+      "url": "https://myanimelist.net/anime/39940/Shokugeki_no_Souma__Shin_no_Sara",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Ecchi, Erotica"
+    }
+  ],
+  "slice_of_life": [
+    {
+      "title": "Mushishi Zoku Shou 2nd Season",
+      "score": "8.72",
+      "rank": "1",
+      "url": "https://myanimelist.net/anime/24701/Mushishi_Zoku_Shou_2nd_Season",
+      "additional_info": "TV, 10 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Mushishi Zoku Shou",
+      "score": "8.69",
+      "rank": "2",
+      "url": "https://myanimelist.net/anime/21939/Mushishi_Zoku_Shou",
+      "additional_info": "TV, 10 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Mushishi",
+      "score": "8.65",
+      "rank": "3",
+      "url": "https://myanimelist.net/anime/457/Mushishi",
+      "additional_info": "TV, 26 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Natsume Yuujinchou Shi",
+      "score": "8.63",
+      "rank": "4",
+      "url": "https://myanimelist.net/anime/11665/Natsume_Yuujinchou_Shi",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Natsume Yuujinchou Roku",
+      "score": "8.61",
+      "rank": "5",
+      "url": "https://myanimelist.net/anime/34591/Natsume_Yuujinchou_Roku",
+      "additional_info": "TV, 11 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Mushishi Zoku Shou: Suzu no Shizuku",
+      "score": "8.58",
+      "rank": "6",
+      "url": "https://myanimelist.net/anime/28957/Mushishi_Zoku_Shou__Suzu_no_Shizuku",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Natsume Yuujinchou Shichi",
+      "score": "8.57",
+      "rank": "7",
+      "url": "https://myanimelist.net/anime/55823/Natsume_Yuujinchou_Shichi",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Natsume Yuujinchou Go",
+      "score": "8.56",
+      "rank": "8",
+      "url": "https://myanimelist.net/anime/32983/Natsume_Yuujinchou_Go",
+      "additional_info": "TV, 11 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Ookami Kodomo no Ame to Yuki",
+      "score": "8.56",
+      "rank": "9",
+      "url": "https://myanimelist.net/anime/12355/Ookami_Kodomo_no_Ame_to_Yuki",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Natsume Yuujinchou San",
+      "score": "8.56",
+      "rank": "10",
+      "url": "https://myanimelist.net/anime/10379/Natsume_Yuujinchou_San",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Zoku Natsume Yuujinchou",
+      "score": "8.53",
+      "rank": "11",
+      "url": "https://myanimelist.net/anime/5300/Zoku_Natsume_Yuujinchou",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Mushishi: Hihamukage",
+      "score": "8.52",
+      "rank": "12",
+      "url": "https://myanimelist.net/anime/21329/Mushishi__Hihamukage",
+      "additional_info": "TV Special, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Yuru Camp△ Season 2",
+      "score": "8.50",
+      "rank": "13",
+      "url": "https://myanimelist.net/anime/38474/Yuru_Camp△_Season_2",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Aria the Origination",
+      "score": "8.47",
+      "rank": "14",
+      "url": "https://myanimelist.net/anime/3297/Aria_the_Origination",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Natsume Yuujinchou Movie: Utsusemi ni Musubu",
+      "score": "8.42",
+      "rank": "15",
+      "url": "https://myanimelist.net/anime/36538/Natsume_Yuujinchou_Movie__Utsusemi_ni_Musubu",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Mushishi Zoku Shou: Odoro no Michi",
+      "score": "8.42",
+      "rank": "16",
+      "url": "https://myanimelist.net/anime/24687/Mushishi_Zoku_Shou__Odoro_no_Michi",
+      "additional_info": "TV Special, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Natsume Yuujinchou Roku Specials",
+      "score": "8.40",
+      "rank": "17",
+      "url": "https://myanimelist.net/anime/36275/Natsume_Yuujinchou_Roku_Specials",
+      "additional_info": "Special, 2 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Yuru Camp△ Movie",
+      "score": "8.38",
+      "rank": "18",
+      "url": "https://myanimelist.net/anime/38475/Yuru_Camp△_Movie",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Barakamon",
+      "score": "8.37",
+      "rank": "19",
+      "url": "https://myanimelist.net/anime/22789/Barakamon",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    },
+    {
+      "title": "Non Non Biyori Nonstop",
+      "score": "8.35",
+      "rank": "20",
+      "url": "https://myanimelist.net/anime/39808/Non_Non_Biyori_Nonstop",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Slice of Life"
+    }
+  ],
+  "comedy": [
+    {
+      "title": "Gintama°",
+      "score": "9.05",
+      "rank": "1",
+      "url": "https://myanimelist.net/anime/28977/Gintama°",
+      "additional_info": "TV, 51 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Gintama: The Final",
+      "score": "9.04",
+      "rank": "2",
+      "url": "https://myanimelist.net/anime/39486/Gintama__The_Final",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Gintama': Enchousen",
+      "score": "9.02",
+      "rank": "3",
+      "url": "https://myanimelist.net/anime/15417/Gintama__Enchousen",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Gintama'",
+      "score": "9.02",
+      "rank": "4",
+      "url": "https://myanimelist.net/anime/9969/Gintama",
+      "additional_info": "TV, 51 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Kaguya-sama wa Kokurasetai: Ultra Romantic",
+      "score": "8.98",
+      "rank": "5",
+      "url": "https://myanimelist.net/anime/43608/Kaguya-sama_wa_Kokurasetai__Ultra_Romantic",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Gintama.",
+      "score": "8.98",
+      "rank": "6",
+      "url": "https://myanimelist.net/anime/34096/Gintama",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Gintama",
+      "score": "8.93",
+      "rank": "7",
+      "url": "https://myanimelist.net/anime/918/Gintama",
+      "additional_info": "TV, 201 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Gintama Movie 2: Kanketsu-hen - Yorozuya yo Eien Nare",
+      "score": "8.90",
+      "rank": "8",
+      "url": "https://myanimelist.net/anime/15335/Gintama_Movie_2__Kanketsu-hen_-_Yorozuya_yo_Eien_Nare",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Gintama. Shirogane no Tamashii-hen - Kouhan-sen",
+      "score": "8.88",
+      "rank": "9",
+      "url": "https://myanimelist.net/anime/37491/Gintama_Shirogane_no_Tamashii-hen_-_Kouhan-sen",
+      "additional_info": "TV, 14 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Owarimonogatari 2nd Season",
+      "score": "8.86",
+      "rank": "10",
+      "url": "https://myanimelist.net/anime/35247/Owarimonogatari_2nd_Season",
+      "additional_info": "TV Special, 7 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Gintama. Shirogane no Tamashii-hen",
+      "score": "8.81",
+      "rank": "11",
+      "url": "https://myanimelist.net/anime/36838/Gintama_Shirogane_no_Tamashii-hen",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Mob Psycho 100 II",
+      "score": "8.78",
+      "rank": "12",
+      "url": "https://myanimelist.net/anime/37510/Mob_Psycho_100_II",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Monogatari Series: Second Season",
+      "score": "8.76",
+      "rank": "13",
+      "url": "https://myanimelist.net/anime/17074/Monogatari_Series__Second_Season",
+      "additional_info": "TV, 26 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Bocchi the Rock!",
+      "score": "8.75",
+      "rank": "14",
+      "url": "https://myanimelist.net/anime/47917/Bocchi_the_Rock",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Boku no Kokoro no Yabai Yatsu 2nd Season",
+      "score": "8.74",
+      "rank": "15",
+      "url": "https://myanimelist.net/anime/55690/Boku_no_Kokoro_no_Yabai_Yatsu_2nd_Season",
+      "additional_info": "TV, 13 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Kaguya-sama wa Kokurasetai: First Kiss wa Owaranai",
+      "score": "8.73",
+      "rank": "16",
+      "url": "https://myanimelist.net/anime/52198/Kaguya-sama_wa_Kokurasetai__First_Kiss_wa_Owaranai",
+      "additional_info": "Movie, 1 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Mob Psycho 100 III",
+      "score": "8.71",
+      "rank": "17",
+      "url": "https://myanimelist.net/anime/50172/Mob_Psycho_100_III",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Great Teacher Onizuka",
+      "score": "8.68",
+      "rank": "18",
+      "url": "https://myanimelist.net/anime/245/Great_Teacher_Onizuka",
+      "additional_info": "TV, 43 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Monogatari Series: Off & Monster Season",
+      "score": "8.67",
+      "rank": "19",
+      "url": "https://myanimelist.net/anime/57864/Monogatari_Series__Off___Monster_Season",
+      "additional_info": "ONA, 14 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    },
+    {
+      "title": "Kaguya-sama wa Kokurasetai? Tensai-tachi no Renai Zunousen",
+      "score": "8.62",
+      "rank": "20",
+      "url": "https://myanimelist.net/anime/40591/Kaguya-sama_wa_Kokurasetai_Tensai-tachi_no_Renai_Zunousen",
+      "additional_info": "TV, 12 episodes",
+      "source": "MyAnimeList",
+      "category": "Comedy"
+    }
+  ]
+}

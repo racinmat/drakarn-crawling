@@ -29,8 +29,8 @@ def run_all_scrapers(limit: int = 20):
         mal_scraper = MALScraper()
         mal_data = mal_scraper.scrape_all_categories(limit)
         all_results['myanimelist'] = mal_data
-        mal_scraper.save_to_json(mal_data, 'mal_top_anime.json')
-        mal_scraper.save_to_csv(mal_data, 'mal_top_anime.csv')
+        mal_scraper.save_to_json(mal_data)
+        mal_scraper.save_to_csv(mal_data)
         print("MyAnimeList scraping completed successfully!")
     except Exception as e:
         print(f"Error scraping MyAnimeList: {e}")
@@ -47,8 +47,8 @@ def run_all_scrapers(limit: int = 20):
         anidb_scraper = AniDBScraper()
         anidb_data = anidb_scraper.scrape_all_categories(limit)
         all_results['anidb'] = anidb_data
-        anidb_scraper.save_to_json(anidb_data, 'anidb_top_anime.json')
-        anidb_scraper.save_to_csv(anidb_data, 'anidb_top_anime.csv')
+        anidb_scraper.save_to_json(anidb_data)
+        anidb_scraper.save_to_csv(anidb_data)
         print("AniDB scraping completed successfully!")
     except Exception as e:
         print(f"Error scraping AniDB: {e}")
@@ -65,8 +65,8 @@ def run_all_scrapers(limit: int = 20):
         animeplanet_scraper = AnimePlanetScraper()
         animeplanet_data = animeplanet_scraper.scrape_all_categories(limit)
         all_results['animeplanet'] = animeplanet_data
-        animeplanet_scraper.save_to_json(animeplanet_data, 'animeplanet_top_anime.json')
-        animeplanet_scraper.save_to_csv(animeplanet_data, 'animeplanet_top_anime.csv')
+        animeplanet_scraper.save_to_json(animeplanet_data)
+        animeplanet_scraper.save_to_csv(animeplanet_data)
         animeplanet_scraper.close()
         print("AnimePlanet scraping completed successfully!")
     except Exception as e:

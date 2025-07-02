@@ -28,6 +28,11 @@ class BaseScraper(ABC):
     def base_url(self):
         pass
 
+    @property
+    @abstractmethod
+    def output_file(self):
+        pass
+
     def _get_cache_filename(self, url: str) -> str:
         """Generate a cache filename based on URL"""
         # Extract the path and query from URL
@@ -83,14 +88,14 @@ class BaseScraper(ABC):
         """Make HTTP request - to be implemented by child classes"""
         pass
     
-    def save_to_json(self, data: Dict, filename: str):
+    def save_to_json(self, data: Dict):
         """Save data to JSON file in results directory"""
-        filepath = os.path.join('results', filename)
+        filepath = os.path.join('results', f"{self.output_file}.json")
         with open(filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
         print(f"Data saved to {filepath}")
     
-    def save_to_csv(self, data: Dict, filename: str, fieldnames: List[str] = None):
+    def save_to_csv(self, data: Dict, fieldnames: List[str] = None):
         """Save data to CSV file in results directory"""
         # Flatten all anime data from all categories
         all_anime = []
@@ -109,7 +114,7 @@ class BaseScraper(ABC):
                 fieldnames_set.update(anime.keys())
             fieldnames = sorted(list(fieldnames_set))
         
-        filepath = os.path.join('results', filename)
+        filepath = os.path.join('results', f"{self.output_file}.csv")
         with open(filepath, 'w', newline='', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()

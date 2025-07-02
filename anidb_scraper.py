@@ -69,6 +69,10 @@ class AniDBScraper(BaseScraper):
     def base_url(self):
         return "https://anidb.net"
 
+    @property
+    def output_file(self):
+        return "anidb_tag_anime"
+
     def _make_request(self, url: str, timeout: int) -> Optional[str]:
         """Make HTTP request using requests session"""
         # Add initial delay to avoid immediate blocking

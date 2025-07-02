@@ -22,20 +22,20 @@
     }
   },
   "common_anime": {
-    "total_common": 13,
+    "total_common": 19,
     "top_common": {
       "gintama": {
         "sources": [
           "animeplanet",
-          "myanimelist",
-          "anidb"
+          "anidb",
+          "myanimelist"
         ],
         "source_count": 3,
         "data": [
           {
             "source": "myanimelist",
             "category": "action_adventure_shounen",
-            "rank": "5",
+            "rank": "4",
             "score": "9.05",
             "original_title": "Gintama°"
           },
@@ -49,126 +49,42 @@
           {
             "source": "myanimelist",
             "category": "action_adventure_shounen",
-            "rank": "13",
+            "rank": "11",
             "score": "8.98",
             "original_title": "Gintama."
           },
           {
             "source": "myanimelist",
             "category": "action_adventure_shounen",
-            "rank": "17",
-            "score": "8.93",
-            "original_title": "Gintama"
-          },
-          {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "5",
-            "score": "9.05",
-            "original_title": "Gintama°"
-          },
-          {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "9",
-            "score": "9.02",
-            "original_title": "Gintama'"
-          },
-          {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "13",
-            "score": "8.98",
-            "original_title": "Gintama."
-          },
-          {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "17",
-            "score": "8.93",
-            "original_title": "Gintama"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "5",
-            "score": "9.05",
-            "original_title": "Gintama°"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "9",
-            "score": "9.02",
-            "original_title": "Gintama'"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "13",
-            "score": "8.98",
-            "original_title": "Gintama."
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "17",
-            "score": "8.93",
-            "original_title": "Gintama"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "5",
-            "score": "9.05",
-            "original_title": "Gintama°"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "9",
-            "score": "9.02",
-            "original_title": "Gintama'"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "13",
-            "score": "8.98",
-            "original_title": "Gintama."
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "17",
+            "rank": "12",
             "score": "8.93",
             "original_title": "Gintama"
           },
           {
             "source": "myanimelist",
             "category": "comedy",
-            "rank": "5",
+            "rank": "1",
             "score": "9.05",
             "original_title": "Gintama°"
           },
           {
             "source": "myanimelist",
             "category": "comedy",
-            "rank": "9",
+            "rank": "4",
             "score": "9.02",
             "original_title": "Gintama'"
           },
           {
             "source": "myanimelist",
             "category": "comedy",
-            "rank": "13",
+            "rank": "6",
             "score": "8.98",
             "original_title": "Gintama."
           },
           {
             "source": "myanimelist",
             "category": "comedy",
-            "rank": "17",
+            "rank": "7",
             "score": "8.93",
             "original_title": "Gintama"
           },
@@ -226,43 +142,15 @@
       "hunter x hunter 2011": {
         "sources": [
           "animeplanet",
-          "myanimelist",
-          "anidb"
+          "anidb",
+          "myanimelist"
         ],
         "source_count": 3,
         "data": [
           {
             "source": "myanimelist",
             "category": "action_adventure_shounen",
-            "rank": "8",
-            "score": "9.03",
-            "original_title": "Hunter x Hunter (2011)"
-          },
-          {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "8",
-            "score": "9.03",
-            "original_title": "Hunter x Hunter (2011)"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "8",
-            "score": "9.03",
-            "original_title": "Hunter x Hunter (2011)"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "8",
-            "score": "9.03",
-            "original_title": "Hunter x Hunter (2011)"
-          },
-          {
-            "source": "myanimelist",
-            "category": "comedy",
-            "rank": "8",
+            "rank": "7",
             "score": "9.03",
             "original_title": "Hunter x Hunter (2011)"
           },
@@ -299,43 +187,15 @@
       "clannad after story": {
         "sources": [
           "animeplanet",
-          "myanimelist",
-          "anidb"
+          "anidb",
+          "myanimelist"
         ],
         "source_count": 3,
         "data": [
           {
             "source": "myanimelist",
-            "category": "action_adventure_shounen",
-            "rank": "16",
-            "score": "8.93",
-            "original_title": "Clannad: After Story"
-          },
-          {
-            "source": "myanimelist",
             "category": "romance",
-            "rank": "16",
-            "score": "8.93",
-            "original_title": "Clannad: After Story"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "16",
-            "score": "8.93",
-            "original_title": "Clannad: After Story"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "16",
-            "score": "8.93",
-            "original_title": "Clannad: After Story"
-          },
-          {
-            "source": "myanimelist",
-            "category": "comedy",
-            "rank": "16",
+            "rank": "3",
             "score": "8.93",
             "original_title": "Clannad: After Story"
           },
@@ -362,44 +222,68 @@
           }
         ]
       },
+      "monogatari series second season": {
+        "sources": [
+          "animeplanet",
+          "anidb",
+          "myanimelist"
+        ],
+        "source_count": 3,
+        "data": [
+          {
+            "source": "myanimelist",
+            "category": "romance",
+            "rank": "4",
+            "score": "8.76",
+            "original_title": "Monogatari Series: Second Season"
+          },
+          {
+            "source": "myanimelist",
+            "category": "comedy",
+            "rank": "13",
+            "score": "8.76",
+            "original_title": "Monogatari Series: Second Season"
+          },
+          {
+            "source": "anidb",
+            "category": "romance",
+            "rank": "20",
+            "score": "9.03",
+            "original_title": "Monogatari Series: Second Season"
+          },
+          {
+            "source": "anidb",
+            "category": "ecchi",
+            "rank": "6",
+            "score": "9.03",
+            "original_title": "Monogatari Series: Second Season"
+          },
+          {
+            "source": "animeplanet",
+            "category": "romance",
+            "rank": "16",
+            "score": "4.3",
+            "original_title": "Monogatari Series: Second Season"
+          },
+          {
+            "source": "animeplanet",
+            "category": "ecchi",
+            "rank": "2",
+            "score": "4.3",
+            "original_title": "Monogatari Series: Second Season"
+          }
+        ]
+      },
       "sousou no frieren": {
         "sources": [
-          "myanimelist",
-          "anidb"
+          "anidb",
+          "myanimelist"
         ],
         "source_count": 2,
         "data": [
           {
             "source": "myanimelist",
             "category": "action_adventure_shounen",
-            "rank": "1",
-            "score": "9.30",
-            "original_title": "Sousou no Frieren"
-          },
-          {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "1",
-            "score": "9.30",
-            "original_title": "Sousou no Frieren"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "1",
-            "score": "9.30",
-            "original_title": "Sousou no Frieren"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "1",
-            "score": "9.30",
-            "original_title": "Sousou no Frieren"
-          },
-          {
-            "source": "myanimelist",
-            "category": "comedy",
             "rank": "1",
             "score": "9.30",
             "original_title": "Sousou no Frieren"
@@ -442,148 +326,11 @@
             "original_title": "Fullmetal Alchemist: Brotherhood"
           },
           {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "2",
-            "score": "9.10",
-            "original_title": "Fullmetal Alchemist: Brotherhood"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "2",
-            "score": "9.10",
-            "original_title": "Fullmetal Alchemist: Brotherhood"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "2",
-            "score": "9.10",
-            "original_title": "Fullmetal Alchemist: Brotherhood"
-          },
-          {
-            "source": "myanimelist",
-            "category": "comedy",
-            "rank": "2",
-            "score": "9.10",
-            "original_title": "Fullmetal Alchemist: Brotherhood"
-          },
-          {
             "source": "animeplanet",
             "category": "action_adventure_shounen",
             "rank": "1",
             "score": "4.6",
             "original_title": "Fullmetal Alchemist: Brotherhood"
-          }
-        ]
-      },
-      "steinsgate": {
-        "sources": [
-          "myanimelist",
-          "anidb"
-        ],
-        "source_count": 2,
-        "data": [
-          {
-            "source": "myanimelist",
-            "category": "action_adventure_shounen",
-            "rank": "3",
-            "score": "9.07",
-            "original_title": "Steins;Gate"
-          },
-          {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "3",
-            "score": "9.07",
-            "original_title": "Steins;Gate"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "3",
-            "score": "9.07",
-            "original_title": "Steins;Gate"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "3",
-            "score": "9.07",
-            "original_title": "Steins;Gate"
-          },
-          {
-            "source": "myanimelist",
-            "category": "comedy",
-            "rank": "3",
-            "score": "9.07",
-            "original_title": "Steins;Gate"
-          },
-          {
-            "source": "anidb",
-            "category": "romance",
-            "rank": "5",
-            "score": "9.47",
-            "original_title": "Steins;Gate"
-          },
-          {
-            "source": "anidb",
-            "category": "comedy",
-            "rank": "5",
-            "score": "9.47",
-            "original_title": "Steins;Gate"
-          }
-        ]
-      },
-      "gintama the final": {
-        "sources": [
-          "myanimelist",
-          "anidb"
-        ],
-        "source_count": 2,
-        "data": [
-          {
-            "source": "myanimelist",
-            "category": "action_adventure_shounen",
-            "rank": "6",
-            "score": "9.04",
-            "original_title": "Gintama: The Final"
-          },
-          {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "6",
-            "score": "9.04",
-            "original_title": "Gintama: The Final"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "6",
-            "score": "9.04",
-            "original_title": "Gintama: The Final"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "6",
-            "score": "9.04",
-            "original_title": "Gintama: The Final"
-          },
-          {
-            "source": "myanimelist",
-            "category": "comedy",
-            "rank": "6",
-            "score": "9.04",
-            "original_title": "Gintama: The Final"
-          },
-          {
-            "source": "anidb",
-            "category": "comedy",
-            "rank": "10",
-            "score": "9.38",
-            "original_title": "Gintama: The Final"
           }
         ]
       },
@@ -597,35 +344,7 @@
           {
             "source": "myanimelist",
             "category": "action_adventure_shounen",
-            "rank": "7",
-            "score": "9.04",
-            "original_title": "One Piece Fan Letter"
-          },
-          {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "7",
-            "score": "9.04",
-            "original_title": "One Piece Fan Letter"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "7",
-            "score": "9.04",
-            "original_title": "One Piece Fan Letter"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "7",
-            "score": "9.04",
-            "original_title": "One Piece Fan Letter"
-          },
-          {
-            "source": "myanimelist",
-            "category": "comedy",
-            "rank": "7",
+            "rank": "5",
             "score": "9.04",
             "original_title": "One Piece Fan Letter"
           },
@@ -645,6 +364,36 @@
           }
         ]
       },
+      "gintama the final": {
+        "sources": [
+          "anidb",
+          "myanimelist"
+        ],
+        "source_count": 2,
+        "data": [
+          {
+            "source": "myanimelist",
+            "category": "action_adventure_shounen",
+            "rank": "6",
+            "score": "9.04",
+            "original_title": "Gintama: The Final"
+          },
+          {
+            "source": "myanimelist",
+            "category": "comedy",
+            "rank": "2",
+            "score": "9.04",
+            "original_title": "Gintama: The Final"
+          },
+          {
+            "source": "anidb",
+            "category": "comedy",
+            "rank": "10",
+            "score": "9.38",
+            "original_title": "Gintama: The Final"
+          }
+        ]
+      },
       "gintama enchousen": {
         "sources": [
           "animeplanet",
@@ -655,35 +404,14 @@
           {
             "source": "myanimelist",
             "category": "action_adventure_shounen",
-            "rank": "10",
-            "score": "9.02",
-            "original_title": "Gintama': Enchousen"
-          },
-          {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "10",
-            "score": "9.02",
-            "original_title": "Gintama': Enchousen"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "10",
-            "score": "9.02",
-            "original_title": "Gintama': Enchousen"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "10",
+            "rank": "8",
             "score": "9.02",
             "original_title": "Gintama': Enchousen"
           },
           {
             "source": "myanimelist",
             "category": "comedy",
-            "rank": "10",
+            "rank": "3",
             "score": "9.02",
             "original_title": "Gintama': Enchousen"
           },
@@ -696,147 +424,17 @@
           }
         ]
       },
-      "ginga eiyuu densetsu": {
-        "sources": [
-          "myanimelist",
-          "anidb"
-        ],
-        "source_count": 2,
-        "data": [
-          {
-            "source": "myanimelist",
-            "category": "action_adventure_shounen",
-            "rank": "11",
-            "score": "9.01",
-            "original_title": "Ginga Eiyuu Densetsu"
-          },
-          {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "11",
-            "score": "9.01",
-            "original_title": "Ginga Eiyuu Densetsu"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "11",
-            "score": "9.01",
-            "original_title": "Ginga Eiyuu Densetsu"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "11",
-            "score": "9.01",
-            "original_title": "Ginga Eiyuu Densetsu"
-          },
-          {
-            "source": "myanimelist",
-            "category": "comedy",
-            "rank": "11",
-            "score": "9.01",
-            "original_title": "Ginga Eiyuu Densetsu"
-          },
-          {
-            "source": "anidb",
-            "category": "romance",
-            "rank": "1",
-            "score": "9.73",
-            "original_title": "Ginga Eiyuu Densetsu"
-          }
-        ]
-      },
-      "fruits basket the final": {
-        "sources": [
-          "myanimelist",
-          "anidb"
-        ],
-        "source_count": 2,
-        "data": [
-          {
-            "source": "myanimelist",
-            "category": "action_adventure_shounen",
-            "rank": "15",
-            "score": "8.95",
-            "original_title": "Fruits Basket: The Final"
-          },
-          {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "15",
-            "score": "8.95",
-            "original_title": "Fruits Basket: The Final"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "15",
-            "score": "8.95",
-            "original_title": "Fruits Basket: The Final"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "15",
-            "score": "8.95",
-            "original_title": "Fruits Basket: The Final"
-          },
-          {
-            "source": "myanimelist",
-            "category": "comedy",
-            "rank": "15",
-            "score": "8.95",
-            "original_title": "Fruits Basket: The Final"
-          },
-          {
-            "source": "anidb",
-            "category": "romance",
-            "rank": "10",
-            "score": "9.22",
-            "original_title": "Fruits Basket the Final"
-          }
-        ]
-      },
       "code geass hangyaku no lelouch r2": {
         "sources": [
-          "myanimelist",
-          "anidb"
+          "anidb",
+          "myanimelist"
         ],
         "source_count": 2,
         "data": [
           {
             "source": "myanimelist",
             "category": "action_adventure_shounen",
-            "rank": "19",
-            "score": "8.91",
-            "original_title": "Code Geass: Hangyaku no Lelouch R2"
-          },
-          {
-            "source": "myanimelist",
-            "category": "romance",
-            "rank": "19",
-            "score": "8.91",
-            "original_title": "Code Geass: Hangyaku no Lelouch R2"
-          },
-          {
-            "source": "myanimelist",
-            "category": "ecchi_erotica",
-            "rank": "19",
-            "score": "8.91",
-            "original_title": "Code Geass: Hangyaku no Lelouch R2"
-          },
-          {
-            "source": "myanimelist",
-            "category": "slice_of_life",
-            "rank": "19",
-            "score": "8.91",
-            "original_title": "Code Geass: Hangyaku no Lelouch R2"
-          },
-          {
-            "source": "myanimelist",
-            "category": "comedy",
-            "rank": "19",
+            "rank": "14",
             "score": "8.91",
             "original_title": "Code Geass: Hangyaku no Lelouch R2"
           },
@@ -849,40 +447,224 @@
           }
         ]
       },
-      "monogatari series second season": {
+      "fruits basket the final": {
         "sources": [
-          "animeplanet",
-          "anidb"
+          "anidb",
+          "myanimelist"
         ],
         "source_count": 2,
         "data": [
           {
-            "source": "anidb",
+            "source": "myanimelist",
             "category": "romance",
-            "rank": "20",
-            "score": "9.03",
-            "original_title": "Monogatari Series: Second Season"
-          },
-          {
-            "source": "anidb",
-            "category": "ecchi",
-            "rank": "6",
-            "score": "9.03",
-            "original_title": "Monogatari Series: Second Season"
-          },
-          {
-            "source": "animeplanet",
-            "category": "romance",
-            "rank": "16",
-            "score": "4.3",
-            "original_title": "Monogatari Series: Second Season"
-          },
-          {
-            "source": "animeplanet",
-            "category": "ecchi",
             "rank": "2",
+            "score": "8.95",
+            "original_title": "Fruits Basket: The Final"
+          },
+          {
+            "source": "anidb",
+            "category": "romance",
+            "rank": "10",
+            "score": "9.22",
+            "original_title": "Fruits Basket the Final"
+          }
+        ]
+      },
+      "fruits basket 2nd season": {
+        "sources": [
+          "animeplanet",
+          "myanimelist"
+        ],
+        "source_count": 2,
+        "data": [
+          {
+            "source": "myanimelist",
+            "category": "romance",
+            "rank": "15",
+            "score": "8.53",
+            "original_title": "Fruits Basket 2nd Season"
+          },
+          {
+            "source": "animeplanet",
+            "category": "romance",
+            "rank": "10",
+            "score": "4.4",
+            "original_title": "Fruits Basket 2nd Season"
+          },
+          {
+            "source": "animeplanet",
+            "category": "comedy",
+            "rank": "15",
+            "score": "4.4",
+            "original_title": "Fruits Basket 2nd Season"
+          }
+        ]
+      },
+      "no game no life": {
+        "sources": [
+          "animeplanet",
+          "myanimelist"
+        ],
+        "source_count": 2,
+        "data": [
+          {
+            "source": "myanimelist",
+            "category": "ecchi_erotica",
+            "rank": "9",
+            "score": "8.04",
+            "original_title": "No Game No Life"
+          },
+          {
+            "source": "animeplanet",
+            "category": "ecchi",
+            "rank": "9",
+            "score": "4.2",
+            "original_title": "No Game No Life"
+          }
+        ]
+      },
+      "aria the origination": {
+        "sources": [
+          "anidb",
+          "myanimelist"
+        ],
+        "source_count": 2,
+        "data": [
+          {
+            "source": "myanimelist",
+            "category": "slice_of_life",
+            "rank": "14",
+            "score": "8.47",
+            "original_title": "Aria the Origination"
+          },
+          {
+            "source": "anidb",
+            "category": "romance",
+            "rank": "8",
+            "score": "9.24",
+            "original_title": "Aria the Origination"
+          },
+          {
+            "source": "anidb",
+            "category": "comedy",
+            "rank": "13",
+            "score": "9.24",
+            "original_title": "Aria the Origination"
+          }
+        ]
+      },
+      "barakamon": {
+        "sources": [
+          "animeplanet",
+          "myanimelist"
+        ],
+        "source_count": 2,
+        "data": [
+          {
+            "source": "myanimelist",
+            "category": "slice_of_life",
+            "rank": "19",
+            "score": "8.37",
+            "original_title": "Barakamon"
+          },
+          {
+            "source": "animeplanet",
+            "category": "slice_of_life",
+            "rank": "17",
             "score": "4.3",
-            "original_title": "Monogatari Series: Second Season"
+            "original_title": "Barakamon"
+          }
+        ]
+      },
+      "gintama shirogane no tamashiihen": {
+        "sources": [
+          "animeplanet",
+          "myanimelist"
+        ],
+        "source_count": 2,
+        "data": [
+          {
+            "source": "myanimelist",
+            "category": "comedy",
+            "rank": "11",
+            "score": "8.81",
+            "original_title": "Gintama. Shirogane no Tamashii-hen"
+          },
+          {
+            "source": "animeplanet",
+            "category": "comedy",
+            "rank": "11",
+            "score": "4.4",
+            "original_title": "Gintama: Shirogane no Tamashii-hen"
+          }
+        ]
+      },
+      "mob psycho 100 ii": {
+        "sources": [
+          "animeplanet",
+          "myanimelist"
+        ],
+        "source_count": 2,
+        "data": [
+          {
+            "source": "myanimelist",
+            "category": "comedy",
+            "rank": "12",
+            "score": "8.78",
+            "original_title": "Mob Psycho 100 II"
+          },
+          {
+            "source": "animeplanet",
+            "category": "comedy",
+            "rank": "7",
+            "score": "4.4",
+            "original_title": "Mob Psycho 100 II"
+          }
+        ]
+      },
+      "bocchi the rock": {
+        "sources": [
+          "animeplanet",
+          "myanimelist"
+        ],
+        "source_count": 2,
+        "data": [
+          {
+            "source": "myanimelist",
+            "category": "comedy",
+            "rank": "14",
+            "score": "8.75",
+            "original_title": "Bocchi the Rock!"
+          },
+          {
+            "source": "animeplanet",
+            "category": "slice_of_life",
+            "rank": "11",
+            "score": "4.3",
+            "original_title": "Bocchi the Rock!"
+          }
+        ]
+      },
+      "monogatari series off  monster season": {
+        "sources": [
+          "anidb",
+          "myanimelist"
+        ],
+        "source_count": 2,
+        "data": [
+          {
+            "source": "myanimelist",
+            "category": "comedy",
+            "rank": "19",
+            "score": "8.67",
+            "original_title": "Monogatari Series: Off & Monster Season"
+          },
+          {
+            "source": "anidb",
+            "category": "ecchi",
+            "rank": "14",
+            "score": "8.81",
+            "original_title": "Monogatari Series: Off & Monster Season"
           }
         ]
       }
@@ -890,12 +672,12 @@
   },
   "score_analysis": {
     "total_scored_anime": 280,
-    "average_score": 7.367071428571428,
-    "median_score": 8.93,
+    "average_score": 7.221964285714286,
+    "median_score": 8.47,
     "min_score": 4.1,
     "max_score": 9.73,
     "source_averages": {
-      "myanimelist": 9.0115,
+      "myanimelist": 8.6052,
       "anidb": 9.047875,
       "animeplanet": 4.378
     }
@@ -934,9 +716,9 @@
   "source_comparison": {
     "myanimelist": {
       "total_entries": 100,
-      "unique_titles": 17,
+      "unique_titles": 84,
       "categories_with_data": 5,
-      "duplicate_ratio": 0.83
+      "duplicate_ratio": 0.16
     },
     "anidb": {
       "total_entries": 80,
@@ -954,66 +736,66 @@
   "title_analysis": {
     "statistics": {
       "total_titles": 280,
-      "average_length": 24.142857142857142,
-      "median_length": 22.0,
+      "average_length": 26.535714285714285,
+      "median_length": 24.0,
       "min_length": 3,
       "max_length": 75
     },
     "common_words": {
-      "no": 69,
-      "gintama": 48,
-      "season": 45,
-      "the": 42,
-      "hunter": 24,
-      "final": 20,
-      "3": 17,
+      "no": 81,
+      "season": 50,
+      "the": 40,
+      "gintama": 35,
+      "hen": 17,
       "2nd": 17,
-      "2": 14,
+      "2": 16,
+      "hunter": 16,
+      "final": 14,
       "s": 14,
-      "x": 13,
-      "hen": 12,
+      "wa": 13,
+      "natsume": 13,
       "of": 12,
-      "shingeki": 10,
-      "kyojin": 10,
-      "frieren": 9,
-      "part": 9,
-      "one": 9,
-      "2011": 9,
-      "kaguya": 9,
-      "sama": 9,
-      "fruits": 9,
-      "basket": 9,
-      "sousou": 8,
-      "piece": 8,
-      "wa": 8,
-      "clannad": 8,
-      "after": 8,
-      "story": 8,
-      "steins": 7,
-      "gate": 7,
-      "fan": 7,
-      "letter": 7,
-      "ultra": 7,
-      "romantic": 7,
-      "lion": 7,
+      "kaguya": 10,
+      "sama": 10,
+      "x": 9,
+      "movie": 9,
+      "shingeki": 8,
+      "kyojin": 8,
+      "3": 8,
+      "monogatari": 8,
+      "series": 8,
+      "yuujinchou": 8,
+      "part": 7,
+      "second": 7,
       "blessing": 7,
-      "fullmetal": 6,
-      "alchemist": 6,
-      "brotherhood": 6,
-      "enchousen": 6,
-      "ginga": 6,
-      "eiyuu": 6,
-      "densetsu": 6,
-      "bleach": 6,
-      "koe": 6,
-      "katachi": 6,
-      "code": 6,
-      "geass": 6,
-      "hangyaku": 6
+      "tamashii": 6,
+      "kokurasetai": 6,
+      "fruits": 6,
+      "basket": 6,
+      "kimi": 6,
+      "ni": 6,
+      "ii": 6,
+      "shokugeki": 6,
+      "souma": 6,
+      "mushishi": 6,
+      "zoku": 6,
+      "owarimonogatari": 6,
+      "on": 6,
+      "frieren": 5,
+      "one": 5,
+      "2011": 5,
+      "kanketsu": 5,
+      "shirogane": 5,
+      "mushoku": 5,
+      "tensei": 5,
+      "sara": 5,
+      "kimetsu": 5,
+      "yaiba": 5,
+      "2017": 5
     }
   },
   "metadata": {
-    "analysis_timestamp": "2025-07-02 10:59:35",
+    "analysis_timestamp": "2025-07-02 14:46:10",
     "source_file": "results/all_anime_data_combined.json",
     "analyzer_version": "1.0"
   }

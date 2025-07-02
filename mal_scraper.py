@@ -58,6 +58,10 @@ class MALScraper(BaseScraper):
     def base_url(self):
         return "https://myanimelist.net"
 
+    @property
+    def output_file(self):
+        return "mal_genre_anime"
+
     def _make_request(self, url: str, timeout: int) -> Optional[str]:
         """Make HTTP request using requests session"""
         # Add initial delay to avoid immediate blocking
@@ -70,6 +74,91 @@ class MALScraper(BaseScraper):
             print(f"Request failed: {e}")
             return None
     
+    def _parse_anime_search_list(self, html_content: str, category_name: str, limit: int) -> List[Dict]:
+        """Parse anime list from MAL's anime.php search pages"""
+        try:
+            soup = BeautifulSoup(html_content, 'html.parser')
+            anime_list = []
+            
+            # Find all table rows containing anime data
+            # Each anime is in a <tr> with multiple <td> cells
+            anime_rows = soup.find_all('tr')
+            
+            count = 0
+            for row in anime_rows:
+                if count >= limit:
+                    break
+                
+                try:
+                    # Look for the title link in the row
+                    title_link = row.find('a', class_='hoverinfo_trigger fw-b fl-l')
+                    if not title_link:
+                        continue
+                    
+                    # Extract title and URL
+                    title = title_link.text.strip()
+                    url = title_link.get('href', '')
+                    if url and not url.startswith('http'):
+                        url = self.base_url + url
+                    
+                    # Extract all table cells for this row
+                    cells = row.find_all('td')
+                    
+                    # Initialize data
+                    score = "N/A"
+                    additional_info = "N/A"
+                    rank = str(count + 1)  # Use sequential numbering
+                    
+                    # The cells typically contain: [image, title+description, type, episodes, score]
+                    if len(cells) >= 5:
+                        # Type is usually in the 3rd cell (index 2)
+                        type_cell = cells[2] if len(cells) > 2 else None
+                        episodes_cell = cells[3] if len(cells) > 3 else None
+                        score_cell = cells[4] if len(cells) > 4 else None
+                        
+                        # Extract type and episodes for additional info
+                        type_text = type_cell.text.strip() if type_cell else ""
+                        episodes_text = episodes_cell.text.strip() if episodes_cell else ""
+                        
+                        if type_text and episodes_text:
+                            additional_info = f"{type_text}, {episodes_text} episodes"
+                        elif type_text:
+                            additional_info = type_text
+                        
+                        # Extract score from the last cell
+                        if score_cell:
+                            score_text = score_cell.text.strip()
+                            # Check if it's a valid score (decimal number)
+                            if re.match(r'^\d+\.\d+$', score_text):
+                                score = score_text
+                    
+                    # Skip entries with empty titles
+                    if not title or title == "N/A":
+                        continue
+                    
+                    anime_data = {
+                        'title': title,
+                        'score': score,
+                        'rank': rank,
+                        'url': url,
+                        'additional_info': additional_info,
+                        'source': 'MyAnimeList',
+                        'category': category_name
+                    }
+                    
+                    anime_list.append(anime_data)
+                    count += 1
+                    
+                except Exception as e:
+                    print(f"Error parsing anime row: {e}")
+                    continue
+            
+            return anime_list
+            
+        except Exception as e:
+            print(f"Error parsing anime search list for {category_name}: {e}")
+            return []
+
     def _parse_topanime_list(self, html_content: str, category_name: str, limit: int) -> List[Dict]:
         """Parse anime list from MAL's top anime by genre pages"""
         try:
@@ -218,37 +307,71 @@ class MALScraper(BaseScraper):
         category = self.categories[category_key]
         print(f"Scraping {category['name']} ({category['description']})...")
         
-        # Use top anime by genre URL - this is more reliable than search
-        # We'll scrape from each genre separately and combine results
-        all_results = []
+        # Collect anime from all genres in this category
+        all_anime = []
         
         for genre_id in category['genres']:
-            # Use the genre-specific top anime URL
-            url = f"{self.base_url}/topanime.php?genre%5B%5D={genre_id}"
+            genre_anime = self._scrape_single_genre(genre_id, category['name'], limit)
+            all_anime.extend(genre_anime)
+
+        # Remove duplicates based on title (keep the one with better score)
+        unique_anime = {}
+        for anime in all_anime:
+            title = anime['title']
+            if title not in unique_anime:
+                unique_anime[title] = anime
+            else:
+                # Keep the one with better score
+                current_score = self._parse_score(anime['score'])
+                existing_score = self._parse_score(unique_anime[title]['score'])
+                if current_score > existing_score:
+                    unique_anime[title] = anime
+        
+        # Convert back to list and sort by score (highest first)
+        final_anime = list(unique_anime.values())
+        final_anime.sort(key=lambda x: self._parse_score(x['score']), reverse=True)
+        
+        # Update category and re-rank based on combined results
+        for i, anime in enumerate(final_anime[:limit]):
+            anime['category'] = category['name']
+            anime['rank'] = str(i + 1)
+        
+        print(f"Final results for {category['name']}: {len(final_anime[:limit])} unique anime")
+        return final_anime[:limit]
+    
+    def _scrape_single_genre(self, genre_id: int, category_name: str, limit: int = 20) -> List[Dict]:
+        """Scrape anime from a single genre"""
+        url = f"{self.base_url}/anime.php?genre[]={genre_id}&o=3"
+        print(f"  Scraping genre {genre_id}: {url}")
+        
+        try:
+            html_content = self._get_page_content(url)
+            if not html_content:
+                print(f"  Failed to get content for genre {genre_id}")
+                return []
             
-            try:
-                html_content = self._get_page_content(url)
-                if not html_content:
-                    print(f"Failed to get content for genre {genre_id}")
-                    continue
-                
-                results = self._parse_topanime_list(html_content, category['name'], limit)
-                all_results.extend(results)
-                
-            except Exception as e:
-                print(f"Error scraping genre {genre_id}: {e}")
+            results = self._parse_anime_search_list(html_content, category_name, limit)
+            print(f"  Found {len(results)} anime for genre {genre_id}")
+            return results
+            
+        except Exception as e:
+            print(f"  Error scraping genre {genre_id}: {e}")
+            return []
+    
+    def _parse_score(self, score_str: str) -> float:
+        """Parse score string to float for sorting"""
+        if score_str == "N/A" or not score_str:
+            return 0.0
         
-        # Remove duplicates based on title and limit results
-        seen_titles = set()
-        unique_results = []
-        for anime in all_results:
-            if anime['title'] not in seen_titles:
-                seen_titles.add(anime['title'])
-                unique_results.append(anime)
-                if len(unique_results) >= limit:
-                    break
+        try:
+            # Extract numeric value from score string
+            match = re.search(r'(\d+\.?\d*)', str(score_str))
+            if match:
+                return float(match.group(1))
+        except:
+            pass
         
-        return unique_results[:limit]
+        return 0.0
     
     def scrape_all_categories(self, limit: int = 20) -> Dict[str, List[Dict]]:
         """Scrape all genre-based categories"""
@@ -271,8 +394,8 @@ def main():
         all_data = scraper.scrape_all_categories(20)
         
         # Save data
-        scraper.save_to_json(all_data, 'mal_genre_anime.json')
-        scraper.save_to_csv(all_data, 'mal_genre_anime.csv')
+        scraper.save_to_json(all_data)
+        scraper.save_to_csv(all_data)
         
     finally:
         scraper.close()
