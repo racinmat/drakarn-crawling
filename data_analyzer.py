@@ -10,12 +10,12 @@ from collections import defaultdict, Counter
 from typing import Dict, List, Set, Tuple
 import re
 from statistics import mean, median
-from config import ANALYSIS_CONFIG, OUTPUT_CONFIG
+from config import ANALYSIS_CONFIG
 
 
 class AnimeDataAnalyzer:
-    def __init__(self, combined_data_file: str = None):
-        self.combined_data_file = combined_data_file or OUTPUT_CONFIG['COMBINED_JSON']
+    def __init__(self, combined_data_file: str = 'results/all_anime_data_combined.json'):
+        self.combined_data_file = combined_data_file
         self.data = {}
         self.analysis_results = {}
         
@@ -46,9 +46,8 @@ class AnimeDataAnalyzer:
         self.category_analysis()
         self.source_comparison()
         self.title_analysis()
-        
-        if ANALYSIS_CONFIG['EXPORT_ANALYSIS']:
-            self.export_analysis()
+
+        self.export_analysis()
     
     def basic_statistics(self):
         """Generate basic statistics about the data"""
@@ -328,7 +327,7 @@ class AnimeDataAnalyzer:
     
     def export_analysis(self):
         """Export analysis results to JSON file"""
-        output_file = ANALYSIS_CONFIG['ANALYSIS_OUTPUT']
+        output_file = 'anime_analysis_report.json'
         
         self.analysis_results['metadata'] = {
             'analysis_timestamp': __import__('time').strftime('%Y-%m-%d %H:%M:%S'),

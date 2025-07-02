@@ -1,81 +1,81 @@
 additional_info,category,rank,score,source,title,url
- | ?,"Action, Adventure, Shounen",1,2.15,AniDB,1,N/A
- | .hack//G.U. Returner,"Action, Adventure, Shounen",2,3.96,AniDB,2,N/A
- | .hack//G.U. Trilogy,"Action, Adventure, Shounen",3,4.96,AniDB,3,N/A
- | .hack//Gift,"Action, Adventure, Shounen",4,2.58,AniDB,4,N/A
- | .hack//Liminality,"Action, Adventure, Shounen",5,4.04,AniDB,5,N/A
- | .hack//Quantum,"Action, Adventure, Shounen",6,6.63,AniDB,6,N/A
- | .hack//Roots,"Action, Adventure, Shounen",7,4.45,AniDB,7,N/A
- | .hack//Sekai no Mukou ni,"Action, Adventure, Shounen",8,5.68,AniDB,8,N/A
- | .hack//Sign,"Action, Adventure, Shounen",9,5.18,AniDB,9,N/A
- | .hack//Tasogare no Udewa Densetsu,"Action, Adventure, Shounen",10,3.99,AniDB,10,N/A
-" | ""0""","Action, Adventure, Shounen",11,2.81,AniDB,11,N/A
-" | ""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu","Action, Adventure, Shounen",12,21.03,AniDB,12,N/A
-" | ""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.","Action, Adventure, Shounen",13,5.24,AniDB,13,N/A
-" | ""Eiji""","Action, Adventure, Shounen",14,4.44,AniDB,14,N/A
-" | ""Eikou Naki Tensai-tachi"" kara no Monogatari","Action, Adventure, Shounen",15,25.03,AniDB,15,N/A
-" | ""Eiyuu"" Kaitai","Action, Adventure, Shounen",16,4.35,AniDB,16,N/A
-" | ""Fate/Grand Order"" Memorial Movie 2023","Action, Adventure, Shounen",17,6.48,AniDB,17,N/A
-" | ""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!","Action, Adventure, Shounen",18,5.29,AniDB,18,N/A
-" | ""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai","Action, Adventure, Shounen",19,N/A,AniDB,19,N/A
-" | ""Oshi no Ko""","Action, Adventure, Shounen",20,8.57,AniDB,20,N/A
- | ?,Romance,1,2.15,AniDB,1,N/A
- | .hack//G.U. Returner,Romance,2,3.96,AniDB,2,N/A
- | .hack//G.U. Trilogy,Romance,3,4.96,AniDB,3,N/A
- | .hack//Gift,Romance,4,2.58,AniDB,4,N/A
- | .hack//Liminality,Romance,5,4.04,AniDB,5,N/A
- | .hack//Quantum,Romance,6,6.63,AniDB,6,N/A
- | .hack//Roots,Romance,7,4.45,AniDB,7,N/A
- | .hack//Sekai no Mukou ni,Romance,8,5.68,AniDB,8,N/A
- | .hack//Sign,Romance,9,5.18,AniDB,9,N/A
- | .hack//Tasogare no Udewa Densetsu,Romance,10,3.99,AniDB,10,N/A
-" | ""0""",Romance,11,2.81,AniDB,11,N/A
-" | ""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",Romance,12,21.03,AniDB,12,N/A
-" | ""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",Romance,13,5.24,AniDB,13,N/A
-" | ""Eiji""",Romance,14,4.44,AniDB,14,N/A
-" | ""Eikou Naki Tensai-tachi"" kara no Monogatari",Romance,15,25.03,AniDB,15,N/A
-" | ""Eiyuu"" Kaitai",Romance,16,4.35,AniDB,16,N/A
-" | ""Fate/Grand Order"" Memorial Movie 2023",Romance,17,6.48,AniDB,17,N/A
-" | ""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",Romance,18,5.29,AniDB,18,N/A
-" | ""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",Romance,19,N/A,AniDB,19,N/A
-" | ""Oshi no Ko""",Romance,20,8.57,AniDB,20,N/A
- | ?,Ecchi,1,2.15,AniDB,1,N/A
- | .hack//G.U. Returner,Ecchi,2,3.96,AniDB,2,N/A
- | .hack//G.U. Trilogy,Ecchi,3,4.96,AniDB,3,N/A
- | .hack//Gift,Ecchi,4,2.58,AniDB,4,N/A
- | .hack//Liminality,Ecchi,5,4.04,AniDB,5,N/A
- | .hack//Quantum,Ecchi,6,6.63,AniDB,6,N/A
- | .hack//Roots,Ecchi,7,4.45,AniDB,7,N/A
- | .hack//Sekai no Mukou ni,Ecchi,8,5.68,AniDB,8,N/A
- | .hack//Sign,Ecchi,9,5.18,AniDB,9,N/A
- | .hack//Tasogare no Udewa Densetsu,Ecchi,10,3.99,AniDB,10,N/A
-" | ""0""",Ecchi,11,2.81,AniDB,11,N/A
-" | ""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",Ecchi,12,21.03,AniDB,12,N/A
-" | ""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",Ecchi,13,5.24,AniDB,13,N/A
-" | ""Eiji""",Ecchi,14,4.44,AniDB,14,N/A
-" | ""Eikou Naki Tensai-tachi"" kara no Monogatari",Ecchi,15,25.03,AniDB,15,N/A
-" | ""Eiyuu"" Kaitai",Ecchi,16,4.35,AniDB,16,N/A
-" | ""Fate/Grand Order"" Memorial Movie 2023",Ecchi,17,6.48,AniDB,17,N/A
-" | ""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",Ecchi,18,5.29,AniDB,18,N/A
-" | ""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",Ecchi,19,N/A,AniDB,19,N/A
-" | ""Oshi no Ko""",Ecchi,20,8.57,AniDB,20,N/A
- | ?,Comedy,1,2.15,AniDB,1,N/A
- | .hack//G.U. Returner,Comedy,2,3.96,AniDB,2,N/A
- | .hack//G.U. Trilogy,Comedy,3,4.96,AniDB,3,N/A
- | .hack//Gift,Comedy,4,2.58,AniDB,4,N/A
- | .hack//Liminality,Comedy,5,4.04,AniDB,5,N/A
- | .hack//Quantum,Comedy,6,6.63,AniDB,6,N/A
- | .hack//Roots,Comedy,7,4.45,AniDB,7,N/A
- | .hack//Sekai no Mukou ni,Comedy,8,5.68,AniDB,8,N/A
- | .hack//Sign,Comedy,9,5.18,AniDB,9,N/A
- | .hack//Tasogare no Udewa Densetsu,Comedy,10,3.99,AniDB,10,N/A
-" | ""0""",Comedy,11,2.81,AniDB,11,N/A
-" | ""Aesop"" no Ohanashi yori: Ushi to Kaeru, Yokubatta Inu",Comedy,12,21.03,AniDB,12,N/A
-" | ""Anata o Hitokoto de Arawashite Kudasai"" no Shitsumon ga Nigate da.",Comedy,13,5.24,AniDB,13,N/A
-" | ""Eiji""",Comedy,14,4.44,AniDB,14,N/A
-" | ""Eikou Naki Tensai-tachi"" kara no Monogatari",Comedy,15,25.03,AniDB,15,N/A
-" | ""Eiyuu"" Kaitai",Comedy,16,4.35,AniDB,16,N/A
-" | ""Fate/Grand Order"" Memorial Movie 2023",Comedy,17,6.48,AniDB,17,N/A
-" | ""Hataraku Saibou!!"" Saikyou no Teki, Futatabi. Karada no Naka wa ""Chou"" Oosawagi!",Comedy,18,5.29,AniDB,18,N/A
-" | ""Omae Gotoki ga Maou ni Kateru to Omou na"" to Yuusha Party o Tsuihou Sareta node, Outo de Kimama ni Kurashitai",Comedy,19,N/A,AniDB,19,N/A
-" | ""Oshi no Ko""",Comedy,20,8.57,AniDB,20,N/A
+Type: TV Series | Episodes: 28,"Action, Adventure, Shounen",1,9.72,AniDB,Sousou no Frieren,https://anidb.net/anime/17617
+Type: TV Series | Episodes: 64,"Action, Adventure, Shounen",2,9.54,AniDB,Hagane no Renkinjutsushi (2009),https://anidb.net/anime/6107
+Type: TV Series | Episodes: 51,"Action, Adventure, Shounen",3,9.46,AniDB,Gintama`,https://anidb.net/anime/8126
+Type: TV Series | Episodes: 148,"Action, Adventure, Shounen",4,9.20,AniDB,Hunter x Hunter (2011),https://anidb.net/anime/8550
+Type: TV Series | Episodes: 10,"Action, Adventure, Shounen",5,9.14,AniDB,Shingeki no Kyojin Season 3 (2019),https://anidb.net/anime/14444
+Type: OVA | Episodes: 26,"Action, Adventure, Shounen",6,8.94,AniDB,Uchuu Senkan Yamato 2199,https://anidb.net/anime/8787
+Type: TV Series | Episodes: 27,"Action, Adventure, Shounen",7,8.74,AniDB,Tengen Toppa Gurren Lagann,https://anidb.net/anime/4575
+Type: TV Series | Episodes: 16,"Action, Adventure, Shounen",8,8.52,AniDB,Shingeki no Kyojin: The Final Season,https://anidb.net/anime/14977
+Type: TV Series | Episodes: 12,"Action, Adventure, Shounen",9,8.42,AniDB,Dan Da Dan,https://anidb.net/anime/18290
+Type: TV Series | Episodes: 11,"Action, Adventure, Shounen",10,8.35,AniDB,Kimetsu no Yaiba: Yuukaku Hen,https://anidb.net/anime/16054
+Type: TV Series | Episodes: TBC,"Action, Adventure, Shounen",11,8.33,AniDB,One Piece,https://anidb.net/anime/69
+Type: TV Series | Episodes: 12,"Action, Adventure, Shounen",12,8.33,AniDB,Shingeki no Kyojin Season 3,https://anidb.net/anime/13241
+Type: TV Series | Episodes: 51,"Action, Adventure, Shounen",13,8.29,AniDB,Hagane no Renkinjutsushi,https://anidb.net/anime/979
+Type: TV Series | Episodes: 25,"Action, Adventure, Shounen",14,8.26,AniDB,Shingeki no Kyojin,https://anidb.net/anime/9541
+Type: OVA | Episodes: 3,"Action, Adventure, Shounen",15,8.26,AniDB,Tsubasa Tokyo Revelations,https://anidb.net/anime/5301
+Type: TV Series | Episodes: 62,"Action, Adventure, Shounen",16,8.22,AniDB,Hunter x Hunter (1999),https://anidb.net/anime/132
+Type: TV Series | Episodes: 24,"Action, Adventure, Shounen",17,8.22,AniDB,JoJo no Kimyou na Bouken: Stardust Crusaders (2015),https://anidb.net/anime/10835
+Type: OVA | Episodes: 14,"Action, Adventure, Shounen",18,8.21,AniDB,Hunter x Hunter: Greed Island Final,https://anidb.net/anime/1427
+Type: OVA | Episodes: 8,"Action, Adventure, Shounen",19,8.18,AniDB,Hunter x Hunter: Original Video Animation,https://anidb.net/anime/173
+Type: Movie | Episodes: 1,"Action, Adventure, Shounen",20,8.13,AniDB,Meitantei Conan: Shikkoku no Chaser,https://anidb.net/anime/6245
+Type: OVA | Episodes: 110,Romance,1,9.73,AniDB,Ginga Eiyuu Densetsu,https://anidb.net/anime/584
+Type: TV Series | Episodes: 28,Romance,2,9.72,AniDB,Sousou no Frieren,https://anidb.net/anime/17617
+Type: TV Series | Episodes: 47,Romance,3,9.64,AniDB,Ashita no Joe 2,https://anidb.net/anime/1458
+Type: TV Series | Episodes: 24,Romance,4,9.49,AniDB,Kusuriya no Hitorigoto,https://anidb.net/anime/17870
+Type: TV Series | Episodes: 24,Romance,5,9.47,AniDB,Steins;Gate,https://anidb.net/anime/7729
+Type: Movie | Episodes: 1,Romance,6,9.39,AniDB,Suzumiya Haruhi no Shoushitsu,https://anidb.net/anime/7221
+Type: TV Special | Episodes: 2,Romance,7,9.27,AniDB,Owarimonogatari (2017),https://anidb.net/anime/13033
+Type: TV Series | Episodes: 13,Romance,8,9.24,AniDB,Aria the Origination,https://anidb.net/anime/5424
+Type: TV Series | Episodes: 22,Romance,9,9.24,AniDB,Clannad: After Story,https://anidb.net/anime/5841
+Type: TV Series | Episodes: 13,Romance,10,9.22,AniDB,Fruits Basket the Final,https://anidb.net/anime/15738
+Type: TV Series | Episodes: 11,Romance,11,9.15,AniDB,Usagi Drop,https://anidb.net/anime/8211
+Type: Movie | Episodes: 1,Romance,12,9.14,AniDB,Eiga Koe no Katachi,https://anidb.net/anime/10937
+Type: TV Series | Episodes: 11,Romance,13,9.13,AniDB,Ping Pong the Animation,https://anidb.net/anime/10400
+Type: OVA | Episodes: 4,Romance,14,9.13,AniDB,Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku Hen,https://anidb.net/anime/73
+Type: TV Series | Episodes: 50,Romance,15,9.12,AniDB,Cross Game,https://anidb.net/anime/6424
+Type: Movie | Episodes: 1,Romance,16,9.10,AniDB,Kono Sekai no Katasumi ni,https://anidb.net/anime/9376
+Type: Movie | Episodes: 1,Romance,17,9.09,AniDB,Kono Sekai no (Sara ni Ikutsumo no) Katasumi ni,https://anidb.net/anime/14233
+Type: TV Series | Episodes: 13,Romance,18,9.09,AniDB,Shouwa Genroku Rakugo Shinjuu (2016),https://anidb.net/anime/10960
+Type: Movie | Episodes: 1,Romance,19,9.06,AniDB,Kimi no Na wa.,https://anidb.net/anime/11829
+Type: TV Series | Episodes: 26,Romance,20,9.03,AniDB,Monogatari Series: Second Season,https://anidb.net/anime/9183
+Type: TV Series | Episodes: 51,Ecchi,1,9.46,AniDB,Gintama`,https://anidb.net/anime/8126
+Type: Movie | Episodes: 1,Ecchi,2,9.39,AniDB,Suzumiya Haruhi no Shoushitsu,https://anidb.net/anime/7221
+Type: TV Special | Episodes: 2,Ecchi,3,9.27,AniDB,Owarimonogatari (2017),https://anidb.net/anime/13033
+Type: TV Series | Episodes: 148,Ecchi,4,9.20,AniDB,Hunter x Hunter (2011),https://anidb.net/anime/8550
+Type: Movie | Episodes: 1,Ecchi,5,9.06,AniDB,Kimi no Na wa.,https://anidb.net/anime/11829
+Type: TV Series | Episodes: 26,Ecchi,6,9.03,AniDB,Monogatari Series: Second Season,https://anidb.net/anime/9183
+Type: TV Series | Episodes: 13,Ecchi,7,9.00,AniDB,Made in Abyss,https://anidb.net/anime/12681
+Type: TV Series | Episodes: 25,Ecchi,8,8.99,AniDB,Code Geass: Hangyaku no Lelouch R2,https://anidb.net/anime/5373
+Type: OVA | Episodes: 26,Ecchi,9,8.94,AniDB,Uchuu Senkan Yamato 2199,https://anidb.net/anime/8787
+Type: TV Series | Episodes: 26,Ecchi,10,8.93,AniDB,Hajime no Ippo: The Fighting! - New Challenger,https://anidb.net/anime/6153
+Type: Movie | Episodes: 1,Ecchi,11,8.92,AniDB,Gekijouban Made in Abyss: Fukaki Tamashii no Reimei,https://anidb.net/anime/13612
+Type: TV Series | Episodes: 25,Ecchi,12,8.85,AniDB,Gintama. (2017),https://anidb.net/anime/13263
+Type: TV Series | Episodes: 25,Ecchi,13,8.84,AniDB,Hajime no Ippo: The Fighting! - Rising,https://anidb.net/anime/9982
+Type: Web | Episodes: 14,Ecchi,14,8.81,AniDB,Monogatari Series: Off & Monster Season,https://anidb.net/anime/18424
+Type: Movie | Episodes: 1,Ecchi,15,8.80,AniDB,Evangelion Shin Gekijouban: Ha,https://anidb.net/anime/6171
+Type: Movie | Episodes: 3,Ecchi,16,8.75,AniDB,Kizumonogatari,https://anidb.net/anime/8357
+Type: TV Series | Episodes: 43,Ecchi,17,8.74,AniDB,GTO,https://anidb.net/anime/191
+Type: TV Series | Episodes: 27,Ecchi,18,8.74,AniDB,Tengen Toppa Gurren Lagann,https://anidb.net/anime/4575
+Type: Movie | Episodes: 1,Ecchi,19,8.73,AniDB,Gekijouban Tengen Toppa Gurren Lagann: Lagann Hen,https://anidb.net/anime/6325
+Type: TV Series | Episodes: 201,Ecchi,20,8.63,AniDB,Gintama,https://anidb.net/anime/3468
+Type: TV Series | Episodes: 28,Comedy,1,9.72,AniDB,Sousou no Frieren,https://anidb.net/anime/17617
+Type: TV Series | Episodes: 51,Comedy,2,9.64,AniDB,Gintama (2015),https://anidb.net/anime/10993
+Type: TV Series | Episodes: 64,Comedy,3,9.54,AniDB,Hagane no Renkinjutsushi (2009),https://anidb.net/anime/6107
+Type: TV Series | Episodes: 24,Comedy,4,9.49,AniDB,Kusuriya no Hitorigoto,https://anidb.net/anime/17870
+Type: TV Series | Episodes: 24,Comedy,5,9.47,AniDB,Steins;Gate,https://anidb.net/anime/7729
+Type: TV Series | Episodes: 51,Comedy,6,9.46,AniDB,Gintama`,https://anidb.net/anime/8126
+Type: TV Series | Episodes: 22,Comedy,7,9.45,AniDB,Sangatsu no Lion (2017),https://anidb.net/anime/12994
+Type: TV Series | Episodes: 13,Comedy,8,9.42,AniDB,Gintama` (2012),https://anidb.net/anime/9427
+Type: Movie | Episodes: 1,Comedy,9,9.39,AniDB,Suzumiya Haruhi no Shoushitsu,https://anidb.net/anime/7221
+Type: Movie | Episodes: 1,Comedy,10,9.38,AniDB,Gintama: The Final,https://anidb.net/anime/14719
+Type: Movie | Episodes: 1,Comedy,11,9.37,AniDB,Gekijouban Gintama Kanketsuhen: Yorozuya yo Eien Nare,https://anidb.net/anime/9384
+Type: TV Special | Episodes: 2,Comedy,12,9.27,AniDB,Owarimonogatari (2017),https://anidb.net/anime/13033
+Type: TV Series | Episodes: 13,Comedy,13,9.24,AniDB,Aria the Origination,https://anidb.net/anime/5424
+Type: TV Series | Episodes: 22,Comedy,14,9.24,AniDB,Clannad: After Story,https://anidb.net/anime/5841
+Type: TV Series | Episodes: 148,Comedy,15,9.20,AniDB,Hunter x Hunter (2011),https://anidb.net/anime/8550
+Type: TV Series | Episodes: 11,Comedy,16,9.15,AniDB,Usagi Drop,https://anidb.net/anime/8211
+Type: TV Series | Episodes: 10,Comedy,17,9.14,AniDB,Shingeki no Kyojin Season 3 (2019),https://anidb.net/anime/14444
+Type: TV Series | Episodes: 50,Comedy,18,9.12,AniDB,Cross Game,https://anidb.net/anime/6424
+Type: TV Series | Episodes: 13,Comedy,19,9.09,AniDB,Shouwa Genroku Rakugo Shinjuu (2016),https://anidb.net/anime/10960
+Type: Movie | Episodes: 1,Comedy,20,9.06,AniDB,Kimi no Na wa.,https://anidb.net/anime/11829
